@@ -1,0 +1,251 @@
+{% extends "./base.html" %} {% load static %} {% block content %}
+<div
+  class="header pb-6 d-flex align-items-center"
+  style="
+    min-height: 500px;
+    background-image: url(https://onlinebanking.zirantankasi.com/asset/images/maintenance-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+  "
+>
+  <!-- Mask -->
+  <span class="mask bg-gradient-default opacity-1"></span>
+  <!-- Header container -->
+  <div class="container-fluid d-flex align-items-center">
+    <div class="row">
+      <div class="col-lg-12 col-7">
+        <h1 class="display-2 text-white">Customer support</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--6">
+  <div class="content-wrapper">
+    <div class="card" id="other">
+      <div class="card-header header-elements-inline">
+        <h3 style="red" class="mb-0">logs</h3>
+      </div>
+      <div class="table-responsive py-4">
+        <div
+          id="datatable-buttons_wrapper"
+          class="dataTables_wrapper dt-bootstrap4 no-footer"
+        >
+          <div class="dt-buttons btn-group"></div>
+          <div id="datatable-buttons_filter" class="dataTables_filter"></div>
+          <table
+            class="table table-flush dataTable no-footer"
+            id="datatable-buttons"
+            role="grid"
+            aria-describedby="datatable-buttons_info"
+          >
+            <thead class="thead-light">
+              <tr role="row">
+                <th
+                  class="sorting_asc"
+                  tabindex="0"
+                  aria-controls="datatable-buttons"
+                  rowspan="1"
+                  colspan="1"
+                  aria-sort="ascending"
+                  aria-label="S/N: activate to sort column descending"
+                   
+                >
+                  S/N
+                </th>
+                <th
+                  class="sorting"
+                  tabindex="0"
+                  aria-controls="datatable-buttons"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Ticket ID: activate to sort column ascending"
+                  style="width: 100.896px;"
+                >
+                  Ticket ID
+                </th>
+                <th
+                  class="sorting"
+                  tabindex="0"
+                  aria-controls="datatable-buttons"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Subject: activate to sort column ascending"
+                  style="width: 72.9479px"
+                >
+                  Subject
+                </th>
+                <th
+                  class="sorting"
+                  tabindex="0"
+                  aria-controls="datatable-buttons"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Priority: activate to sort column ascending"
+                  style="width: 78.2292px"
+                >
+                  Priority
+                </th>
+                <th
+                  class="sorting"
+                  tabindex="0"
+                  aria-controls="datatable-buttons"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Status: activate to sort column ascending"
+                  style="width: 62.5521px"
+                >
+                  Status
+                </th>
+                <th
+                  class="sorting"
+                  tabindex="0"
+                  aria-controls="datatable-buttons"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Created: activate to sort column ascending"
+                  style="width: 154.042px"
+                >
+                  Created
+                </th>
+                <th
+                  class="sorting"
+                  tabindex="0"
+                  aria-controls="datatable-buttons"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Updated: activate to sort column ascending"
+                  style="width: 154.042px"
+                >
+                  Updated
+                </th>
+                <th
+                  class="sorting"
+                  tabindex="0"
+                  aria-controls="datatable-buttons"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label=": activate to sort column ascending"
+                  style="width: 50.8958px"
+                ></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% if user.Subjecttiketmain %}
+              {% for i in user.Subjecttiketmain.all %}
+              <tr role="row" class="odd">
+                <td class="sorting_1">{{i.id}}</td>
+                <td>#{{i.uuid}}</td>
+                <td>{{i.Subject}}</td>
+                <td>{{i.Priority}}</td>
+                
+               
+                <td>
+                  <span class="badge badge-info">{{i.appoved}}</span>
+                </td>
+                <td>{{i.created_at}}</td>
+                <td>{{i.updated_at}}</td>
+                <td class="text-right">
+                  <div class="dropdown">
+                    <a
+                      class="btn btn-sm btn-icon-only text-light"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                    >
+                     
+                      <a
+                        class="dropdown-item"
+                        href="/tiketdelet/{{i.uuid}}"
+                        >Delete</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              {% endfor %}
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <div class="card-header header-elements-inline">
+            <h3 class="mb-0">Start request</h3>
+          </div>
+
+          <div class="card-body">
+            <form
+             
+              method="post"
+            >{% csrf_token %}
+              <input
+                type="hidden"
+                name="_token"
+                value="iDFcjEucAMlZ1wTCxuDFDxHzBXsWPS1kIkW9kuCN"
+              />
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Subject</label>
+                <div class="col-lg-10">
+                  <div class="input-group input-group-merge">
+                    <input
+                      type="text"
+                      name="subject"
+                      maxlength="10"
+                      class="form-control"
+                      required=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Priority</label>
+                <div class="col-lg-10">
+                  <select
+                    class="form-control select"
+                    name="category"
+                    data-dropdown-css-class="bg-slate-800"
+                    data-fouc=""
+                    required=""
+                  >
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Details</label>
+                <div class="col-lg-10">
+                  <textarea
+                    name="details"
+                    class="form-control"
+                    rows="4"
+                    required=""
+                  ></textarea>
+                </div>
+              </div>
+              <div class="text-right">
+                <button
+                  style="color: red"
+                  type="submit"
+                  class="btn btn-primary"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- footer begin -->
+      </div>
+    </div>
+    {% endblock content %}
+  </div>
+</div>

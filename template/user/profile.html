@@ -1,0 +1,94 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block content %}
+<link
+rel="stylesheet"
+
+href="https://tailwindui.com/plus/build/iframe-assets/compiled.css?hash=73be3ed2c08aa96cecdac9ca5dbecfe1"
+/>
+{% if user.profile_picture %}
+<div class="header pb-6 d-flex align-items-center" style="min-height: 400px; background-image: url('{{user.profile_picture.url}}'); background-size: cover; background-position: center top;   border: 2px solid; color: pink; resize: both; overflow: scroll;">
+{% else %} <!-- Mask -->
+  <div class="header pb-6 d-flex align-items-center" style="min-height: 400px; background-image: url('  '); background-size: cover; background-position: center top;   border: 2px solid; color: pink; resize: both; overflow: scroll;">
+   {% endif %} <!-- Mask -->
+    <span class="mask bg-gradient-default opacity-1"></span>
+    <!-- Header container -->
+    <div class="container-fluid d-flex align-items-left">
+      <div class="row">
+        <div class="col-lg-10 col-md-10">
+          <h1 style="margine-top:50px !important;" class="display-2 text-white"></h1>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+<div class="container-fluid mt--12">
+    <div class="content-wrapper">
+  <div class="row">
+       <div class="col-md-6">
+        <!-- Basic layout-->
+         
+        
+      </div></div></div>
+
+
+      <div class="container-fluid mt--6">
+        <div class="content-wrapper">
+      <div class="row">
+          <div class="col-md-12">
+          <div class="card" id="edit">
+              <div class="card-header header-elements-inline">
+                 <h3 class="mb-0">
+      Profile Overview<br>
+      <small>Below is your Online Banking profile details</small></h3>
+              </div>
+              <div class="card-body">
+                <form   method="post" enctype="multipart/form-data">
+
+{% csrf_token %}
+                  {{form.as_p}}
+                  <button type="submit" class="" style="background-color: black; padding: 12px; margin: 7px;">UPDATE</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+      
+          
+          </div>
+      </div> 
+      
+      
+      <!-- footer begin -->
+      <footer class="footer pt-0">
+              <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-12">
+                  <div class="copyright text-center text-xl-left text-muted">
+                  <center>{{site.name}}  © 2025. All Rights Reserved. </center>
+                  </div>
+                </div>
+               <!--- <div class="col-lg-6">
+                  <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                                                         <li class="nav-item">
+                        <a class="nav-link" href="https://onlinebanking.zirantankasi.com/page/4">AML Policy</a>
+                      </li>
+                                                                             <li class="nav-item">
+                        <a class="nav-link" href="https://onlinebanking.zirantankasi.com/page/6">Diversity</a>
+                      </li>
+                                                                             <li class="nav-item">
+                        <a class="nav-link" href="https://onlinebanking.zirantankasi.com/page/7">Sponsoring</a>
+                      </li>
+                                                      <!--- <li class="nav-item">
+                      <a class="nav-link" href="https://onlinebanking.zirantankasi.com/terms">Terms & conditions</a>
+                    </li>              
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://onlinebanking.zirantankasi.com/privacy">Privacy policy</a>
+                    </li>
+                  </ul>
+                </div>--->
+              </div>
+            </footer>
+          </div>
+{% endblock content %}

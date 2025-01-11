@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit and Debit Alert</title>
+    {% load humanize %}
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #007bff;
+        }
+
+        .details {
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #f4f4f4;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .credit {
+            border-left: 4px solid #28a745;
+        }
+
+        .debit {
+            border-left: 4px solid #dc3545;
+        }
+
+        .amount {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>{{site.name}}</h1>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Transaction Alert</h2>
+
+            <!-- Credit Alert Example -->
+             {% if not item.types == 'Debit' %}
+            <div class="details credit">
+                <p><strong>Transaction Type:</strong> Credit</p>
+                <p class="amount">- ${{item1.Amount|intcomma}}.00</p>
+                <p><strong>Date:</strong> {{item1.date}}</p>
+                <p><strong>Account Number:</strong> {{item1.accnum}}</p>
+                <p><strong>Time:</strong>{{item1.date.time}}</p>
+                <p><strong>Description:</strong> {{item1.Description}}</p>
+                <p><strong>Status:</strong> processing</p>
+                <p><strong>Available Balance:</strong> ${{user2.balance|intcomma}}</p>
+            </div>
+{% else %}
+            <!-- Debit Alert Example -->
+            <div class="details debit">
+                <p><strong>Transaction Type:</strong> Debit</p>
+                <p class="amount">- ${{item.Amount |intcomma}}.00</p>
+                <p><strong>Account Number:</strong> {{item.accnum}}</p>
+                <p><strong>Date:</strong> {{item.date}}</p>
+                <p><strong>Status:</strong> processing</p>
+                <p><strong>Time:</strong>{{item.date.time}}</p>
+                <p><strong>Description:</strong> {{item.Description}}</p>
+                <p><strong>Available Balance:</strong> ${{user.balance|intcomma}}</p>
+            </div>
+        </div>
+{% endif %}
+        <!-- Footer Section -->
+        <div class="footer">
+            This is an automated message from {{site.name}}. If you have any concerns, please contact customer service at {{site.email}}.
+        </div>
+    </div>
+</body>
+</html>

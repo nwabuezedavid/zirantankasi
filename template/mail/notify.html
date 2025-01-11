@@ -1,0 +1,81 @@
+<table
+  width="100%"
+  cellpadding="0"
+  cellspacing="0"
+  style="
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  "
+>
+  <tr>
+    <td align="center">
+      <table
+        width="600"
+        cellpadding="0"
+        cellspacing="0"
+        style="background-color: #ffffff; border-radius: 8px; overflow: hidden"
+      >
+        <!-- Header Section -->
+        <tr>
+          <td
+            style="
+              background-color: #4caf50;
+              padding: 20px;
+              text-align: center;
+              color: white;
+            "
+          >
+            <h1 style="margin: 0; font-size: 24px">{{site.name}}</h1>
+          </td>
+        </tr>
+        <!-- Body Section -->
+        <tr>
+          <td style="padding: 20px; color: #333333">
+            <h2 style="font-size: 20px; margin-top: 0">
+              Hello {{user}},
+            </h2>
+            <p style="font-size: 16px; line-height: 1.5">{{message}}</p>
+            <!-- Call-to-Action Button -->
+
+            <p style="font-size: 16px; line-height: 1.5">
+              If you have any questions or feedback, feel free to
+              <a
+                href="mailto:{{site.name}}"
+                style="color: #4caf50; text-decoration: none"
+                >contact us</a
+              >.
+            </p>
+            <p style="font-size: 16px; line-height: 1.5">
+              Best regards,<br />{{site.name}} Team
+            </p>
+          </td>
+        </tr>
+        <!-- Footer Section -->
+        <tr>
+          <td
+            style="
+              background-color: #f4f4f4;
+              padding: 10px;
+              text-align: center;
+              color: #888888;
+              font-size: 14px;
+            "
+          >
+            <p style="margin: 0">
+              &copy; 2025 {{site.name}}. All rights reserved.
+            </p>
+            <p style="margin: 5px 0 0">{{site.Address}}</p>
+            <p style="margin: 5px 0 0">
+              <a
+                href="{{site.host}}"
+                style="color: #4caf50; text-decoration: none"
+                >website</a
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

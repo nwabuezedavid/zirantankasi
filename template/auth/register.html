@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      
+      href="https://tailwindui.com/plus/build/iframe-assets/compiled.css?hash=73be3ed2c08aa96cecdac9ca5dbecfe1"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+  
+
+    <div id="app">
+      <div class="la sk aas aoc">
+        <div class="la tg wr">
+          <div class="la wr aas abf aua auu cwm dqf dwd efe">
+            <div class="fy vo wj dpi">
+              <center>
+                <img
+                  alt="Your Company" onclick="window.location.href = '/';"
+                  src="{{site.logo.url}}"
+                  class="w-[120px] h-fit cursor-pointer"
+                />
+                <h2 class="hm ayt azo azt baw">Sign Up to your account</h2>
+                <p class="hf aze bas">
+                   a member?
+                  <a href="/login" class="text-red-300 text-xl">Sign In</a>
+                </p>
+              </center>
+              <div class="ho">
+                <div>
+                  <form   method="POST" class="acr">
+                    {% if messages %}
+                    {% for message in messages %}
+                      <div 
+                        class="my-3 p-4 rounded-lg text-white 
+                               {% if message.tags == 'success' %} bg-green-600 {% endif %}
+                               {% if message.tags == 'error' %} bg-red-600 {% endif %}
+                               cursor-pointer" 
+                        onclick="this.remove()"
+                      >
+                        <strong>{{ message.tags|capfirst }}:</strong> {{ message }}
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                  
+                  
+                   
+                      {% csrf_token %}
+                      
+                      <!-- Username -->
+                      <div>
+                        {{ form.username.label_tag }}
+                        <div class="hf">
+                          {{ form.username }}
+                        </div>
+                      </div>
+                      
+                      <!-- Email -->
+                      <div>
+                        {{ form.email.label_tag }}
+                        <div class="hf">
+                          {{ form.email }}
+                        </div>
+                      </div>
+                    
+                      <!-- Gender -->
+                      <div>
+                        {{ form.gender.label_tag }}
+                        <div class="hf">
+                          {{ form.gender }}
+                        </div>
+                      </div>
+                    
+                      <!-- Mobile -->
+                      <div>
+                        {{ form.mobile.label_tag }}
+                        <div class="hf">
+                          {{ form.mobile }}
+                        </div>
+                      </div>
+                    
+                      <!-- Password -->
+                      <div>
+                        {{ form.password.label_tag }}
+                        <div class="hf">
+                          {{ form.password }}
+                        </div>
+                      </div>
+                    
+                      <!-- Confirm Password -->
+                      <div>
+                        {{ form.confirm_password.label_tag }}
+                        <div class="hf">
+                          {{ form.confirm_password }}
+                        </div>
+                      </div>
+                    
+                      <!-- Occupation -->
+                      <div>
+                        {{ form.occupation.label_tag }}
+                        <div class="hf">
+                          {{ form.occupation }}
+                        </div>
+                      </div>
+                    
+                      <!-- Address -->
+                      <div>
+                        {{ form.address.label_tag }}
+                        <div class="hf">
+                          {{ form.address }}
+                        </div>
+                      </div>
+                    
+                      <!-- Marital Status -->
+                      <div>
+                        {{ form.marital_status.label_tag }}
+                        <div class="hf">
+                          {{ form.marital_status }}
+                        </div>
+                      </div>
+                    
+                      <!-- Type of Account -->
+                      <div>
+                        {{ form.type_of_account.label_tag }}
+                        <div class="hf">
+                          {{ form.type_of_account }}
+                        </div>
+                      </div>
+                    
+                      <!-- Submit Button -->
+                      
+                    
+                    
+                      <div>
+                        <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+                      </div>
+                  </form>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <div class="l ld th wr dnd "  >
+            <img  style="position: sticky; top: 0; width: 100%; height: 100vh;"
+              alt=""
+              src="https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1908&amp;q=80"
+              class="j u pe asz"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

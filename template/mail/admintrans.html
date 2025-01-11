@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load humanize %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Transfer Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #007bff;
+        }
+
+        .details {
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #f4f4f4;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .highlight {
+            border-left: 4px solid #ffc107;
+        }
+
+        .amount {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Chestburg Bank</h1>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Transfer Request Notification</h2>
+
+            <!-- User Transfer Request -->
+            <div class="details highlight">
+
+                <p><strong>Requester Name:</strong> {{user.username}}</p>
+                <p><strong>Account Number:</strong> {{user.Accountnum}}</p>
+                <p class="amount"><strong>Transfer Amount:</strong> ${{item.Amount|intcomma}}</p>
+                 
+                <p><strong>Recipient Name:</strong> {{item.accname}}</p>
+                <p><strong>Recipient Account:</strong> {{item.Accountnum}}</p>
+                <p><strong>Type:</strong> {{item.types}}</p>
+                <p><strong>Date:</strong>{{item.date}}</p>
+                <p><strong>Time:</strong>{{item.date.time}}</p>
+                <p><strong>Description:</strong> {{item.Description}}</p>
+                
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            This is an automated message from {{site.name}}. If this request requires your attention, please log in to the admin portal to review and take action.
+        </div>
+    </div>
+</body>
+</html>
