@@ -138,6 +138,15 @@ class ProfileForms(forms.ModelForm):
  
  
  
+class adminProfileForms(forms.ModelForm):
+     
+    
+    class Meta:
+        model = Account
+        fields ="__all__"
+        exclude=["profile_picture"]
+        
+ 
 class siteForm(forms.ModelForm):
      
     

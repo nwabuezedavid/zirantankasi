@@ -58,7 +58,7 @@ class Account(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     is_verified = models.BooleanField(default=False)
     banned = models.BooleanField(default=False)
-    profile_picture = models.FileField(upload_to='contact_files/', blank=True, null=True)
+    profile_picture = models.TextField(  blank=True, null=True)
 
     def __str__(self):
         return self.username
@@ -84,6 +84,10 @@ class Account(models.Model):
         return localtransferx.objects.all( )
     def alltor(self):
         combined_queryset2 = localtransferx.objects.all( ).count() +intertransferx.objects.all( ).count()
+        
+        return combined_queryset2
+    def alltoritem(self):
+        combined_queryset2 = chain(self.intertransfer.all( )  ,self.localtransfer.all( ) )
         
         return combined_queryset2
 

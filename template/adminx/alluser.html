@@ -55,7 +55,7 @@
                                 <span class="badge " style="background-color: red; color: white;">banned</span>
                                         {% endif %}                            </td>   
                                                                            </td>   
-                            <td>USD {{i.balance}}</td> 
+                            <td>USD {{i.balance}} </td> 
                              
                             <td class="text-center">
                                 <div class="list-icons">
@@ -64,7 +64,7 @@
                                             <i class="bi bi-justify"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href=""><i class="bi bi-person spinner mr-2"></i>Manage account</a>
+                                            <a class="dropdown-item" href="/aduseredit/{{i.uuid}}/"><i class="bi bi-person spinner mr-2"></i>Manage account</a>
                                                                                                   
                                             
 <a class="dropdown-item" href="/banners/{{i.uuid}}/"><i class="bi bi-person spinner mr-2"></i>  </i>Block</a>
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-link legitRipple" data-dismiss="modal">Close</button>
-                                        <a href="/deleteinter/{{i.uuid}}/" class="btn bg-danger legitRipple">Proceed</a>
+                                        <a href="/deleteuser/{{i.uuid}}/" class="btn bg-danger legitRipple">Proceed</a>
                                     </div>
                                 </div>
                             </div>

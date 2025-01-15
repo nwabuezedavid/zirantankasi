@@ -34,8 +34,7 @@ def generate_swift_code():
     return swift_code
 
 # Example usage
-swift_code = generate_swift_code()
-print("Generated SWIFT Code:", swift_code)
+ 
 
 
 

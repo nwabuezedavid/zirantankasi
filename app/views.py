@@ -15,6 +15,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from .forms import AccountForm,ProfileForms
 from .req import *
+from .use import *
 # Create your views here.
 def home(request):
      
@@ -236,6 +237,16 @@ def deleteinter(request, pk):
         return redirect('adinter', pk=uu.uuid)
     else:
         messages.error(request, 'item  not found')
+def deleteuser(request, pk):
+    
+    if Account.objects.filter(uuid=pk).exists():
+        uu = Account.objects.get(user=request.user)
+        item = Account.objects.get(uuid=pk)
+        item.delete()
+        messages.success(request, 'Account deleted successfully')
+        return redirect('adinter', pk=uu.uuid)
+    else:
+        messages.error(request, 'Account  not found')
 def approvedinter(request, pk):
     
     if intertransferx.objects.filter(uuid=pk).exists():
@@ -611,11 +622,66 @@ def adtiket(request,pk):
     }   
     return render (request, "adminx/tiket.html",con)
 def aduseredit(request,pk):
-    adminlo = Account.objects.get(uuid=pk)
-   
+    adminlo = Account.objects.get(user=request.user)
+    item = Account.objects.get(uuid=pk)
+    profile = get_object_or_404(Account, uuid=pk)
+    if request.method == "POST" and not request.POST.get('types') :
+        form = adminProfileForms(request.POST,  instance=profile)
+        uploaded_file = request.FILES['files']
+        print(uploaded_file)
+        if form.is_valid():
+            blob_url = upload_file_to_blob(uploaded_file, uploaded_file.name)
+            print(blob_url)
+            form.instance.profile_picture=blob_url
+            form.save()
+            messages.success(request, 'site updated successfully')
+            return redirect('aduseredit', pk=item.uuid)  # Redirect to list view after update
+        else:
+            messages.error(request, form.errors)
+    
+    if request.method == "POST" and request.POST.get('types') :
+        types = request.POST.get('types')
+        trnafertypes = request.POST.get('typefe')
+        amount = request.POST.get('amount')
+        end_date = request.POST.get('end_date')
+        content = request.POST.get('content')
+        if types and amount and end_date and content: 
+            if trnafertypes == 'local':
+                loc = localtransferx.objects.create(types=types,accname=get_random_name(),appoved=True, Routing=referCode(9) ,Amount=amount, date=end_date, Description=content, )
+                item.localtransfer.add(loc)
+                if types == 'debit': 
+                    if item.balance < int(amount):
+                        messages.error(request, f'insufficient balance to transfer balance:{item.balance}')
+                        loc.delete()
+                    else:
+                        item.balance = int(item.balance) - int(amount)
+                        messages.success(request, ' Local transfer : credited  successfully ')
+                        
+                if types == 'credit':
+                    item.balance = int(item.balance) + int(amount)
+                    messages.success(request, 'local transfer : created  successfully')
+                return redirect('aduseredit', pk=item.uuid)
+            elif trnafertypes == 'Inter':
+                inters = intertransferx.objects.create(bankname = get_random_bank_name(), swiftcode = generate_swift_code(), accname=get_random_name(),appoved=True  ,Amount=amount, date=end_date, Description=content, )
+                item.intertransfer.add(inters)
+                if types == 'debit':
+                    if item.balance < int(amount):
+                        messages.error(request, 'International insufficient balance')
+                        loc.delete()
+                    else:
+                        item.balance = int(item.balance) - int(amount)
+                        messages.success(request, ' International : debit  successfully ')
+                if types == 'credit':
+                    item.balance = int(item.balance) + int(amount)
+                    messages.success(request, ' International : credited  successfully ')
+                return redirect('aduseredit', pk=item.uuid)
+    else:
+        form = adminProfileForms(instance=profile)
     con ={
          "site":siteedit.objects.get(idx = 1),
     "user":adminlo,    
+    "form":form,    
+    "item":item,    
     }   
     return render (request, "adminx/edituser.html",con)
 def adlocal(request,pk):

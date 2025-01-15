@@ -142,3 +142,6 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+VERCEL_BLOB_READ_WRITE_TOKEN ="vercel_blob_rw_yDSsynpZIAbHMS9A_B9WyNp9IaiCdRJKybXxW6gHfNFYdNc"
