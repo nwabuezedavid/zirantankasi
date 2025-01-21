@@ -1,297 +1,330 @@
 {% extends "./index.html" %}
 {% load static %}
+
+{% block slide %}
+<div id="ContentSection">
+    <div
+      class="main-slider"
+      role="region"
+      aria-label="Banner alanı"
+    >
+      <div class="owl-carousel">
+        <div
+          class="item box-height owl-lazy default"
+          data-src="https://www.ziraatbank.com.tr/en/Banners/western-union-desktop.jpg"
+          data-mobile-src="https://www.ziraatbank.com.tr/en/PublishingImages/western-union-BG.jpg"
+        >
+          <div class="slide-text">
+            <div class="global-container">
+              <div class="desktop-text">
+                <h2>
+                  Western Union Transfers Are on <br />
+                  Ziraat Mobile and Internet Banking
+                </h2>
+                <a>FOR MORE INFORMATION</a>
+              </div>
+              <div class="mobile-text">
+                <h2>
+                  Western Union Transfers Are on <br />
+                  Ziraat Mobile and Internet Banking
+                </h2>
+              </div>
+              <img
+                class="mobile-img lazyload"
+                src="https://www.ziraatbank.com.tr/en/transparent.png"
+                data-src="https://www.ziraatbank.com.tr/en/PublishingImages/western-union-img.png"
+              />
+              <div class="mobile-sub-text">
+                <a>FOR MORE INFORMATION</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="item box-height owl-lazy"
+          data-src="https://www.ziraatbank.com.tr/en/Banners/QR.jpg"
+          data-mobile-src="https://www.ziraatbank.com.tr/en/PublishingImages/QR-mobile.png"
+        >
+          <div class="slide-text">
+            <div class="global-container">
+              <div class="desktop-text">
+                <h2>
+                  <span class="text-black"
+                    >Withdraw and Deposit Money by<br />using
+                    Ziraat Mobile QR Code!</span
+                  >
+                </h2>
+                <a
+                  href="/en/digital-banking/mobile-banking/ziraat-mobil"
+                  >FOR MORE INFORMATION</a
+                >
+              </div>
+              <div class="mobile-text">
+                <h2>
+                  <span class="text-black"
+                    >Withdraw and Deposit Money by<br />using
+                    Ziraat Mobile QR Code!</span
+                  >
+                </h2>
+              </div>
+
+              <div class="mobile-sub-text">
+                <a
+                  href="/en/digital-banking/mobile-banking/ziraat-mobil"
+                  >FOR MORE INFORMATION</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="item box-height owl-lazy"
+          data-src="https://www.ziraatbank.com.tr/en/Banners/ziraat-mobil-kurumsal.jpg"
+          data-mobile-src="https://www.ziraatbank.com.tr/en/PublishingImages/ziraat-kurumsal-mobil-bg.jpg"
+        >
+          <div class="slide-text">
+            <div class="global-container">
+              <div class="desktop-text">
+                <h2>
+                  <span class="text-red">Ziraat Mobile</span>
+                  <span class="text-black"
+                    >has<br />Timesaving Transactions<br />for
+                    Your Company.</span
+                  >
+                </h2>
+                <a>FOR MORE INFORMATION</a>
+              </div>
+              <div class="mobile-text">
+                <h2>
+                  <span class="text-red">Ziraat Mobile</span>
+                  <span class="text-black"
+                    >has<br />Timesaving Transactions<br />for
+                    Your Company.</span
+                  >
+                </h2>
+              </div>
+              <img
+                class="mobile-img lazyload middle"
+                src="https://www.ziraatbank.com.tr/transparent.png"
+                data-src="https://www.ziraatbank.com.tr/en/PublishingImages/ziraat-kurumsal-mobil-img.png"
+              />
+              <div class="mobile-sub-text">
+                <a>FOR MORE INFORMATION</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-controls" id="owl-controls-1">
+        <div class="owl-buttons"></div>
+      </div>
+    </div>
+  </div>
+{% endblock slide %}
+
+
+
 {% block content %}
 
      
-        <!-- header -->
-        <!--slider-->
-        <section id="home" class="p-0 single-slide light-slider">
-            <h2 class="d-none">hidden</h2>
-            <div id="rev_single_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="trax_slider_01">
-                <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
-                <div id="rev_single" class="rev_slider fullwidthabanner" data-version="5.4.8.1">
-                    <ul>
-                        <!-- SLIDE  -->
-                         
-                        <li data-index="rs-3"  style="background-color: aliceblue !important;" data-transition="crossfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default"   data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <!-- MAIN IMAGE -->
-            <img id="asdasdasdas" class="rev-slidebg" onload="setinter()" src="https://img.freepik.com/premium-photo/business-colleagues-working-office_1048944-26753857.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid"     >
-                            <!-- LAYERS -->
- 
-                           
-                            <!-- Overlay -->
-                            <div class="bg-black bg-overlay opacity-7 z-index-1"></div>
-                            <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100vh" data-videomp4="video/pexels-kampus-production-8425706.mp4" data-videopreload="auto" data-videoloop="loopandnoslidestop" data-forcecover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"></div>
-                            <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-120','-80','-80','-80']" data-whitespace="nowrap" data-responsive_offset="on" data-width="['none','none','none','none']" data-type="text" data-textalign="['center','center','center','center']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-splitin="none" data-splitout="none">
-                                <h2 class="font-xlight" style="margin-bottom:100px; margin-top:82px">
-                                    
-                                    {{site.name}} <br>Welcome's you to <br>Withdraw & Deposite <br>Money By Using 
-                                <br>Our QR Code</h2>
-                            </div>
- 
-                            <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-30','0','0','0']" data-whitespace="nowrap" data-responsive_offset="on" data-width="['none','none','none','none']" data-type="text" data-textalign="['center','center','center','center']" data-fontsize="['24','24','18','16']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="900" data-splitin="none" data-splitout="none">
+<div class="section fp-section fp-table" id="main-box" data-percentage="80" data-centered="false" style="height: 478px;"><div class="fp-tableCell" style="height:478px;">
+	<div class="main-box-wrapper">
+		
 
-                            </div>
-                            <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['50','75','75','75']" data-whitespace="nowrap" data-responsive_offset="on" data-width="['none','none','none','none']" data-type="text" data-textalign="['center','center','center','center']" data-fontsize="['24','24','18','16']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1600" data-splitin="none" data-splitout="none">
-
-                            </div>
-                            <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['140','160','160','160']" data-width="['500','500','500','500']" data-textalign="['center','center','center','center']" data-type="text" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="s:900;e:Power2.easeInOut;s:900;e:Power2.easeInOut;" data-start="1800" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                <a style="background-color:red !important" class="button btn-primary transition-3 button-padding" href="indexe47e.html?a=about">   <b>LEARN MORE</b>   </a>  
-                               
-                                
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- END REVOLUTION SLIDER -->
-            </div>
-            <!--scroll down--->
-            <a href="?a= " class="scroll-down pagescroll whitecolor hover-default">Scroll Down <i class="fas fa-long-arrow-alt-down"></i></a>
-        </section>
-        <!-- header -->
-        <!--Main Slider-->
-      
-        <!--Main Slider ends --> 
-        <!--Some Services-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="services-slider" class="owl-carousel">
-                        <div style="background-color:red !important" class="item">
-                            <div style="background-color:red !important" class="service-box">
-                                <span class="bottom25"><i style="color:red !important" class="fa fa-clipboard"></i></span>
-                                <h4 class="bottom10 text-nowrap"><a href="/login">Online and Mobile Banking</a></h4>
-                                <p><b> Access to accounts through the internet and mobile apps, allowing for account management, money transfers, bill payments, and more.</b></p>
-                            </div>
-                        </div>
-                        <div style="background-color:red !important" class="item">
-                            <div style="background-color:red !important" class="service-box">
-                                <span class="bottom25"><i style="color:red !important" class="fa fa-laptop"></i></span>
-                                <h4 class="bottom10"><a href="/login">
-                                    Various Account Types
-</a></h4>
-                                <p>
-                                  Offering savings, checking, and foreign currency accounts, as well as time deposits and investment accounts tailored to different customer needs.</p>
-                            </div>
-                        </div>
-                        <div style="background-color:red !important" class="item">
-                            <div class="service-box">
-                                <span class="bottom25"><i style="color:red !important" class="fa fa-globe"></i></span>
-                                <h4 class="bottom10"><a href="/login"> 
-                                Loans and Credit Facilities</a></h4>
-                                <p>
-                                    Personal loans, mortgage loans, car loans, and overdraft facilities with competitive interest rates.
-
-</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 box-height market-data-box" role="region" aria-label="Piyasa Verileri">
+					<div class="tabs-box">
+						<div class="tabs-title">
+							<a href="javascript:;" class="active" data-id="ZiraatVerileri">
+								Ziraat
+							</a>
+							<a href="javascript:;" class="" data-id="PiyasaVerileri">
+								Market
+							</a>
+						</div>
+						<div class="tabs-content-wrapper">
+							<div class="tabs-content" id="ZiraatVerileri"><div class="vertical-align"><div class="vertical-align-middle"><ul><li><h2>AMERICAN DOLLAR</h2><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><h3>BANK BUY</h3><span>34.4204</span></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><h3>BANK SELL</h3><span>36.7696</span></div></div></li><li><h2>EURO</h2><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><h3>BANK BUY</h3><span>35.6492</span></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><h3>BANK SELL</h3><span>38.0823</span></div></div></li><li><h2>A02 GOLD (1000/1000)</h2><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><h3>BANK BUY</h3><span>2,972.330996</span></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><h3>BANK SELL</h3><span>3,405.795933</span></div></div></li></ul><span>01.21.2025 - 04:05:54</span></div></div></div>
+							<div class="tabs-content" id="PiyasaVerileri"><div class="vertical-align"><div class="vertical-align-middle"><ul class="market-list"><li><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><div class="market-box"><h2>BIST 100</h2><h3><i class="icon-up"></i>+0.51</h3><span>10,029.31</span></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><div class="market-box"><h2>GOLD</h2><h3><i class="icon-down"></i>-0.15</h3><span>3,094.617</span></div></div></div></li><li><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><div class="market-box"><h2>EURO</h2><h3><i class="icon-down"></i>-0.2</h3><span>37.0063</span></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><div class="market-box"><h2>USD</h2><h3><i class="icon-up"></i>+0.12</h3><span>35.6095</span></div></div></div></li><li><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><div class="market-box"><h2>EURO/USD</h2><h3><i class="icon-down"></i>-0.4</h3><span>1.0375</span></div></div></div></li></ul><span class="bistinfo">BIST verileri 15 dakika gecikmeli yansımaktadır.</span><span>01.21.2025 - 18:10:10</span></div></div></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-12 box-height calc-data-box form-wrapper col-sm-6" id="calc-form-box" role="form" aria-label="Hesap Makinesi">
+					
 
 
-        <section style=" background-color:#FFF; padding-bottom:20px; padding-top:20px" id="our-feature" class="single-feature padding_bottom padding_top_half mt-1 mt-lg-n4 mt-md-n3">
+<script type="text/javascript">
+    var vadeGunMin = 1;
+    var vadeGunMax = 730;
+    var vadeAyMax = [12,36];
+    var BaslangicTutar = 0;
+    var BitisTutar = 0;
 
+</script>
 
-            <div class="container">
-
-
-                <div class="row d-flex align-items-center">
-                    <div style="margin-bottom:20px; padding-bottom:40px" class="col-lg-5 col-md-5 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-                        <h2 style="color:#0CF; text-align:left; font-weight:lighter"> <center>Ziraat Bankası</center></h2>
-<br>
-                        <center>Foreign Currency Check Amounts Reach Your Wallet Before They Mature!
-Apply for a Foreign Currency Check Purchase Loan only for Turkish Citizen's  to easily meet the cash needs of your business, and receive the amounts of foreign currency checks in your account before they mature.
-<br><br><br><center><h2 style="color:#0CF; text-align:left; font-weight:lighter">
-Features</h2></center><br><br>
-A loan to provide the customer up front with the amounts of foreign currency checks that, due to their features, cannot be purchased and must be collected.
-The term of the loan is limited by the period until funds are received for the check sent for collection.<br><br><br><br>
-<h3>BE PART OF THE FUTURE WITH US</h3></center>
-
-
-                    </div>
-
-                    <div style="margin-bottom:20px" class="col-lg-1 col-md-1 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-                    </div>
-
-                    <div style="margin-bottom:20px; background-repeat:no-repeat; background-image:url('https://img.freepik.com/premium-photo/portrait-call-center-worker-accompanied-by-his-team-smiling-customer-support-operator-work_931065-1053.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid'); background-size:contain; height:350px" class="col-lg-6 col-md-6 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-
-
-
-                    </div>
-
-
-
-
-                </div>
-            </div>
-        </section>
-
-
-<section>
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <ul class="image-list-small">
-                <li>
-                  <a href="#" style="background-image: url('https://img.freepik.com/premium-photo/composition-with-hologram-logistics-business-transportation_23-2151770260.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid');"></a>
-                  <div class="details">
-                    <h3><a href="#">PLANING SERVICES</a></h3>
-                    <p class="image-author">BUSINESS SERVICES</p>
-                  </div>
-                </li>
-                <li>
-                  <a href="#" style="background-image: url(https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241264.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid);"></a>
-                  <div class="details">
-                    <h3><a href="#">SECTORS</a></h3>
-                    <p class="image-author">ENERGY & SUSTAINABILITY</p>
-                  </div>
-                </li>
-                <li>
-                  <a href="#" style="background-image: url('https://img.freepik.com/premium-photo/diverse-multi-ethnic-teamwork-brainstorming-company-ideas-analyzing-financial-graphs-presentation_482257-7548.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid');"></a>
-                  <div class="details">
-                    <h3><a href="?a=retirement-planning">PLANNING SERVICES</a></h3>
-                    <p class="image-author">RETIREMENT PLANNING</p>
-                  </div>
-                </li>
-               
-                
-
-              </ul>
-		</div>
+<div class="calctabs-box">
+    <div class="calctabs-title">
+        <a href="javascript:;" class="calculation-form active" data-id="MevduatGetirisi">
+            Deposit Calculator
+        </a>
+        <a href="javascript:;" class="deposit-price" data-id="KrediHesaplama">
+            Credit Calculator
+        </a>
     </div>
-</section>
-
-
-        
-        <section style=" background-color:#FFF; padding-bottom:20px; padding-top:20px" id="our-feature" class="single-feature padding_bottom padding_top_half mt-1 mt-lg-n4 mt-md-n3">
-
-
-            <div class="container">
-
-
-                <div class="row d-flex align-items-center">
-                    <div style="margin-bottom:20px; padding-bottom:20px" class="col-lg-5 col-md-5 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-                        <h2 style="color:red; text-align:left; font-weight:lighter"> <center>No Need to Wait for Your Bills to Mature!</center></h2>
-
-                        <center>
-
-Apply for a Discount and Purchase Loan only for Turkish Citizen's and leave your bills portfolio with us to easily meet the cash needs of your business, and repay at your leisure with interest rates favorable to you.
-The difference between a purchase and a discount is that with a purchase transaction the bill debtor resides in a different province to the branch completing the discount transaction.
-Subject to the term / check issue date of the bill that is to be discount-purchased, only bills / checks with up to 180 days (6 months) left until the term / issue date will be accepted for discount or purchase transactions.
-
-</center>
-
-
+    <div class="calctabs-content-wrapper">
+        <div class="calctabs-content active" id="MevduatGetirisi">
+            <div class="vertical-align">
+                <div class="vertical-align-middle">
+                    <div class="form-box deposit-price" data-module="mevduatGetirisi">
+                        <div class="row mT20">
+                            <div class="form-item col-xs-12">
+                                <label for="dovizCinsi" class="sr-only">Döviz Cinsi</label>
+                                <div class="select-box black">
+                                    <select id="dovizCinsi" name="dovizCinsi" class="required select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                        <option value="TRY" selected="selected">TL</option>
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EURO</option>
+                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-dovizCinsi-container"><span class="select2-selection__rendered" id="select2-dovizCinsi-container" title="TL">TL</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </div>
+                            </div>
+                            <div class="form-item sc-box col-xs-12">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-8 col-xs-12 hidden-xs">
+                                        <label for="deposit-calc-vade" class="sr-only">Kredi Vadesi</label>
+                                        <div class="slider-calculation">
+                                            <div class="slider-calculate slider-vade ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="1" data-max="36" data-value="32" data-step="1"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 4.8011%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 4.8011%;"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-4 col-xs-12">
+                                        <div class="input slider-month">
+                                            <i>Day</i>
+                                            <input type="tel" maxlength="3" class="only-number" name="deposit-calc-vade" id="deposit-calc-vade" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item col-xs-12">
+                                <div class="input-box">
+                                    <div class="form-sub-item col-xs-6">
+                                        <label for="tutar">Amount</label>
+                                    </div>
+                                    <div class="form-sub-item col-xs-6">
+                                        <input type="text" class="required only-number money" name="tutar" id="tutar" value="10.000" autocomplete="off" maxlength="10" style="text-align: right;"><i>TL</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item col-xs-12">
+                                <div class="input-box input-percent">
+                                    <div class="form-sub-item col-xs-6">
+                                        <label for="m-faiz-orani"> Interest Rate</label>
+                                    </div>
+                                    <div class="form-sub-item col-xs-6">
+                                        <span class="interest-rate" id="m-faiz-orani">% 38</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item col-xs-12">
+                                <div class="interest-rate">
+                                    <label>Maturity Amount</label>
+                                    <span class="total-price">10,299.83 TL</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div style="margin-bottom:20px" class="col-lg-1 col-md-1 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-                    </div>
-
-                    <div style="margin-bottom:20px; background-repeat:no-repeat; background-image:url({% static 'images/08_2017_diversity-654x395.jpg'%}); background-size:contain; height:350px" class="col-lg-6 col-md-6 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-
-                    </div>
-
                 </div>
             </div>
-        </section>
 
- <section style=" background-color:#FFF; padding-bottom:20px; padding-top:20px" id="our-feature" class="single-feature padding_bottom padding_top_half mt-1 mt-lg-n4 mt-md-n3">
+        </div>
+        <div class="calctabs-content" id="KrediHesaplama">
+            <div class="vertical-align">
+                <div class="vertical-align-middle">
+                    <div class="calculation-form form-box">
+                        <div class="row">
+                            <div class="form-item select-box black col-xs-12">
+                                <label for="credit-select" class="sr-only">Consumer Loan</label>
+                                <select id="credit-select" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                    <option value="G11" selected="selected" data-grup="1" data-def-tutar="0" data-vmin="13" data-vmax="36">Consumer Loan</option>
+                                    <option value="G8" data-grup="2" data-def-tutar="0" data-vmin="13" data-vmax="48">Vehicle Loan</option>
+                                    <option value="G4" data-grup="3" data-def-tutar="0" data-vmin="13" data-vmax="120">Home Loan</option>
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-credit-select-container"><span class="select2-selection__rendered" id="select2-credit-select-container" title="Consumer Loan">Consumer Loan</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                            <div class="form-item select-box black col-xs-12">
+                                <label for="ddlCredit" class="sr-only"></label>
+                                <select name="ctl00$PlaceHolderMain$ctl03$ctl00$ddlCredit" id="ddlCredit" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+	<option value="DİJİ1">Dijital Kredi</option>
+	<option value="TUK1">Tüketici Kredisi</option>
+	<option value="TUKP1">Tüketici Kredisi Ürün Paketi</option>
 
-
-            <div class="container">
-
-
-                <div class="row d-flex align-items-center">
-                    <div style="margin-bottom:20px; padding-bottom:20px" class="col-lg-5 col-md-5 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-                        <h2 style="color:red; text-align:left; font-weight:lighter"> <center>FINANCIAL
-PLANNING</center></h2>
-<br>
-                        <center>
-
-
-These days, it's more important than ever to have a plan. Our version of financial planning not only gives you the confidence to know you're ready for anything, but is also designed to help you reach all your goals in the days ahead.
-</center>
-
-
+</select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlCredit-container"><span class="select2-selection__rendered" id="select2-ddlCredit-container" title="Dijital Kredi">Dijital Kredi</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                            <div class="form-item col-xs-12">
+                                <div class="input-box">
+                                    <div class="form-sub-item col-xs-6">
+                                        <label for="kredi-tutari">Credit Amount</label>
+                                    </div>
+                                    <div class="form-sub-item col-xs-6">
+                                        <input type="tel" id="kredi-tutari" name="kredi-tutari" class="money only-number" maxlength="10" autocomplete="off" style="text-align: right;"><i>TL</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item sc-box col-xs-12">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-8 col-xs-12 hidden-xs">
+                                        <label for="calc-vade" class="sr-only">Kredi Vadesi</label><div class="slider-calculation">
+                                            <div class="slider-calculate slider-vade ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="slider-calculate" data-min="1" data-max="36" data-value="0" data-step="1"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-4 col-xs-12">
+                                        <div class="input slider-month">
+                                            <i>Month</i>
+                                            <input type="tel" maxlength="3" class="only-number" name="calc-vade" id="calc-vade" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item col-xs-12">
+                                <div class="input-box input-percent">
+                                    <div class="form-sub-item col-xs-6">
+                                        <label for="faiz-orani">Interest Rate</label>
+                                    </div>
+                                    <div class="form-sub-item col-xs-6">
+                                        <input type="tel" id="faiz-orani" name="faiz-orani" class="percent" maxlength="8" value="0" autocomplete="off" style="text-align: right;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item col-xs-12">
+                                <div class="interest-rate">
+                                    <label>Monthly Payment</label><span class="total-price">0,06 TL</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div style="margin-bottom:20px" class="col-lg-1 col-md-1 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-                    </div>
-
-                    <div style="margin-bottom:20px; background-repeat:no-repeat; background-image:url({% static 'images/Financial-Planning-Tips.jpg'%}); background-size:contain; height:350px" class="col-lg-6 col-md-6 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-
-
-
-                    </div>
-
-
-
-
                 </div>
             </div>
-        </section>
 
-        
+        </div>
+    </div>
+    
+    <a class="digerhesaplamaaraclari" href="/en/calculation-tools">Other Calculation Tools</a>
+</div>
+
+
+
+
+
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-12 box-height applications col-sm-6" role="region" aria-label="Başvurular">
+					<h2>Applications</h2><div class="vertical-align"><div class="vertical-align-middle"><div class="applications-box"><div class="row"><a href="/en/retail/loans/general-needs/consumer-loan" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="home-icon-kredi"><span id="animation_containerhome-icon-kredi" class="animation" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"><canvas id="canvashome-icon-kredi" width="144" height="144" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"></canvas><span id="dom_overlay_containerhome-icon-kredi" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"></span></span>Consumer <br>Loan</a><a href="/en/retail/cards" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="home-icon-kart"><span id="animation_containerhome-icon-kart" class="animation" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"><canvas id="canvashome-icon-kart" width="144" height="144" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"></canvas><span id="dom_overlay_containerhome-icon-kart" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"></span></span>Bankkart<br></a><a href="/en/retail/insurance-pension" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="home-icon-sigorta"><span id="animation_containerhome-icon-sigorta" class="animation" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"><canvas id="canvashome-icon-sigorta" width="144" height="144" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"></canvas><span id="dom_overlay_containerhome-icon-sigorta" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"></span></span>Insurance<br>Products</a><a href="/en/retail/insurance-pension/personal-pension-system/general-features" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="home-icon-emeklilik"><span id="animation_containerhome-icon-emeklilik" class="animation" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"><canvas id="canvashome-icon-emeklilik" width="144" height="144" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"></canvas><span id="dom_overlay_containerhome-icon-emeklilik" aria-hidden="true" role="presentation" style="width: 96px; height: 96px;"></span></span>Individual<br> Pension</a><i class="shadow"></i></div></div></div></div>
+
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-12 box-height sube-atm map-container col-sm-6" role="region" aria-label="En Yakın Ziraat">
+					<h2>Closest Ziraat</h2><div class="map-form"> <div class="vertical-align"> <div class="vertical-align-middle"> <div class="map-form-item"> <div class="radio-btn-group red-box row"> <fieldset role="radiogroup"> <legend class="sr-only">Branch and ATM</legend> <div class="col-xs-6"> <div class="radio-box grey active"> <div class="radio-item"> <input type="radio" id="radio-sube" name="radio-group" checked="checked" value="sube" tabindex="0"><span class="active"></span> </div> <label for="radio-sube">Branch <span class="sr-only">Please click to search.</span> </label> </div> </div> <div class="col-xs-6"> <div class="radio-box grey"> <div class="radio-item"> <input type="radio" id="radio-atm" name="radio-group" value="atm" tabindex="0"><span></span> </div> <label for="radio-atm">ATM <span class="sr-only">Please click to search.</span> </label> </div> </div> </fieldset> </div> </div> <div class="map-form-box"> <a href="javascript:;" class="icon-close visible-sm visible-xs"></a> <div class="map-form-item f-item"> <div class="map-search"> <label for="txtMapSearch" class="sr-only">Branch Name</label> <input type="text" maxlength="50" name="txtMapSearch" id="txtMapSearch" placeholder="Branch and Adress Search" tabindex="0"> <a href="javascript:;" class="icon-search"><span class="sr-only">Please click to search.</span></a> </div> </div> <div class="map-form-item f-item"> <div class="select-box black"> <label for="ddlCity" class="sr-only">Select City</label> <select id="ddlCity" name="ddlCity" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true"> <option value="0">Select City</option> <option value="1">Adana</option><option value="2">Adıyaman</option><option value="3">Afyonkarahisar</option><option value="4">Ağrı</option><option value="68">Aksaray</option><option value="5">Amasya</option><option value="6">Ankara</option><option value="7">Antalya</option><option value="75">Ardahan</option><option value="8">Artvin</option><option value="9">Aydın</option><option value="10">Balıkesir</option><option value="74">Bartın</option><option value="72">Batman</option><option value="69">Bayburt</option><option value="11">Bilecik</option><option value="12">Bingöl</option><option value="13">Bitlis</option><option value="14">Bolu</option><option value="15">Burdur</option><option value="16">Bursa</option><option value="17">Çanakkale</option><option value="18">Çankırı</option><option value="19">Çorum</option><option value="20">Denizli</option><option value="21">Diyarbakır</option><option value="81">Düzce</option><option value="22">Edirne</option><option value="23">Elazığ</option><option value="24">Erzincan</option><option value="25">Erzurum</option><option value="26">Eskişehir</option><option value="27">Gaziantep</option><option value="28">Giresun</option><option value="29">Gümüşhane</option><option value="30">Hakkari</option><option value="31">Hatay</option><option value="76">Iğdır</option><option value="32">Isparta</option><option value="34">İstanbul</option><option value="35">İzmir</option><option value="46">Kahramanmaraş</option><option value="78">Karabük</option><option value="70">Karaman</option><option value="36">Kars</option><option value="37">Kastamonu</option><option value="38">Kayseri</option><option value="79">Kilis</option><option value="71">Kırıkkale</option><option value="39">Kırklareli</option><option value="40">Kırşehir</option><option value="41">Kocaeli</option><option value="42">Konya</option><option value="43">Kütahya</option><option value="44">Malatya</option><option value="45">Manisa</option><option value="47">Mardin</option><option value="33">Mersin</option><option value="48">Muğla</option><option value="49">Muş</option><option value="50">Nevşehir</option><option value="51">Niğde</option><option value="52">Ordu</option><option value="80">Osmaniye</option><option value="53">Rize</option><option value="54">Sakarya</option><option value="55">Samsun</option><option value="63">Şanlıurfa</option><option value="56">Siirt</option><option value="57">Sinop</option><option value="73">Şırnak</option><option value="58">Sivas</option><option value="59">Tekirdağ</option><option value="60">Tokat</option><option value="61">Trabzon</option><option value="62">Tunceli</option><option value="64">Uşak</option><option value="65">Van</option><option value="77">Yalova</option><option value="66">Yozgat</option><option value="67">Zonguldak</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlCity-container"><span class="select2-selection__rendered" id="select2-ddlCity-container" title="Select City">Select City</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> </div> </div> <div class="map-form-item f-item"> <div class="select-box black"> <label for="ddlTown" class="sr-only">Select Town</label> <select id="ddlTown" name="ddlTown" disabled="" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true"> <option value="0">Select Town</option> </select><span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-ddlTown-container"><span class="select2-selection__rendered" id="select2-ddlTown-container" title="Select Town">Select Town</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> </div> </div> <div class="map-form-item f-item"> <a href="javascript:;" class="btn btn-red map-search-btn">SEARCH</a> </div> </div> </div> </div></div>
+
+				</div>
+
+			
+	</div>
+</div></div>
+
        
-        <section>
-
-            <div class="container">
-                <div class="row d-flex align-items-center">
-
-                </div>
-                <div class="col-lg-10 offset-lg-1 col-md-10 col-sm-10 wow fadeInRight" data-wow-delay="300ms">
-                    <div class="heading-title mb-4">
-                        <center>
-                            <h2 style="font-weight:bolder; color:red !important" class="darkcolor font-normal bottom30">Features<span class="defaultcolor"> </span></h2>
-                        </center>
-                    </div>
-                    <p class="bottom35">
-                        
-</p><center>Periodical Returns And Broad Liquidity Possibilities With Foreign Currency Investments
-Eurobonds are medium- to long-term coupon securities issued by corporations/companies or governments abroad in foreign currency.
-
-Our bank trades in Republic of Türkiye Undersecretariat of Treasury-issued EUR and USD Eurobonds.
-
-Our customers can participate in Treasury issues of Eurobonds through our bank.
-
-In addition to Eurobonds whose prices are announced by our bank, we are able to trade in Eurobonds issued by different countries and corporations and denominated in various currencies upon the request of our customers.
-
-
-Provides periodic coupon interest in addition to a fixed return when held until maturity.
-Capital and coupon payments are made in the same currency as that of the Eurobond on issue.
-Due to their tradability on the secondary market, the investor may convert Eurobonds to cash before the maturity date for the amount desired. Sale of the security on the secondary market is dependent on current market prices, and therefore may result in either a trading profit or a loss.
-Coupon payments on USD Eurobonds occur once every 6 months, and once a year for EUR Eurobonds.
-These are sold and purchased in nominal multiples of 1,000 and are subject to a minimum transaction limit during initial issue.
-The amount invested and the capital return on maturity (nominal amount) may vary depending on whether the Eurobond is traded at a premium or a discount on the markets.
-Returns are not subject to withholding tax. Taxation is carried out on the basis of declaration, dependent on the investor's legal status, and the structure and amount of the return. Apply to one of our branches for detailed information.
-Trading transactions are monitored on your investment account, Eurobonds are held on behalf of our customers through our bank's Euroclear account.
-</center>
-
-                   <br><br>
-                    <a style="background-color:red !important" href="/login" class="button btnsecondary gradient-btn pagescroll mb-sm-0 mb-4">Learn More</a>
-
-                    <p></p>
-
-
-                </div>
-            </div>
-
-        </section>
-        <script defer>
-            function setinter() {
-                    
-                    console.log(document.querySelector('.asdasdsad'));
-                    
-                    const arry =[
-                        'https://img.freepik.com/premium-photo/business-technology-office-concept-three-smiling-businessmen-with-tablet-pc-computers-office_380164-82689.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid'
-                        ,'https://img.freepik.com/free-photo/coworkers-from-construction-company-estimating-house-prototype-bold-man-spectacles-holding-tiny-cupboard-building-hands-african-american-pointing-details-looking-mock-up-model_273609-5764.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid'
-                        ,'https://img.freepik.com/premium-photo/business-oldness-online-banking-internet-shopping-oldness-concept-smiling-old-man-with-tablet-pc-credit-card-home_380164-44536.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid' ]
-                        
-                        document.querySelector('.rev-slidebg').src = arry[Math.floor(Math.random() * arry.length)];
-            }       </script>
 {% endblock content %}

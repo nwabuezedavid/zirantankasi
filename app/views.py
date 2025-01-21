@@ -35,6 +35,76 @@ def activate(request,pk):
         
     }
     return render (request, "home/verified.html",con)
+def Commercial(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/commer.html",con)
+def bank(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/bank.html",con)
+def ServiceFees(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/ServiceFees.html",con)
+def sitemap(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/sitemap.html",con)
+def branchesatms(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/branches-atms.html",con)
+def Calculation(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/Calculation.html",con)
+def Contact(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/Contact.html",con)
+def iban(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/iban.html",con)
+def notice(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/notice.html",con)
+def Investor(request):
+     
+    con ={
+         "site":siteedit.objects.get(idx = 1),
+        
+    }   
+    return render (request, "home/Investor.html",con)
 def about(request):
      
     con ={
