@@ -141,7 +141,7 @@ class  intertransferx(models.Model):
     
     date = models.DateTimeField( blank=True,default=timezone.now, null=True,)
     class Meta:
-        ordering = ['date']  
+        ordering = ['-date']  
     def save(self, *args, **kwargs):
         # Generate a new UUID if it doesn't exist
         if not self.uuid:
