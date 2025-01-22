@@ -181,8 +181,8 @@ class siteedit(models.Model):
     country = models.CharField( max_length=50 ,blank=True, null=True,)
     dis = models.TextField( blank=True, null=True,)
     phone = models.CharField( max_length=50 ,blank=True, null=True,)
-    logo = models.ImageField( blank=True, null=True,)
-    image1 = models.ImageField( blank=True, null=True,)
+    logo = models.TextField( blank=True, null=True,)
+    image1 = models.TextField( blank=True, null=True,)
     idx = models.IntegerField( default=1) 
     
     facebooklink = models.CharField( max_length=500 ,blank=True, null=True,)
