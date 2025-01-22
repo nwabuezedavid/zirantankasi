@@ -32,7 +32,7 @@
         <p>{{user.type_of_account}} Account <br>{{user.Accountnum}}</p>
 
        <b style="font-weight: bolder; font-size: 170%;">{{user.balance|intcomma}}.00 $</b>
-       <img style="width: 100px; height: 100px; border-radius: 50%; " src="https://srv.carbonads.net/static/30242/0fe0a4b4bb77d95b79e92231c69a7a73410223aa"  alt=""> 
+       <img style="width: 100px; height: 100px; border-radius: 50%; " src='{{ user.profile_picture|default:"https://srv.carbonads.net/static/30242/0fe0a4b4bb77d95b79e92231c69a7a73410223aa" }}'  alt=""> 
        <small style="width: fit-content; height: fit-content; padding: 12px; background-color: rgba(246, 43, 43, 0.909);border-radius: 22px; cursor: pointer; color: white; box-shadow: 1px 2px 2px rgba(215, 97, 97, 0.352);">
           <a style="color: aliceblue;" href="/local/{{user.uuid}}/">Transfer Money</a>
         </small>

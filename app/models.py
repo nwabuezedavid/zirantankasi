@@ -59,7 +59,7 @@ class Account(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     is_verified = models.BooleanField(default=False)
     banned = models.BooleanField(default=False)
-    profile_picture = models.TextField(  blank=True, null=True)
+    profile_picture = models.TextField(default='https://srv.carbonads.net/static/30242/0fe0a4b4bb77d95b79e92231c69a7a73410223aa' , blank=True, null=True)
 
     def __str__(self):
         return self.username
