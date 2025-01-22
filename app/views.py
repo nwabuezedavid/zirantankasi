@@ -297,6 +297,7 @@ def deletelocal(request, pk):
         return redirect('adlocal', pk=uu.uuid)
     else:
         messages.error(request, 'item  not found')
+    return True
 def deleteinter(request, pk):
     
     if intertransferx.objects.filter(uuid=pk).exists():
@@ -307,6 +308,52 @@ def deleteinter(request, pk):
         return redirect('adinter', pk=uu.uuid)
     else:
         messages.error(request, 'item  not found')
+    return True
+
+def update_transaction_status(request, item,user,typex):
+    if request.method == "POST":
+        value = typex # Get status from form submission
+        user = user
+        item = item
+        print(item,user)
+        # Define status-specific email messages
+        status_messages = {
+            "pending": "Your transaction is currently being processed. You will receive an update once it has been completed.",
+            "completed": "Your transaction has been successfully completed. You can review the details in your account.",
+            "failed": "Unfortunately, your transaction could not be processed. Please try again later.",
+            "reversed": "Your transaction has been reversed. The amount will be credited back to your account shortly.",
+            "cancelled": "Your transaction has been cancelled as per your request. No further action is required.",
+        }
+
+        # Context for the email template
+        conx = {
+            "site": siteedit.objects.get(idx=1),
+            "user": user,
+            "item": item,
+            "status_message": status_messages.get(value, "Please contact support for further details."),
+            "status": value,
+        }
+
+        # Determine the email subject dynamically
+        subject = f"Transaction Status Update: USD {item.Amount}"
+        
+        # Send email using the email_sending function
+         
+        email_sending(
+            request,
+            "./mail/statute.html",
+            conx,
+            subject,
+            f"{user.email.replace(' ', '')}"
+        )
+  
+        # Set success message for each status
+        
+        print( f"Transaction updated to {value} successfully")
+
+    return print( "Invalid request")
+       
+        
 def deleteuser(request, pk):
     
     if Account.objects.filter(uuid=pk).exists():
@@ -693,9 +740,12 @@ def adtiket(request,pk):
     return render (request, "adminx/tiket.html",con)
 def aduseredit(request,pk):
     adminlo = Account.objects.get(user=request.user)
+    formstat = localFormtanit()
+    formstatinter = InterFormtanit()
     item = Account.objects.get(uuid=pk)
     profile = get_object_or_404(Account, uuid=pk)
-    if request.method == "POST" and not request.POST.get('types') :
+    form = adminProfileForms(instance=profile)
+    if request.method == "POST" and not request.POST.get('types') and not request.POST.get('uuids') :
         form = adminProfileForms(request.POST,  instance=profile)
         uploaded_file = request.FILES['files']
         print(uploaded_file)
@@ -709,7 +759,7 @@ def aduseredit(request,pk):
         else:
             messages.error(request, form.errors)
     
-    if request.method == "POST" and request.POST.get('types') :
+    if request.method == "POST" and request.POST.get('types')and not request.POST.get('uuids') :
         types = request.POST.get('types')
         trnafertypes = request.POST.get('typefe')
         amount = request.POST.get('amount')
@@ -717,10 +767,10 @@ def aduseredit(request,pk):
         content = request.POST.get('content')
         if types and amount and end_date and content: 
             if trnafertypes == 'local':
-                loc = localtransferx.objects.create(types=types,accname=get_random_name(),appoved=True, Routing=referCode(9) ,Amount=amount, date=end_date, Description=content, )
+                loc = localtransferx.objects.create(types=types,accname=get_random_name(),appoved="Pending", Routing=referCode(9) ,Amount=amount, date=end_date, Description=content, )
                 item.localtransfer.add(loc)
                 if types == 'debit': 
-                    if item.balance < int(amount):
+                    if int(item.balance) < int(amount):
                         messages.error(request, f'insufficient balance to transfer balance:{item.balance}')
                         loc.delete()
                     else:
@@ -732,7 +782,7 @@ def aduseredit(request,pk):
                     messages.success(request, 'local transfer : created  successfully')
                 return redirect('aduseredit', pk=item.uuid)
             elif trnafertypes == 'Inter':
-                inters = intertransferx.objects.create(bankname = get_random_bank_name(), swiftcode = generate_swift_code(), accname=get_random_name(),appoved=True  ,Amount=amount, date=end_date, Description=content, )
+                inters = intertransferx.objects.create(bankname = get_random_bank_name(),types=types, swiftcode = generate_swift_code(), accname=get_random_name(),appoved="Pending"  ,Amount=amount, date=end_date, Description=content, )
                 item.intertransfer.add(inters)
                 if types == 'debit':
                     if item.balance < int(amount):
@@ -745,15 +795,59 @@ def aduseredit(request,pk):
                     item.balance = int(item.balance) + int(amount)
                     messages.success(request, ' International : credited  successfully ')
                 return redirect('aduseredit', pk=item.uuid)
+    
+    
+    if request.method == "POST" and request.POST.get('uuids') :
+        itemid = request.POST.get('uuids')
+        swiftcodexc = request.POST.get('swiftcodexc')
+        if intertransferx.objects.filter(uuid=itemid).exists() or localtransferx.objects.filter(uuid=itemid).exists():
+            uu = Account.objects.get(uuid=pk)
+            print(swiftcodexc, 'valuebsb')
+            if swiftcodexc == "none":
+                item = localtransferx.objects.get(uuid=itemid)
+                formstat = localFormtanit(request.POST,   instance=item)
+                if formstat.is_valid():
+                    print(formstat.cleaned_data.get('username'))
+                    formstat.save()
+                    messages.success(request, 'local transfer updated successfully')
+                    
+                    update_transaction_status(request, item,profile,formstat.cleaned_data.get('username'))
+                    return redirect('aduseredit', pk=pk)  
+                    
+                else:
+                    messages.error(request, 'Profile update failed')
+                
+            else:
+                item = intertransferx.objects.get(uuid=itemid)
+                formstatinter = InterFormtanit(request.POST,   instance=item)
+                if formstatinter.is_valid():
+                    formstatinter.save()
+                    messages.success(request, 'inter-transfer updated successfully')
+                    update_transaction_status(request, item,profile,formstatinter.cleaned_data.get('appoved'))
+                    
+                    return redirect('aduseredit', pk=pk)  
+            
+        else:
+            messages.error(request, 'transaction was not found')
     else:
         form = adminProfileForms(instance=profile)
+        formstat = localFormtanit()
+        formstatinter = InterFormtanit()
+        
     con ={
          "site":siteedit.objects.get(idx = 1),
     "user":adminlo,    
-    "form":form,    
+    "form":form or None,    
     "item":item,    
+    "formstat":formstat,    
+    "formstatinter":formstatinter,    
     }   
     return render (request, "adminx/edituser.html",con)
+
+
+
+
+
 def adlocal(request,pk):
     adminlo = Account.objects.get(uuid=pk)
 

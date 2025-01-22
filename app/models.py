@@ -125,6 +125,7 @@ class  intertransferx(models.Model):
     Amount = models.CharField( max_length=50 ,blank=True, null=True,)
     Description = models.CharField( max_length=900 ,blank=True, null=True,)
     appoved = models.CharField(blank=True, choices=TRANSACTION_STATUS_CHOICES, default="pending", null=True,max_length=50)
+    types = models.CharField( max_length=50 , default='Debit',blank=True, null=True,)
     
     date = models.DateTimeField( blank=True,default=timezone.now, null=True,)
     class Meta:

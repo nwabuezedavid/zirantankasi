@@ -138,6 +138,16 @@ class ProfileForms(forms.ModelForm):
  
  
  
+class localFormtanit(forms.ModelForm):
+    class Meta:
+        model = localtransferx
+        fields =['appoved']
+ 
+class InterFormtanit(forms.ModelForm):
+    class Meta:
+        model = intertransferx
+        fields =['appoved']
+ 
 class adminProfileForms(forms.ModelForm):
      
     

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Status Update</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+  <div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; padding: 20px; border-radius: 5px;">
+    <h2 style="text-align: center; color: #004085;">{{site.name}} - Transaction Update</h2>
+    <p>Dear {{ user.first_name }},</p>
+    <p>Your recent transaction of <strong>USD {{ item.Amount }}</strong> is currently <strong>{{ status }}</strong>.</p>
+    <p>{{ status_message }}</p>
+    <p>If you have any questions, please contact our support team.</p>
+    <p>Thank you for banking with us.</p>
+    <p>Best regards, <br> <strong>{{site.name}} Team</strong></p>
+  </div>
+</body>
+</html>
