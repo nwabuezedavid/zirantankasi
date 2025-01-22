@@ -140,16 +140,16 @@ def register(request):
             if User.objects.filter(    username=form.cleaned_data.get('username'),    email=form.cleaned_data.get('email'),    password=form.cleaned_data.get('password'),).exists():
                 messages.error(request, 'Account already exists')
                 return redirect('register')
-            acc = User.objects.create(
+            accx = User.objects.create(
                 username=form.cleaned_data.get('username'),
                 email=form.cleaned_data.get('email'),
                 password=form.cleaned_data.get('password'),
             )
-            form.instance.user = acc
+            form.instance.user = accx
             form.instance.Accountnum = acc()
             form.instance.uuid = referCode(12)
             form.save()
-            ss = Account.objects.get(user=acc)
+            ss = Account.objects.get(user=accx)
             sites=siteedit.objects.get(idx = 1)
             conx={
                         "site":siteedit.objects.get(idx = 1),
@@ -157,7 +157,7 @@ def register(request):
                         "user2" :ss     ,
                         "token":f'{sites.host}/activate/{ss.uuid}'
                          }
-            email_sending(request,"./mail/activate.html",conx,f"{acc.username} verify Your Account",f"{acc.email.replace(" ", "")
+            email_sending(request,"./mail/activate.html",conx,f"{acc.username} verify Your Account",f"{accx.email.replace(" ", "")
      }")
             email_sending(request,"./mail/adminnotifie.html",conx,f" New User Registration",f"{sites.owneremail}")
             messages.success(request, 'An email has been sent to your email address. Please verify your account.')
