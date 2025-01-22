@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'zirantankasi.wsgi.application'
 
 import  os 
 from urllib.parse import urlparse
-tmpPostgres = urlparse('postgres://avnadmin:AVNS_0OjRz2DfUKJEixA3mR2@pg-363e4bc0-nwabuezedavid333-2f45.k.aivencloud.com:27439/defaultdb?sslmode=require')
+# tmpPostgres = urlparse('postgres://avnadmin:AVNS_0OjRz2DfUKJEixA3mR2@pg-363e4bc0-nwabuezedavid333-2f45.k.aivencloud.com:27439/defaultdb?sslmode=require')
 
 DATABASES = {
     'default': {
