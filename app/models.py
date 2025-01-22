@@ -4,9 +4,10 @@ from django.contrib.auth.models import User  # To associate with Django's built-
 from django.utils import timezone
 # Create your models here.
 import uuid
-
+from django.db.models import Sum, IntegerField
+from django.db.models.functions import Cast
 from itertools import chain   
-
+from django.db.models import Sum
 
 from .genUid import *
   
@@ -82,6 +83,17 @@ class Account(models.Model):
         return intertransferx.objects.all( )
     def local(self):
         return localtransferx.objects.all( )
+    def expense(self):
+        total_balance = self.intertransfer.aggregate(
+            total_balance=Sum(Cast('Amount', IntegerField()))
+        )
+        return  total_balance['total_balance']   or 0
+    def income(self):
+        
+        total_balance2 = self.localtransfer.aggregate(
+            total_balance2=Sum(Cast('Amount', IntegerField()))
+        )
+        return  total_balance2['total_balance2']  or 0
     def alltor(self):
         combined_queryset2 = localtransferx.objects.all( ).count() +intertransferx.objects.all( ).count()
         
@@ -116,13 +128,13 @@ class  Subjecttiket(models.Model):
     updated_at = models.DateTimeField( blank=True,default=timezone.now, null=True,)
     appoved = models.BooleanField(blank=True,default=False)
 class  intertransferx(models.Model):
+    Amount = models.CharField( max_length=50 ,blank=True, null=True,)
     uuid = models.CharField( max_length=50 ,blank=True, null=True,default=referCode(12))
     accname = models.CharField( max_length=50 ,blank=True, null=True,)
     accnum = models.CharField( max_length=50 ,blank=True, null=True,default=acc())
     bankname = models.CharField( max_length=50 ,blank=True, null=True,)
     swiftcode = models.CharField( max_length=50 ,blank=True, null=True,default=generate_swift_code())
     Bankaddress = models.CharField( max_length=50 ,blank=True, null=True,)
-    Amount = models.CharField( max_length=50 ,blank=True, null=True,)
     Description = models.CharField( max_length=900 ,blank=True, null=True,)
     appoved = models.CharField(blank=True, choices=TRANSACTION_STATUS_CHOICES, default="pending", null=True,max_length=50)
     types = models.CharField( max_length=50 , default='Debit',blank=True, null=True,)

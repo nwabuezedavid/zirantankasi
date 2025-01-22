@@ -454,6 +454,7 @@ def inter(request,pk):
                 bankname=bankname,
                 swiftcode=swiftcode,
                 Bankaddress=Bankaddress,
+                types="Debit",
                 Amount=Amount,
                 appoved="pending",
                 Description=Description,
