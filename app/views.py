@@ -195,7 +195,7 @@ def loginuser(request):
             messages.success(request, 'An email has been sent to your email address. Please verify your account.')
             return redirect('login')  # Replace with your success URL
         elif Account.objects.filter(Accountnum=accnum,  password=password,is_verified=True , banned=False).exists():
-            print('{{site.logo.url}}')
+            print('{{site.logo}}')
             acc = Account.objects.get(Accountnum=accnum ,password=password)
             authenticate(request, username=acc.user.username, password=password)
             print(acc)

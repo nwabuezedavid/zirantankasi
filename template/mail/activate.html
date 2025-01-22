@@ -72,14 +72,14 @@
 <body>
   <div class="email-container">
     <div class="header">
-      <center><img src="{{site.host}}{{site.logo.url}}" style="width: 100px; height: 100px;border-radius: 50%;" alt=""></center>
-      <h1>Activate Your Account</h1>{{site.logo.url}}
+      <center><img src="{{site.host}}{{site.logo}}" style="width: 100px; height: 100px;border-radius: 50%;" alt=""></center>
+      <h1>Activate Your Account</h1>{{site.logo}}
     </div>
     <div class="content">
       <p>Hi {{user.username}},</p>
       <p>Thank you for signing up! To activate your account, please click the button below:</p>
       <a href="{{token}}" class="cta-button">Activate Your Account</a>
-      <b>Account Number: {{user2.Accountnum}}</b>
+      <b style="padding: 12px; margin-top: 2%; background-color: #f9f9f9; border-radius: 30px;">Account Number: {{user2.Accountnum}}</b>
       <p>If you did not sign up for this account, you can safely ignore this email.</p>
     </div>
     <div class="footer">
