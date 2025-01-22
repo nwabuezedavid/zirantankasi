@@ -413,10 +413,21 @@ from django.http import HttpResponse
 @account_enabled_required
 def profile(request,pk):
     user = Account.objects.get(uuid=pk)
+    blob_url =None
     profile = get_object_or_404(Account, uuid=user.uuid)
     if request.method == "POST":
-        form = ProfileForms(request.POST, request.FILES, instance=profile)
+        form = ProfileForms(request.POST,   instance=profile)
+        uploaded_file = request.FILES['profile_picture']
+        print(uploaded_file)
         if form.is_valid():
+            if uploaded_file:
+                blob_url = upload_file_to_blob(uploaded_file, uploaded_file.name)
+                form.instance.profile_picture = blob_url
+
+                
+                form.save()
+                messages.success(request, 'Profile updated successfully')
+                return redirect('profile', pk=user.uuid)  # Redirect to list view after
             form.save()
             messages.success(request, 'Profile updated successfully')
             return redirect('profile', pk=user.uuid)  # Redirect to list view after update

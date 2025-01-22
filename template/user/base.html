@@ -421,7 +421,7 @@ tr:nth-child(even){background-color: #f2f2f2}
                       <div class="media align-items-center">
                         <span class="avatar avatar-sm rounded-circle">
                           {% if user.profile_picture   %}
-                          <img alt="Image placeholder" src="{{user.profile_picture.url}}">
+                          <img alt="Image placeholder" src="{{user.profile_picture}}">
                           {% else %}
                           <img alt="Image placeholder" src="{% static 'images/earth-g8d7511b30_1280.jpg' %}">
                           {% endif %}

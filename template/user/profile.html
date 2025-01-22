@@ -7,7 +7,7 @@ rel="stylesheet"
 href="https://tailwindui.com/plus/build/iframe-assets/compiled.css?hash=73be3ed2c08aa96cecdac9ca5dbecfe1"
 />
 {% if user.profile_picture %}
-<div class="header pb-6 d-flex align-items-center" style="min-height: 400px; background-image: url('{{user.profile_picture.url}}'); background-size: cover; background-position: center top;   border: 2px solid; color: pink; resize: both; overflow: scroll;">
+<div class="header pb-6 d-flex align-items-center" style="min-height: 400px; background-image: url('{{user.profile_picture}}'); background-size: cover; background-position: center top;   border: 2px solid; color: pink; resize: both; overflow: scroll;">
 {% else %} <!-- Mask -->
   <div class="header pb-6 d-flex align-items-center" style="min-height: 400px; background-image: url('  '); background-size: cover; background-position: center top;   border: 2px solid; color: pink; resize: both; overflow: scroll;">
    {% endif %} <!-- Mask -->
