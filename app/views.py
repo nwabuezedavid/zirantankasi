@@ -185,7 +185,7 @@ def loginuser(request):
             sites=siteedit.objects.get(idx = 1)
             conx={
                         "site":siteedit.objects.get(idx = 1),
-                        "user" :acc     ,
+                        "user" :ss.user     ,
                         "user2" :ss     ,
                         "token":f'{sites.host}/activate/{ss.uuid}'
                          }
