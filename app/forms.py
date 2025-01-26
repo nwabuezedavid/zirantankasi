@@ -12,9 +12,12 @@ class AccountForm(forms.ModelForm):
     class Meta:
         model = Account
         fields = [
+            'firstname', 
+            'lastname', 
             'username', 
             'email', 
             'gender', 
+            'Country', 
             'mobile', 
             'password', 
             'occupation', 
@@ -27,6 +30,15 @@ class AccountForm(forms.ModelForm):
                 'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
                 'autocomplete': 'username',
             }),
+            'firstname': forms.TextInput(attrs={
+                'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
+                'autocomplete': 'firstname',
+            }),
+            'lastname': forms.TextInput(attrs={
+                'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
+                'autocomplete': 'lastname',
+            }),
+          
             'email': forms.EmailInput(attrs={
                 'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
                 'autocomplete': 'email',
@@ -41,6 +53,10 @@ class AccountForm(forms.ModelForm):
             'password': forms.PasswordInput(attrs={
                 'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
                 'autocomplete': 'new-password',
+            }),
+            'Country': forms.TextInput(attrs={
+                'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
+                'autocomplete': 'Country',
             }),
             'occupation': forms.TextInput(attrs={
                 'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
