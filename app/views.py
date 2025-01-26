@@ -190,7 +190,7 @@ def loginuser(request):
                         "token":f'{sites.host}/activate/{ss.uuid}'
                          }
             
-            email_sending(request,"./mail/activate.html",conx,f"{acc.username} verify Your Account",f"{acc.email.replace(" ", "")
+            email_sending(request,"./mail/activate.html",conx,f"{acc.user.username} verify Your Account",f"{acc.user.email.replace(" ", "")
      }")
             messages.success(request, 'An email has been sent to your email address. Please verify your account.')
             return redirect('login')  # Replace with your success URL
