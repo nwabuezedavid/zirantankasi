@@ -21,7 +21,7 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .header {
-      background-color: red;
+      background-color: white;
       color: #ffffff;
       padding: 20px;
       text-align: center;
@@ -79,7 +79,10 @@
       <p>Hi {{user.username}},</p>
       <p>Thank you for signing up! To activate your account, please click the button below:</p>
       <a href="{{token}}" class="cta-button">Activate Your Account</a>
-      <b style="padding: 12px; margin-top: 2%; background-color: #f9f9f9; border-radius: 30px;">Account Number: {{user2.Accountnum}}</b>
+      <div style="padding: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #f9f9f9; border-radius: 10px; margin-top: 20px; margin-bottom: 20px">
+        <b style="padding: 12px; margin-top: 2%; background-color: #f9f9f9; border-radius: 30px;">Account Number: {{user2.Accountnum}}</b>
+
+      </div>
       <p>If you did not sign up for this account, you can safely ignore this email.</p>
     </div>
     <div class="footer">
