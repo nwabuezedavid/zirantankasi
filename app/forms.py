@@ -86,6 +86,8 @@ class ProfileForms(forms.ModelForm):
         model = Account
         fields = [
             'username', 
+            'firstname', 
+            'lastname', 
             'email', 
             'gender', 
             'mobile', 
@@ -95,7 +97,6 @@ class ProfileForms(forms.ModelForm):
             'Zip', 
             'Country', 
             'marital_status', 
-            'type_of_account',
             'profile_picture',
         ]
         widgets = {
@@ -104,6 +105,17 @@ class ProfileForms(forms.ModelForm):
                 'autocomplete': 'username',
                 'readonly': 'true',
             }),
+            'firstname': forms.TextInput(attrs={
+                'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
+                'autocomplete': 'firstname',
+                 'readonly': 'Fasle',
+
+            }),
+            'lastname': forms.TextInput(attrs={
+                'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
+                'autocomplete': 'lastname',
+                'readonly': 'Fasle',
+                }),
             'Country': forms.TextInput(attrs={
                 'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
                 'autocomplete': 'Country',

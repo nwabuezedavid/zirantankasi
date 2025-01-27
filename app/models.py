@@ -41,8 +41,8 @@ class Account(models.Model):
     Subjecttiketmain = models.ManyToManyField("Subjecttiket", blank=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     username = models.CharField(max_length=100)
-    firstname = models.CharField(max_length=100)
-    lastname = models.CharField(max_length=100)
+    firstname = models.CharField(max_length=100, blank=True, null=True)
+    lastname = models.CharField(max_length=100, blank=True, null=True)
     email = models.EmailField(unique=True)
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES)
     mobile = models.CharField(max_length=15)
@@ -61,7 +61,7 @@ class Account(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     is_verified = models.BooleanField(default=False)
     banned = models.BooleanField(default=False)
-    profile_picture = models.TextField(default='https://srv.carbonads.net/static/30242/0fe0a4b4bb77d95b79e92231c69a7a73410223aa' , blank=True, null=True)
+    profile_picture = models.TextField(default='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR16or0exEMDvFtsffJsXIClq3qU0zDoSMoUKxic-68O4CpTFbT' , blank=True, null=True)
 
     def __str__(self):
         return self.username

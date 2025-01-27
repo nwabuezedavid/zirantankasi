@@ -5,12 +5,7 @@
 rel="stylesheet"
 
 href="https://tailwindui.com/plus/build/iframe-assets/compiled.css?hash=73be3ed2c08aa96cecdac9ca5dbecfe1"
-/>
-{% if user.profile_picture %}
-<div class="header pb-6 d-flex align-items-center" style="min-height: 400px; background-image: url('{{user.profile_picture}}'); background-size: cover; background-position: center top;   border: 2px solid; color: pink; resize: both; overflow: scroll;">
-{% else %} <!-- Mask -->
-  <div class="header pb-6 d-flex align-items-center" style="min-height: 400px; background-image: url('  '); background-size: cover; background-position: center top;   border: 2px solid; color: pink; resize: both; overflow: scroll;">
-   {% endif %} <!-- Mask -->
+/> <!-- Mask -->
     <span class="mask bg-gradient-default opacity-1"></span>
     <!-- Header container -->
     <div class="container-fluid d-flex align-items-left">
@@ -45,6 +40,12 @@ href="https://tailwindui.com/plus/build/iframe-assets/compiled.css?hash=73be3ed2
       <small>Below is your Online Banking profile details</small></h3>
               </div>
               <div class="card-body">
+                
+{% if user.profile_picture %}
+<img src="{{ user.profile_picture }}" width="100" height="100" alt="">
+{% else %} <!-- Mask -->
+<img src="" bgcolor="red" width="100" height="100" alt="">
+   {% endif %}
                 <form   method="post" enctype="multipart/form-data">
 
 {% csrf_token %}
