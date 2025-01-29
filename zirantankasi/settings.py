@@ -5,13 +5,12 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 import os
-
-EMAIL_HOST = 'ankazirankasi.com'
- 
-EMAIL_HOST_USER = "admin@ankazirankasi.com" 
+EMAIL_HOST = 'chestburgbank.com'
+  
+EMAIL_HOST_USER = "support@chestburgbank.com" 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST_PASSWORD = "nwabueze666$" 
-EMAIL_PORT = 465  
+EMAIL_PORT = 465 
 EMAIL_USE_SSL = True 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
