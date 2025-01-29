@@ -159,6 +159,7 @@ def register(request):
                          }
             email_sending(request,"./mail/activate.html",conx,f"{accx.username} verify Your Account",f"{accx.email.replace(" ", "")
      }")
+            
             email_sending(request,"./mail/adminnotifie.html",conx,f" New User Registration",f"{sites.owneremail}")
             messages.success(request, 'An email has been sent to your email address. Please verify your account.')
             return redirect('register')  # Replace with your success URL
