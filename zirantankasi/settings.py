@@ -5,9 +5,9 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 import os
-EMAIL_HOST = 'chestburgbank.com'
+EMAIL_HOST = 'zeqpay.com'
   
-EMAIL_HOST_USER = "support@chestburgbank.com" 
+EMAIL_HOST_USER = "ankazirankasi@zeqpay.com" 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST_PASSWORD = "nwabueze666$" 
 EMAIL_PORT = 465 
