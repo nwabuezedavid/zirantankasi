@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     "app",
     'crispy_forms',
+    'django_countries',
     'crispy_tailwind',
     "whitenoise.runserver_nostatic",
     'django.contrib.staticfiles',

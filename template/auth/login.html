@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -42,7 +42,7 @@ body{
     <form class="space-y-6"  method="POST">
       {% csrf_token %}
       <div>
-        <label for="email" class="block text-sm/6 font-medium text-gray-900">Account Number</label>
+        <label for="email" class="block text-sm/6 font-medium text-white" style="color: aliceblue;">Account Number</label>
         <div class="mt-2">
           <input type="number" name="accnum" id="email" autocomplete="email" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
         </div>

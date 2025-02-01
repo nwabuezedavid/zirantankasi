@@ -8,7 +8,7 @@ from django.db.models import Sum, IntegerField
 from django.db.models.functions import Cast
 from itertools import chain   
 from django.db.models import Sum
-
+from django_countries.fields import CountryField
 from .genUid import *
   
 class Account(models.Model):
@@ -48,7 +48,7 @@ class Account(models.Model):
     mobile = models.CharField(max_length=15)
     password = models.CharField(max_length=100)  # Store hashed passwords in production!
     occupation = models.CharField(max_length=100, blank=True, null=True)
-    Country = models.CharField(max_length=100, blank=True, null=True)
+    Country = CountryField()
     City = models.CharField(max_length=100, blank=True, null=True)
     Zip = models.CharField(max_length=100, blank=True, null=True)
     Accountnum = models.CharField(max_length=100,default=referCode(11) ,blank=True, null=True)

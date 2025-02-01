@@ -17,6 +17,19 @@ from .forms import AccountForm,ProfileForms
 from .req import *
 from .use import *
 # Create your views here.
+
+def email_sending(request,tempname,context,subjects,to):
+    
+    tos = render_to_string(tempname,context=context )
+    tags =strip_tags(tos)
+    mas = EmailMultiAlternatives(
+            subject = subjects,
+            body=tags,
+            from_email = settings.EMAIL_HOST_USER,
+            to=[to]
+        )
+    mas.attach_alternative(tos, 'text/html')
+    mas.send()
 def home(request):
      
     con ={
@@ -140,29 +153,30 @@ def register(request):
             if User.objects.filter(    username=form.cleaned_data.get('username'),    email=form.cleaned_data.get('email'),    password=form.cleaned_data.get('password'),).exists():
                 messages.error(request, 'Account already exists')
                 return redirect('register')
-            accx = User.objects.create(
-                username=form.cleaned_data.get('username'),
-                email=form.cleaned_data.get('email'),
-                password=form.cleaned_data.get('password'),
-            )
-            form.instance.user = accx
-            form.instance.Accountnum = acc()
-            form.instance.uuid = referCode(12)
-            form.save()
-            ss = Account.objects.get(user=accx)
-            sites=siteedit.objects.get(idx = 1)
-            conx={
-                        "site":siteedit.objects.get(idx = 1),
-                        "user" :accx     ,
-                        "user2" :ss     ,
-                        "token":f'{sites.host}/activate/{ss.uuid}'
-                         }
-            email_sending(request,"./mail/activate.html",conx,f"{accx.username} verify Your Account",f"{accx.email.replace(" ", "")
-     }")
-            
-            email_sending(request,"./mail/adminnotifie.html",conx,f" New User Registration",f"{sites.owneremail}")
-            messages.success(request, 'An email has been sent to your email address. Please verify your account.')
-            return redirect('register')  # Replace with your success URL
+            else:
+                accx = User.objects.create(
+                    username=form.cleaned_data.get('username'),
+                    email=form.cleaned_data.get('email'),
+                    password=form.cleaned_data.get('password'),
+                )
+                form.instance.user = accx
+                form.instance.Accountnum = acc()
+                form.instance.uuid = referCode(12)
+                form.save()
+                ss = Account.objects.get(user=accx)
+                sites=siteedit.objects.get(idx = 1)
+                print(accx.email.replace(" ", ""))
+                conx={
+                            "site":siteedit.objects.get(idx = 1),
+                            "user" :accx     ,
+                            "user2" :ss     ,
+                            "token":f'{sites.host}/activate/{ss.uuid}'
+                            }
+                email_sending(request,"./mail/act.html",conx,f"{accx.username} verify Your Account",form.cleaned_data.get('email'))
+                print('email ending')
+                email_sending(request,"./mail/adminnotifie.html",conx,f" New User Registration",f"{sites.owneremail}")
+                messages.success(request, 'An email has been sent to your email address. Please verify your account.')
+                return redirect('loginuser')  # Replace with your success URL
         else:
             messages.error(request, form.errors)
                # Replace with your success URL
@@ -181,9 +195,9 @@ def loginuser(request):
         password =request.POST['password']
         if Account.objects.filter(Accountnum=accnum,  password=password, is_verified=False , banned=False).exists():
             print(accnum)
-            print(password)
             ss = Account.objects.get(Accountnum=accnum,  password=password, is_verified=False)
             sites=siteedit.objects.get(idx = 1)
+            print(f'{sites.host}/activate/{ss.uuid}')
             conx={
                         "site":siteedit.objects.get(idx = 1),
                         "user" :ss.user     ,
@@ -191,8 +205,9 @@ def loginuser(request):
                         "token":f'{sites.host}/activate/{ss.uuid}'
                          }
             
-            email_sending(request,"./mail/activate.html",conx,f"{ss.user.username} verify Your Account",f"{ss.user.email.replace(" ", "")
-     }")
+            email_sending(request,"./mail/act.html",conx,f"{ss.user.username} verify Your Account",f"{ss.user.email}")    
+            print(ss.user.email.replace(" ", ""))
+
             messages.success(request, 'An email has been sent to your email address. Please verify your account.')
             return redirect('loginuser')  # Replace with your success URL
         elif Account.objects.filter(Accountnum=accnum,  password=password,is_verified=True , banned=False).exists():
@@ -224,21 +239,10 @@ from django.core.mail import send_mail,  EmailMultiAlternatives
 from  django.utils.html import strip_tags
 from django.conf import settings
 from django.template.loader import get_template, render_to_string
-def email_sending(request,tempname,context,subjects,to):
-    try:
-        tos = render_to_string(tempname,context=context )
-        tags =strip_tags(tos)
-        mas = EmailMultiAlternatives(
-            subject = subjects,
-            body=tags,
-            from_email = settings.EMAIL_HOST_USER,
-            to=[to]
-        )
-        mas.attach_alternative(tos, 'text/html')
-        mas.send()
-    except Exception as e:
-        print(e)
-        return False    
+
+
+
+        
     
     
     

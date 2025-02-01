@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Account Activation</title>
+ 
+</head>
+
+<body>
+
+  
+  <div class="email-container">
+    <center> 
+      <span style="background-color: rgba(50, 9, 9, 0.137); color: white; padding: 10px; border-radius: 10px; width: 100%;"> 
+      <h1 style="text-transform: capitalize; font-size: 30px; color: red; font-weight: bold;">ankazirankasi</h1>
+       </span>
+    
+    </center>
+    <svg
+    width="76"
+   height="65"
+viewBox="0 0 76 65"
+fill="none" xmlns="http://www.w3.org/2000/svg"><path
+d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff"/></svg>
+    <div class="header">
+      <h1>Activate Your Account</h1> 
+    </div>
+    <div class="content">
+      <p>Hi {{user.username}},</p>
+      <p>Thank you for signing up! To activate your account, please click the button below:</p>
+      <center>
+
+        <a href="{{token}}" class="cta-button">Activate Your Account</a>
+      </center>
+      <div style="padding: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #f9f9f9; border-radius: 10px; margin-top: 20px; margin-bottom: 20px">
+        <b style="padding: 12px; margin-top: 2%; background-color: #f9f9f9; border-radius: 30px; font-size: 20px;">Account Number: {{user2.Accountnum}}</b>
+
+      </div>
+      <p>If you did not sign up for this account, you can safely ignore this email.</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 {{site.name}}. All rights reserved.</p>
+      <p>Need help? <a href="{{site.email}}">Contact Support</a></p>
+    </div>
+  </div>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: rgba(100, 97, 97, 0.416);
+      background-color: #f9f9f9;
+  
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .content {
+      padding: 20px;
+      color: #333;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 10px 20px;
+      color: #ffffff;
+      background-color: red;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: white;
+      color: red;
+      border: 1pc solid white;
+    }
+    .footer {
+      padding: 10px 20px;
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ddd;
+    }
+    .footer a {
+      color: red;
+      text-decoration: none;
+    }
+  </style>
+</body>
+</html>

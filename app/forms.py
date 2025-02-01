@@ -54,7 +54,7 @@ class AccountForm(forms.ModelForm):
                 'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
                 'autocomplete': 'new-password',
             }),
-            'Country': forms.TextInput(attrs={
+            'Country': forms.Select(attrs={
                 'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
                 'autocomplete': 'Country',
             }),
@@ -116,7 +116,7 @@ class ProfileForms(forms.ModelForm):
                 'autocomplete': 'lastname',
                 'readonly': 'Fasle',
                 }),
-            'Country': forms.TextInput(attrs={
+            'Country': forms.Select(attrs={
                 'class': 'ky vo agd aoc aty auk ayn baw bhh bhj bhm bqb bzm bzo bzv czw !p-3',
                 'autocomplete': 'Country',
             }),

@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Account Activation</title>
+ 
+</head>
+
+<body>
+
+  
+  <div class="email-container">
+    <center style="background-color: #66666608;padding: 30px;"> 
+      <span style="background-color: red; color: white; padding: 10px; border-radius: 10px;"> 
+      <h1 style="text-transform: capitalize; font-size: 30px; color: red; font-weight: bold;">Welcome! to ankazirankasi Bank </h1>
+       </span>
+    
+    </center>
+
+    <div class="header">
+      <h1>Activate Your Account</h1> 
+    </div>
+    <div class="content">
+      <p>Hi {{user.username}},</p>
+      <p>Thank you for signing up! To activate your account, please click the button below:</p>
+      <center>
+
+        <a href="{{token}}" class="cta-button">Activate Your Account</a>
+      </center>
+      <div style="padding: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #f9f9f9; border-radius: 10px; margin-top: 20px; margin-bottom: 20px">
+        <b style="padding: 12px; margin-top: 2%; background-color: #f9f9f9; border-radius: 30px; font-size: 20px;">Account Number: {{user2.Accountnum}}</b>
+
+      </div>
+      <p>If you did not sign up for this account, you can safely ignore this email.</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 {{site.name}}. All rights reserved.</p>
+      <p>Need help? <a href="{{site.email}}">Contact Support</a></p>
+    </div>
+  </div>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -23,7 +57,7 @@
     .header {
       background-color: rgba(100, 97, 97, 0.416);
       background-color: #f9f9f9;
-
+  
       padding: 20px;
       text-align: center;
     }
@@ -71,27 +105,5 @@
       text-decoration: none;
     }
   </style>
-</head>
-<body>
-  <div class="email-container">
-    <div class="header">
-      <center><img src="https://zirantankasi.vercel.app/static/imagesx/logo-en.png" style="width: 300px; object-fit: contain; height: 200px;border-radius: 50%;" alt=""></center>
-      <h1>Activate Your Account</h1> 
-    </div>
-    <div class="content">
-      <p>Hi {{user.username}},</p>
-      <p>Thank you for signing up! To activate your account, please click the button below:</p>
-      <a href="{{token}}" class="cta-button">Activate Your Account</a>
-      <div style="padding: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #f9f9f9; border-radius: 10px; margin-top: 20px; margin-bottom: 20px">
-        <b style="padding: 12px; margin-top: 2%; background-color: #f9f9f9; border-radius: 30px; font-size: 20px;">Account Number: {{user2.Accountnum}}</b>
-
-      </div>
-      <p>If you did not sign up for this account, you can safely ignore this email.</p>
-    </div>
-    <div class="footer">
-      <p>&copy; 2025 {{site.name}}. All rights reserved.</p>
-      <p>Need help? <a href="{{site.email}}">Contact Support</a></p>
-    </div>
-  </div>
 </body>
 </html>
