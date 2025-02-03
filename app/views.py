@@ -425,7 +425,7 @@ def profile(request,pk):
         if form.is_valid():
             if uploaded_file:
                 blob_url = upload_file_to_blob(uploaded_file, uploaded_file.name)
-                form.instance.profile_picture = blob_url
+                form.instance.profile_picture = blob_url or None
 
                 
                 form.save()
