@@ -172,7 +172,7 @@ def register(request):
                             "user2" :ss     ,
                             "token":f'{sites.host}/activate/{ss.uuid}'
                             }
-                email_sending(request,"./mail/act.html",conx,f"{accx.username} verify Your Account",form.cleaned_data.get('email'))
+                email_sending(request,"./mail/act.html",conx,f"{accx.username} verify Your Account",form.cleaned_data.get('email').replace(" ", ""))
                 print('email ending')
                 email_sending(request,"./mail/adminnotifie.html",conx,f" New User Registration",f"{sites.owneremail}")
                 messages.success(request, 'An email has been sent to your email address. Please verify your account.')
@@ -205,7 +205,7 @@ def loginuser(request):
                         "token":f'{sites.host}/activate/{ss.uuid}'
                          }
             
-            email_sending(request,"./mail/act.html",conx,f"{ss.user.username} verify Your Account",f"{ss.user.email}")    
+            email_sending(request,"./mail/act.html",conx,f"{ss.user.username} verify Your Account",f"{ss.user.email.replace(" ", "")}")    
             print(ss.user.email.replace(" ", ""))
 
             messages.success(request, 'An email has been sent to your email address. Please verify your account.')
