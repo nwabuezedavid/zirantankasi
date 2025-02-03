@@ -55,101 +55,15 @@
     <link href="{% static 'images/favicon.ico'%}" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'css/magiclick.min.css'%}" type="text/css" />
     <script async="" src="https://www.ziraatbank.com.tr//zbmatomoapp.ziraatbank.com.tr/matomo.js'%}"></script>
-    <script type="text/javascript">
-      function RegisterSod() {}
-      function removeAllStatus() {}
-      function RegisterSodDep() {}
-      function AttachEvent() {}
-      function UpdateFormDigest(n, t) {
-        var s, i, r, u, c;
-        if (
-          g_updateFormDigestPageLoaded != null &&
-          typeof g_updateFormDigestPageLoaded == "object" &&
-          ((s = new Date()),
-          !(s.getTime() - g_updateFormDigestPageLoaded.getTime() < t)) &&
-          n != null &&
-          !(n.length <= 0) &&
-          ((i = document.getElementsByName("__REQUESTDIGEST")[0]),
-          i != null &&
-            i.tagName.toLowerCase() == "input" &&
-            i.type.toLowerCase() == "hidden" &&
-            i.value != null &&
-            !(i.value.length <= 0)) &&
-          ((r = new XMLHttpRequest()), r != null) &&
-          (r.open(
-            "POST",
-            GetUrlFromWebUrlAndWebRelativeUrl(n, "_vti_bin/sites.asmx"),
-            !1
-          ),
-          r.setRequestHeader("Content-Type", "text/xml"),
-          r.setRequestHeader(
-            "SOAPAction",
-            "http://schemas.microsoft.com/sharepoint/soap/GetUpdatedFormDigest"
-          ),
-          r.send(
-            '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  <soap:Body>    <GetUpdatedFormDigest xmlns="http://schemas.microsoft.com/sharepoint/soap/" />  <\/soap:Body><\/soap:Envelope>'
-          ),
-          (u = r.responseText),
-          u != null && !(u.length <= 0))
-        ) {
-          var o = "<GetUpdatedFormDigestResult>",
-            f = u.indexOf(o),
-            h = u.indexOf("<\/GetUpdatedFormDigestResult>", f + o.length),
-            e = null;
-          (f >= 0 && h > f && (e = u.substring(f + o.length, h)),
-          e == null || e.length <= 0) ||
-            ((c = i.value),
-            (i.value = e),
-            (g_updateFormDigestPageLoaded = new Date()));
-        }
-      }
-      function GetUrlFromWebUrlAndWebRelativeUrl(n, t) {
-        var i = n == null || n.length <= 0 ? "/" : n;
-        return i.charAt(i.length - 1) != "/" && (i += "/"), i + t;
-      }
-      var _spBodyOnLoadFunctionNames = [],
-        WPSC = {},
-        g_updateFormDigestPageLoaded;
-      WPSC.Init = function () {};
-      WPSC.WebPartPage = {};
-      WPSC.WebPartPage.Parts = {};
-      WPSC.WebPartPage.Parts.Register = function () {};
-      typeof _spPageContextInfo == "undefined" &&
-        ((_spPageContextInfo = {}),
-        (_spPageContextInfo.updateFormDigestPageLoaded = new Date()));
-      g_updateFormDigestPageLoaded = new Date();
-    </script>
+    
     <!-- BehaviorControl / 1/21/2025 4:53:23 AM -->
 
-    <script>
-      var langUrl = "/tr";
-    </script>
-    <script type="text/javascript">
-      var webRelURL = "\u002fen";
-      var digestRefreshInterval = 1440000;
-    </script>
+     
+   
     <!--50dacb16-ae00-45d6-aab5-059e20bdc31e-->
 
     <!-- Matomo -->
-    <script>
-      var _paq = (window._paq = window._paq || []);
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(["setCookieDomain", "*.ziraatbank.com.tr"]);
-      _paq.push(["setDomains", ["*.ziraatbank.com.tr"]]);
-      _paq.push(["trackPageView"]);
-      _paq.push(["enableLinkTracking"]);
-      (function () {
-        var u = "//zbmatomoapp.ziraatbank.com.tr/";
-        _paq.push(["setTrackerUrl", u + "matomo.php"]);
-        _paq.push(["setSiteId", "1"]);
-        var d = document,
-          g = d.createElement("script"),
-          s = d.getElementsByTagName("script")[0];
-        g.async = true;
-        g.src = u + "matomo.js'%}";
-        s.parentNode.insertBefore(g, s);
-      })();
-    </script>
+   
     <!-- End Matomo Code -->
   </head>
   <body class="home-page global en">
@@ -958,14 +872,7 @@
 
     <!--<script type="text/javascript" id="chatjs" src="/_layouts/15/Ziraat/Chatbot/ChatbotVerSelector.aspx" async></script>-->
     <!--[if !IE]-->
-    <script
-      id="cbot-widget-script"
-      type="text/javascript"
-      data-owl="true"
-      data-static-url="https://api.ziraatbank.com.tr/inbound/cbot/static-files/web"
-      src="{% static 'js/cbot-ziraatbilge-generator.js'%}"
-      async=""
-    ></script>
+   
     <!--<![endif]-->
     <div class="cookie-box noindex" aria-label="Çerez Politikası">
       <p>
