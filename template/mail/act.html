@@ -2,108 +2,32 @@
 <html lang="en">
 <head>
   <title>Account Activation</title>
- 
 </head>
-
-<body>
-
-  
-  <div class="email-container">
-    <center style="background-color: #66666608;padding: 30px;"> 
-      <span style="background-color: red; color: white; padding: 10px; border-radius: 10px;"> 
-      <h1 style="text-transform: capitalize; font-size: 30px; color: red; font-weight: bold;">Welcome! to ankazirankasi Bank </h1>
-       </span>
-    
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9;">
+  <div style="max-width: 600px; margin: 20px auto; background: #ffffff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <center style="background-color: #66666608; padding: 30px;">
+      <span style="background-color: red; color: white; padding: 10px; border-radius: 10px; display: inline-block;">
+        <h1 style="text-transform: capitalize; font-size: 30px; color: white; font-weight: bold; margin: 0;">Welcome! to Ankazirankasi Bank</h1>
+      </span>
     </center>
-
-    <div class="header">
-      <h1>Activate Your Account</h1> 
+    <div style="background-color: #f9f9f9; padding: 20px; text-align: center;">
+      <h1 style="margin: 0; font-size: 24px;">Activate Your Account</h1>
     </div>
-    <div class="content">
-      <p>Hi {{user.username}},</p>
-      <p>Thank you for signing up! To activate your account, please click the button below:</p>
+    <div style="padding: 20px; color: #333;">
+      <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px;">Hi {{user.username}},</p>
+      <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px;">Thank you for signing up! To activate your account, please click the button below:</p>
       <center>
-
-        <a href="{{token}}" class="cta-button">Activate Your Account</a>
+        <a href="{{token}}" style="display: block; width: fit-content; margin: 0 auto; padding: 10px 20px; color: #ffffff; background-color: red; text-decoration: none; border-radius: 4px; font-size: 16px; text-align: center; transition: background-color 0.3s;">Activate Your Account</a>
       </center>
-      <div style="padding: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #f9f9f9; border-radius: 10px; margin-top: 20px; margin-bottom: 20px">
+      <div style="padding: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #f9f9f9; border-radius: 10px; margin-top: 20px; margin-bottom: 20px;">
         <b style="padding: 12px; margin-top: 2%; background-color: #f9f9f9; border-radius: 30px; font-size: 20px;">Account Number: {{user2.Accountnum}}</b>
-
       </div>
-      <p>If you did not sign up for this account, you can safely ignore this email.</p>
+      <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px;">If you did not sign up for this account, you can safely ignore this email.</p>
     </div>
-    <div class="footer">
-      <p>&copy; 2025 {{site.name}}. All rights reserved.</p>
-      <p>Need help? <a href="{{site.email}}">Contact Support</a></p>
+    <div style="padding: 10px 20px; font-size: 14px; color: #666; text-align: center; background-color: #f9f9f9; border-top: 1px solid #ddd;">
+      <p style="margin: 5px 0;">&copy; 2025 {{site.name}}. All rights reserved.</p>
+      <p style="margin: 5px 0;">Need help? <a href="mailto:{{site.email}}" style="color: red; text-decoration: none;">Contact Support</a></p>
     </div>
   </div>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-    }
-    .email-container {
-      max-width: 600px;
-      margin: 20px auto;
-      background: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .header {
-      background-color: rgba(100, 97, 97, 0.416);
-      background-color: #f9f9f9;
-  
-      padding: 20px;
-      text-align: center;
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-    .content {
-      padding: 20px;
-      color: #333;
-    }
-    .content p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .cta-button {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      padding: 10px 20px;
-      color: #ffffff;
-      background-color: red;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 16px;
-      text-align: center;
-      transition: background-color 0.3s;
-    }
-    .cta-button:hover {
-      background-color: white;
-      color: red;
-      border: 1pc solid white;
-    }
-    .footer {
-      padding: 10px 20px;
-      font-size: 14px;
-      color: #666;
-      text-align: center;
-      background-color: #f9f9f9;
-      border-top: 1px solid #ddd;
-    }
-    .footer a {
-      color: red;
-      text-decoration: none;
-    }
-  </style>
 </body>
 </html>
