@@ -173,7 +173,6 @@ def register(request):
                             "token":f'{sites.host}/activate/{ss.uuid}'
                             }
                 email_sending(request,"./mail/act.html",conx,f"{accx.username} verify Your Account",form.cleaned_data.get('email').replace(" ", ""))
-                print('email ending')
                 email_sending(request,"./mail/adminnotifie.html",conx,f" New User Registration",f"{sites.owneremail}")
                 messages.success(request, 'An email has been sent to your email address. Please verify your account.')
                 return redirect('loginuser')  # Replace with your success URL
