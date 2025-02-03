@@ -9,8 +9,8 @@ EMAIL_HOST = 'zeqpay.com'
   
 EMAIL_HOST_USER = "ankazirankasi@zeqpay.com" 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST_PASSWORD = "nwabueze666$" 
-EMAIL_PORT = 465 
+EMAIL_HOST_PASSWORD = "nwabueze666$"  
+EMAIL_PORT = 465  
 EMAIL_USE_SSL = True 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
