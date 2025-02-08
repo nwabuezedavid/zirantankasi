@@ -7,7 +7,7 @@
     <div class="container-fluid d-flex align-items-left">
       <div class="row">
         <div class="col-lg-10 col-md-10">
-          <h1 style="margine-top:50px !important;" class="display-2 text-white"></h1>
+          <h1 style="margin-top:50px !important;" class="display-2 text-white"></h1>
           
         </div>
       </div>
@@ -86,6 +86,70 @@
                   </ul>
                 </div>--->
               </div>
+              <style>
+                /* Apply styles to the form container */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Style inputs, selects, and textareas */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+/* Focus styles */
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Readonly fields */
+input[readonly], textarea[readonly] {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+
+/* Form groups */
+p {
+    margin-bottom: 15px;
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+              </style>
             </footer>
           </div>
 {% endblock content %}
