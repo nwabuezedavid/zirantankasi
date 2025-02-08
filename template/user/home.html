@@ -33,8 +33,11 @@
 
        <b style="font-weight: bolder; font-size: 170%;">{{user.balance|intcomma}}.00 $</b>
        <img style="width: 100px; height: 100px; border-radius: 50%; " src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR16or0exEMDvFtsffJsXIClq3qU0zDoSMoUKxic-68O4CpTFbT"  alt=""> 
-       <small style="width: fit-content;display: flex;flex-direction: column; height: fit-content; gap: 7px; padding: 12px; background-color: rgba(246, 43, 43, 0.909);border-radius: 22px; cursor: pointer; color: white; box-shadow: 1px 2px 2px rgba(215, 97, 97, 0.352);">
+       <small style="width: fit-content;  height: fit-content; gap: 7px; padding: 12px; background-color: rgba(246, 43, 43, 0.909);border-radius: 22px; cursor: pointer; color: white; box-shadow: 1px 2px 2px rgba(215, 97, 97, 0.352);">
           <a style="color: aliceblue;" href="/local/{{user.uuid}}/">Transfer Money</a>
+         
+        </small>
+       <small style="width: fit-content;display: flex; margin-top: 9px; flex-direction: column; height: fit-content; gap: 7px; padding: 12px; background-color: rgba(0, 28, 237, 0.909);border-radius: 22px; cursor: pointer; color: white; box-shadow: 1px 2px 2px rgba(215, 97, 97, 0.352);">
           <a style="color: aliceblue;" href="/inter/{{user.uuid}}/">Inter-Transfer Money</a>
         </small>
       </span>
