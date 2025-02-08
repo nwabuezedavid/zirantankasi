@@ -485,7 +485,7 @@ def inter(request,pk):
             email_sending(request,"./mail/trans.html",conx,f"International Transfer > #Debit Alert USD{Amount}  ",f"{user.email.replace(" ", "")
      }")
             email_sending(request,"./mail/admintrans.html",conx,f" User Transfer Request USD {Amount}  ",f"{site.owneremail}")
-            messages.success(request, 'Transfer on process !Note it might take 5min to due to international transfer')  
+            messages.success(request, 'Transfer on process! Note:  it might take 1hrs  due to international transfer')  
             return redirect('local',pk=user.uuid)
     con ={
          "site":siteedit.objects.get(idx = 1),
