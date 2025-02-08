@@ -420,7 +420,7 @@ def profile(request,pk):
     profile = get_object_or_404(Account, uuid=user.uuid)
     if request.method == "POST":
         form = ProfileForms(request.POST,   instance=profile)
-        uploaded_file = request.FILES['profile_picture'] or None
+        uploaded_file = request.FILES.get('profile_picture', None)
         print(uploaded_file)
         if form.is_valid():
             if uploaded_file:
