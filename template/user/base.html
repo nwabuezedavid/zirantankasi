@@ -170,15 +170,24 @@ tr:nth-child(even){background-color: #f2f2f2}
             <link rel="shortcut icon" href="{% static 'adminx/favicon.ico' %}">
             <link rel="shortcut icon" href="{% static 'adminx/favicon.ico' %}" type="image/x-icon">
 
-            <link rel="apple-touch-icon" href="{% static 'adminx/favicon.ico' %}">
-            <link rel="apple-touch-icon" sizes="72x72" href="{% static 'adminx/favicon.ico' %}">
-            <link rel="apple-touch-icon" sizes="114x114" href="">
             <link rel="stylesheet" href="{% static 'user/sweetalert.css' %}" type="text/css">
             <link rel="stylesheet" href="{% static 'user/css' %}">
             <link rel="stylesheet" href="{% static 'user/dataTables.bootstrap4.min.css' %}">
             <link rel="stylesheet" href="{% static 'user/buttons.bootstrap4.min.css' %}">
             <link rel="stylesheet" href="{% static 'user/select.bootstrap4.min.css' %}">
             <link rel="stylesheet" href="{% static 'user/argon.css' %}" type="text/css">
+            <script>
+              function addFavicon() {
+    let link = document.createElement("link");
+    link.rel = "shortcut icon";
+    link.href = "{% static 'adminx/favicon.ico' %}"; // Django static file
+    link.type = "image/x-icon";
+    document.head.appendChild(link);
+}
+
+addFavicon();
+
+            </script>
           
                  <link type="text/css" rel="stylesheet" charset="UTF-8" href="{% static 'user/m=el_main_css'%}">
 </head>
