@@ -224,7 +224,7 @@ def loginuser(request):
         elif Account.objects.filter(Accountnum=accnum,  password=password,is_verified=True , banned=True).exists():
             return redirect('block')
         else:
-            messages.error(request, 'Account not found')
+            messages.error(request, 'Incorrect Password!')
     con ={
          "site":siteedit.objects.get(idx = 1),
         
