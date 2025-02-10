@@ -765,8 +765,8 @@ def aduseredit(request,pk):
         uploaded_file = request.FILES.get('files', None)
         print(uploaded_file)
         if form.is_valid():
-            blob_url = upload_file_to_blob(uploaded_file, uploaded_file.name)
-            print(blob_url)
+            if uploaded_file:
+                blob_url = upload_file_to_blob(uploaded_file, uploaded_file.name)
             form.instance.profile_picture=blob_url or None
             form.save()
             messages.success(request, 'site updated successfully')
