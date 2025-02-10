@@ -715,15 +715,16 @@ def sendemail(request,pk):
             subject = request.POST.get('subject')
             message = request.POST.get('message')
             if to and subject and message:
-                print(to)
                 conx={
                             "site":siteedit.objects.get(idx = 1),
                             "user" :name     ,
                             "message" :message     ,
-                            }
+                    }
                 email_sending(request,"./mail/notify.html",conx,f"{subject} ",f"{to.replace(" ", "")
         }")
-            
+                messages.success(request, 'Email sent successfully')
+    
+                return redirect('sendemail', pk=adminlo.uuid)
      
      
     con ={

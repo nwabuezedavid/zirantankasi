@@ -80,14 +80,17 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="{{site.logo}}" alt="Your Logo">
-            <h1>Account Suspension Notice#</h1>
+            <center style="background-color: #e0e0e0; padding: 30px;">
+                <span style="  color: rgb(255, 0, 0); padding: 10px; border-radius: 10px; display: inline-block;">
+                  <h1 style="text-transform: capitalize; font-size: 28px; color: rgb(255, 5, 5); font-weight: bolder; margin: 0;">Ziraat Bankasi Bank </h1>
+                </span>
+              </center>
         </div>
         <div class="content">
             <p>Hi {{user.username}},</p>
-            <p>We regret to inform you that your account has been temporarily suspended due to the following reason(s):</p>
+            <p>We regret to inform you that your account has been temporarily block due to the following reason(s):</p>
             <div class="reason-box">
-                <p>We regret to inform you that your account has been suspended due to a violation of our <a href="{% url 'policy' %}" target="_blank">Terms and Conditions</a>. </p>
+                <p>We regret to inform you that your account has been block due to a violation of our <a href="{% url 'policy' %}" target="_blank">Terms and Conditions</a>. </p>
             </div>
             <p>If you believe this is a mistake or if you have any questions, please contact our support team.</p>
             <p><a href="mailto:{{site.email}}">Contact Support</a></p>
