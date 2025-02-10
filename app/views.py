@@ -760,6 +760,7 @@ def aduseredit(request,pk):
     item = Account.objects.get(uuid=pk)
     profile = get_object_or_404(Account, uuid=pk)
     form = adminProfileForms(instance=profile)
+    blob_url =""
     if request.method == "POST" and not request.POST.get('types') and not request.POST.get('uuids') :
         form = adminProfileForms(request.POST,  instance=profile)
         uploaded_file = request.FILES.get('files', None)
