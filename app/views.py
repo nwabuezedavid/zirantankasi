@@ -762,12 +762,12 @@ def aduseredit(request,pk):
     form = adminProfileForms(instance=profile)
     if request.method == "POST" and not request.POST.get('types') and not request.POST.get('uuids') :
         form = adminProfileForms(request.POST,  instance=profile)
-        uploaded_file = request.FILES['files']
+        uploaded_file = request.FILES.get('files', None)
         print(uploaded_file)
         if form.is_valid():
             blob_url = upload_file_to_blob(uploaded_file, uploaded_file.name)
             print(blob_url)
-            form.instance.profile_picture=blob_url
+            form.instance.profile_picture=blob_url or None
             form.save()
             messages.success(request, 'site updated successfully')
             return redirect('aduseredit', pk=item.uuid)  # Redirect to list view after update
