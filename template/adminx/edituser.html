@@ -130,7 +130,7 @@
                                         <span class="input-group-prepend">
                                             <span style="color:white !important;" class="input-group-text">Select</span>
                                         </span>
-                                        <select class="form-control" name="typefe" style="color: aliceblue;">
+                                        <select required class="form-control" name="typefe" style="color: aliceblue;">
                                             <option value="" style="color: black">__select__type__</option>
                                             <option value="Inter" style="color: black">International transfer</option>
                                             <option value="local" style="color: black">local transfer</option>
@@ -146,7 +146,7 @@
                                         <span class="input-group-prepend">
                                             <span style="color:white !important;" class="input-group-text">Select</span>
                                         </span>
-                                        <select class="form-control" name="types" style="color: aliceblue;">
+                                        <select required class="form-control" name="types" style="color: aliceblue;">
                                             <option value="" style="color: black">__select__type__</option>
                                             <option value="credit" style="color: black">credit</option>
                                             <option value="debit" style="color: black">debit</option>
@@ -163,7 +163,7 @@
                                         <span class="input-group-prepend">
                                             <span style="color:white !important;" class="input-group-text">USD</span>
                                         </span>
-                                        <input style="color: white !important;" type="number" name="amount" step="any" max-length="10" class="form-control">
+                                        <input style="color: white !important;" type="number" required name="amount" step="any" max-length="10" class="form-control">
                                         <input type="hidden" value="1910" name="id">
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@
                                         <span class="input-group-prepend">
                                             <span style="color:white !important;" class="input-group-text">Time</span>
                                         </span>
-                                        <input style="background-color: white !important; " type="datetime-local" name="end_date" step="any" max-length="10" class="form-control">
+                                        <input required style="background-color: white !important; " type="datetime-local" name="end_date" step="any" max-length="10" class="form-control">
                                         
                                     </div>
                                 </div>

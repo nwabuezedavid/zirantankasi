@@ -1,460 +1,1041 @@
-{% extends './base.html' %}
-{% load static %}
-
-
-
-
-
-{% block content %}
+{% extends './base.html' %} {% load static %} {% block content %}
 
 <div class="content-wrapper">
-    <div class="page-header page-header-light">
-        <div class="page-header-content header-elements-md-inline">
-            <div class="page-title d-flex">
-                <h4><span class="font-weight-semibold">Nishikant Damodar Panke</span></h4>
-            </div>
-        </div>
+  <div class="page-header page-header-light">
+    <div class="page-header-content header-elements-md-inline">
+      <div class="page-title d-flex">
+        <h4>
+          <span class="font-weight-semibold">Nishikant Damodar Panke</span>
+        </h4>
+      </div>
     </div>
-<div class="content">
-<div class="row">
-<div class="col-md-8">
-    <div class="card">
-        <div class="card-header header-elements-inline">
-            <h6 class="card-title font-weight-semibold">Update account information</h6>
-        </div>
-        <div class="card-body">
-                <form action="https://onlinebanking.zirantankasi.com/admin/profile-update" method="post">
-                <input type="hidden" name="_token" value="iDFcjEucAMlZ1wTCxuDFDxHzBXsWPS1kIkW9kuCN">                        <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Username:</label>
-                    <div class="col-lg-10">
-                        <input type="" hidden="" value="1206" name="id">
-                        <input type="text" name="username" class="form-control" value="Pnishikant">
-                    </div>
+  </div>
+  <div class="content">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header header-elements-inline">
+            <h6 class="card-title font-weight-semibold">
+              Update account information
+            </h6>
+          </div>
+          <div class="card-body">
+            <form
+              action="https://onlinebanking.zirantankasi.com/admin/profile-update"
+              method="post"
+            >
+              <input
+                type="hidden"
+                name="_token"
+                value="iDFcjEucAMlZ1wTCxuDFDxHzBXsWPS1kIkW9kuCN"
+              />
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Username:</label>
+                <div class="col-lg-10">
+                  <input type="" hidden="" value="1206" name="id" />
+                  <input
+                    type="text"
+                    name="username"
+                    class="form-control"
+                    value="Pnishikant"
+                  />
                 </div>
-                   <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Password:</label>
-                    <div class="col-lg-10">
-                        <input type="" hidden="" value="1206" name="id">
-          <input type="text" readonly="" class="form-control" value="Aharnishkam@59">
-                    </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Password:</label>
+                <div class="col-lg-10">
+                  <input type="" hidden="" value="1206" name="id" />
+                  <input
+                    type="text"
+                    readonly=""
+                    class="form-control"
+                    value="Aharnishkam@59"
+                  />
                 </div>
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Title:</label>
-                    <div class="col-lg-10">
-                        <input type="text" readonly="" class="form-control" value="">
-                    </div>
-                </div> 
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Name:</label>
-                    <div class="col-lg-10">
-                        <input type="text" name="name" class="form-control" value="Nishikant Damodar Panke">
-                    </div>
-                </div> 
-                  <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Date of Birth:</label>
-                    <div class="col-lg-10">
-                        <input type="text" name="dob" class="form-control" value="1959-12-27">
-                    </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Title:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    readonly=""
+                    class="form-control"
+                    value=""
+                  />
                 </div>
-                  <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Gender:</label>
-                    <div class="col-lg-10">
-                        <input type="text" name="gender" class="form-control" value="Male">
-                    </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Name:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    value="Nishikant Damodar Panke"
+                  />
                 </div>
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Email:</label>
-                    <div class="col-lg-10">
-                        <input type="email" name="email" class="form-control" readonly="" value="nishikantpanke59@gmail.com">
-                    </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Date of Birth:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    name="dob"
+                    class="form-control"
+                    value="1959-12-27"
+                  />
                 </div>
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Mobile:</label>
-                    <div class="col-lg-10">
-                        <input type="text" name="mobile" class="form-control" value="918830772751">
-                    </div>
-                </div>                        
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Country:</label>
-                    <div class="col-lg-10">
-                        <input type="text" name="country" class="form-control" value="India">
-                    </div>
-                </div>                        
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Account Type:</label>
-                    <div class="col-lg-10">
-                        <input type="text" name="acc_type" class="form-control" value="NON-Resident">
-                    </div>
-                </div>                       
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Occupation:</label>
-                    <div class="col-lg-10">
-                        <input type="text" name="occupation" class="form-control" value="President Damodar Charitable Trust">
-                    </div>
-                </div>                        
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Address:</label>
-                    <div class="col-lg-10">
-                        <input type="text" name="address" class="form-control" value="111 Acres, Vrindavan township Gokul B1/605 Near NCI, Nagpur 441122">
-                    </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Gender:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    name="gender"
+                    class="form-control"
+                    value="Male"
+                  />
                 </div>
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Balance:</label>
-                    <div class="col-lg-10">
-                        <div class="input-group">
-                            <span class="input-group-prepend">
-                                <span class="input-group-text">USD</span>
-                            </span>
-                            <input type="number" name="balance" max-length="10" value="500000" class="form-control">
-                        </div>
-                    </div>
-                </div> 
-                <div class="form-group row">
-                    <label class="col-form-label col-lg-2">Status<span class="text-danger">*</span></label>
-                    <div class="col-lg-10">
-                        <div class="form-check form-check-inline form-check-switchery">
-                            <label class="form-check-label">
-                                                                            <input type="checkbox" name="email_verify" class="form-check-input-switchery" value="1" checked="" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="background-color: rgb(100, 189, 99); border-color: rgb(100, 189, 99); box-shadow: rgb(100, 189, 99) 0px 0px 0px 10px inset; transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;"><small style="left: 18px; background-color: rgb(255, 255, 255); transition: background-color 0.4s, left 0.2s;"></small></span>
-                                  
-                                Email verification  
-                            </label>
-                        </div>                                
-                        <div class="form-check form-check-inline form-check-switchery">
-                            <label class="form-check-label">
-                                                                            <input type="checkbox" name="phone_verify" class="form-check-input-switchery" value="1" checked="" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="background-color: rgb(100, 189, 99); border-color: rgb(100, 189, 99); box-shadow: rgb(100, 189, 99) 0px 0px 0px 10px inset; transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;"><small style="left: 18px; background-color: rgb(255, 255, 255); transition: background-color 0.4s, left 0.2s;"></small></span>
-                                  
-                                Phone verification  
-                            </label>
-                        </div>                                
-                        <div class="form-check form-check-inline form-check-switchery">
-                            <label class="form-check-label">
-                                                                            <input type="checkbox" name="upgrade" class="form-check-input-switchery" value="1" data-switchery="true" style="display: none;"><span class="switchery switchery-default" style="box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); background-color: rgb(255, 255, 255); transition: border 0.4s, box-shadow 0.4s;"><small style="left: 0px; transition: background-color 0.4s, left 0.2s;"></small></span>
-                                  
-                                Account upgrade  
-                            </label>
-                        </div>
-                    </div>
-                </div>                
-                <!---div class="text-right">
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Email:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    readonly=""
+                    value="nishikantpanke59@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Mobile:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    name="mobile"
+                    class="form-control"
+                    value="918830772751"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Country:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    name="country"
+                    class="form-control"
+                    value="India"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Account Type:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    name="acc_type"
+                    class="form-control"
+                    value="NON-Resident"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Occupation:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    name="occupation"
+                    class="form-control"
+                    value="President Damodar Charitable Trust"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Address:</label>
+                <div class="col-lg-10">
+                  <input
+                    type="text"
+                    name="address"
+                    class="form-control"
+                    value="111 Acres, Vrindavan township Gokul B1/605 Near NCI, Nagpur 441122"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2">Balance:</label>
+                <div class="col-lg-10">
+                  <div class="input-group">
+                    <span class="input-group-prepend">
+                      <span class="input-group-text">USD</span>
+                    </span>
+                    <input
+                      type="number"
+                      name="balance"
+                      max-length="10"
+                      value="500000"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-lg-2"
+                  >Status<span class="text-danger">*</span></label
+                >
+                <div class="col-lg-10">
+                  <div
+                    class="form-check form-check-inline form-check-switchery"
+                  >
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        name="email_verify"
+                        class="form-check-input-switchery"
+                        value="1"
+                        checked=""
+                        data-switchery="true"
+                        style="display: none"
+                      /><span
+                        class="switchery switchery-default"
+                        style="
+                          background-color: rgb(100, 189, 99);
+                          border-color: rgb(100, 189, 99);
+                          box-shadow: rgb(100, 189, 99) 0px 0px 0px 10px inset;
+                          transition: border 0.4s, box-shadow 0.4s,
+                            background-color 1.2s;
+                        "
+                        ><small
+                          style="
+                            left: 18px;
+                            background-color: rgb(255, 255, 255);
+                            transition: background-color 0.4s, left 0.2s;
+                          "
+                        ></small
+                      ></span>
+
+                      Email verification
+                    </label>
+                  </div>
+                  <div
+                    class="form-check form-check-inline form-check-switchery"
+                  >
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        name="phone_verify"
+                        class="form-check-input-switchery"
+                        value="1"
+                        checked=""
+                        data-switchery="true"
+                        style="display: none"
+                      /><span
+                        class="switchery switchery-default"
+                        style="
+                          background-color: rgb(100, 189, 99);
+                          border-color: rgb(100, 189, 99);
+                          box-shadow: rgb(100, 189, 99) 0px 0px 0px 10px inset;
+                          transition: border 0.4s, box-shadow 0.4s,
+                            background-color 1.2s;
+                        "
+                        ><small
+                          style="
+                            left: 18px;
+                            background-color: rgb(255, 255, 255);
+                            transition: background-color 0.4s, left 0.2s;
+                          "
+                        ></small
+                      ></span>
+
+                      Phone verification
+                    </label>
+                  </div>
+                  <div
+                    class="form-check form-check-inline form-check-switchery"
+                  >
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        name="upgrade"
+                        class="form-check-input-switchery"
+                        value="1"
+                        data-switchery="true"
+                        style="display: none"
+                      /><span
+                        class="switchery switchery-default"
+                        style="
+                          box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+                          border-color: rgb(223, 223, 223);
+                          background-color: rgb(255, 255, 255);
+                          transition: border 0.4s, box-shadow 0.4s;
+                        "
+                        ><small
+                          style="
+                            left: 0px;
+                            transition: background-color 0.4s, left 0.2s;
+                          "
+                        ></small
+                      ></span>
+
+                      Account upgrade
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!---div class="text-right">
                     <button type="submit" class="btn bg-dark">Update<i class="icon-paperplane ml-2"></i></button>
                 </div--->
             </form>
+          </div>
         </div>
-    </div>
-</div>
-<div class="col-md-4">
-    <div class="card">
-        <div class="card-body text-center">
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
             <div class="card-img-actions d-inline-block mb-3">
-                <img class="img-fluid rounded-circle" src="https://onlinebanking.zirantankasi.com/asset/profile/" width="120" height="120" alt="">
+              <img
+                class="img-fluid rounded-circle"
+                src="https://onlinebanking.zirantankasi.com/asset/profile/"
+                width="120"
+                height="120"
+                alt=""
+              />
             </div>
+          </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
+        <div class="card">
+          <div class="card-body">
             <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
-                <div>
-                    <ul class="list list-unstyled mb-0">
-                        <li>Joined: <span class="font-weight-semibold">2024/03/26 04:17:AM</span></li>
-                        <li>Last Login: <span class="font-weight-semibold">2024/03/26 05:58:AM</span></li>
-                        <li>Last Updated: <span class="font-weight-semibold">2024/03/26 12:33:PM</span></li>
-                        <li>IP Address: <span class="font-weight-semibold">2409:40c2:1c:e9c5:8000::</span></li>
-                        <li>Account no: <span class="font-weight-semibold">2706042519</span></li>
-                    </ul>
-                </div>
+              <div>
+                <ul class="list list-unstyled mb-0">
+                  <li>
+                    Joined:
+                    <span class="font-weight-semibold"
+                      >2024/03/26 04:17:AM</span
+                    >
+                  </li>
+                  <li>
+                    Last Login:
+                    <span class="font-weight-semibold"
+                      >2024/03/26 05:58:AM</span
+                    >
+                  </li>
+                  <li>
+                    Last Updated:
+                    <span class="font-weight-semibold"
+                      >2024/03/26 12:33:PM</span
+                    >
+                  </li>
+                  <li>
+                    IP Address:
+                    <span class="font-weight-semibold"
+                      >2409:40c2:1c:e9c5:8000::</span
+                    >
+                  </li>
+                  <li>
+                    Account no:
+                    <span class="font-weight-semibold">2706042519</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </div>  
-                            <div class="card">
-        <div class="card-header header-elements-inline">
+        <div class="card">
+          <div class="card-header header-elements-inline">
             <h6 class="card-title font-weight-semibold">Kyc verification</h6>
-        </div>
-        <div class="table-responsive">
+          </div>
+          <div class="table-responsive">
             <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                    <th>#</th>
-                    <th class="text-center">Status</th>
-                    <th class="text-center">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-center">
-                                                                    Unverified
-                                                            </td>
-                        <td class="text-center">
-                                                                    No file
-                                                            </td>
-                        <td class="text-center">
-                                                                                                                            </td>             
-                    </tr> 
-                </tbody>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th class="text-center">Status</th>
+                  <th class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">Unverified</td>
+                  <td class="text-center">No file</td>
+                  <td class="text-center"></td>
+                </tr>
+              </tbody>
             </table>
+          </div>
         </div>
+      </div>
     </div>
-            </div>
-</div>
-<div class="row">
-<div class="col-md-12">
-    <div style="background-color:black; color:white !important;" class="card">
-        <div class="card-body">
-            <ul class="nav nav-tabs justify-content-center nav-tabs-highlight nav-justified">
-                <li class="nav-item"><a href="#basic-tab3" class="nav-link active legitRipple" data-toggle="tab">Credit account</a></li>
-                <li class="nav-item"><a href="#basic-tab4" class="nav-link legitRipple" data-toggle="tab">Debit account</a></li>
+    <div class="row">
+      <div class="col-md-12">
+        <div
+          style="background-color: black; color: white !important"
+          class="card"
+        >
+          <div class="card-body">
+            <ul
+              class="nav nav-tabs justify-content-center nav-tabs-highlight nav-justified"
+            >
+              <li class="nav-item">
+                <a
+                  href="#basic-tab3"
+                  class="nav-link active legitRipple"
+                  data-toggle="tab"
+                  >Credit account</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#basic-tab4"
+                  class="nav-link legitRipple"
+                  data-toggle="tab"
+                  >Debit account</a
+                >
+              </li>
             </ul>
             <div class="tab-content">
-                <div class="tab-pane fade show active" id="basic-tab3">
-                    <div class="card-body">
-                        <form action="https://onlinebanking.zirantankasi.com/admin/credit-account" method="post">
-                            <input type="hidden" name="_token" value="iDFcjEucAMlZ1wTCxuDFDxHzBXsWPS1kIkW9kuCN">                                    <div class="form-group row">
-                                <label class="col-form-label col-lg-2">Amount:</label>
-                                <div class="col-lg-8">
-                                    <div class="input-group">
-                                        <span class="input-group-prepend">
-                                            <span style="color:white !important;" class="input-group-text">USD</span>
-                                        </span>
-                                        <input style="color: white !important;" type="number" name="amount" step="any" max-length="10" class="form-control">
-                                        <input type="hidden" value="1206" name="id">
-                                    </div>
-                                </div>
-                            </div> 
-                                <div class="form-group row">
-                                <label class="col-form-label col-lg-2">Trasact:</label>
-                                <div class="col-lg-8">
-                                    <div class="input-group">
-                                        <span class="input-group-prepend">
-                                            <span style="color:white !important;" class="input-group-text">Time</span>
-                                        </span>
-                                        <input style="color: white !important;" type="text" name="end_date" step="any" max-length="10" class="form-control">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-form-label col-lg-2">Description:</label>
-                                <div class="col-lg-8">
-                                    <textarea style="color: white !important;" type="text" name="content" class="form-control"></textarea>
-                                </div>
-                            </div>                
-                            <div class="text-right">
-                                <button type="submit" class="btn bg-dark legitRipple">Update<i class="icon-paperplane ml-2"></i></button>
-                            </div>
-                        </form>
+              <div class="tab-pane fade show active" id="basic-tab3">
+                <div class="card-body">
+                  <form
+                    action="https://onlinebanking.zirantankasi.com/admin/credit-account"
+                    method="post"
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="iDFcjEucAMlZ1wTCxuDFDxHzBXsWPS1kIkW9kuCN"
+                    />
+                    <div class="form-group row">
+                      <label class="col-form-label col-lg-2">Amount:</label>
+                      <div class="col-lg-8">
+                        <div class="input-group">
+                          <span class="input-group-prepend">
+                            <span
+                              style="color: white !important"
+                              class="input-group-text"
+                              >USD</span
+                            >
+                          </span>
+                          <input
+                            style="color: white !important"
+                            type="number"
+                            name="amount"
+                            step="any"
+                            max-length="10"
+                            class="form-control"
+                          />
+                          <input type="hidden" value="1206" name="id" />
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="basic-tab4">
-                    <div class="card-body">
-                        <form action="https://onlinebanking.zirantankasi.com/admin/debit-account" method="post">
-                            <input type="hidden" name="_token" value="iDFcjEucAMlZ1wTCxuDFDxHzBXsWPS1kIkW9kuCN">                                    <div class="form-group row">
-                                <label class="col-form-label col-lg-2">Amount:</label>
-                                <div class="col-lg-8">
-                                    <div class="input-group">
-                                        <span class="input-group-prepend">
-                                            <span style="color:white !important;" class="input-group-text">USD</span>
-                                        </span>
-                                        <input style="color: white !important;" type="number" name="amount" step="any" max-length="10" class="form-control">
-                                        <input type="hidden" value="1206" name="id">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-form-label col-lg-2">Trasact:</label>
-                                <div class="col-lg-8">
-                                    <div class="input-group">
-                                        <span class="input-group-prepend">
-                                            <span style="color:white !important;" class="input-group-text">Time</span>
-                                        </span>
-                                        <input style="color: white !important;" type="text" name="end_date" step="any" max-length="10" class="form-control">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-form-label col-lg-2">Description:</label>
-                                <div class="col-lg-8">
-                                    <textarea style="color: white !important;" type="text" name="content" class="form-control"></textarea>
-                                </div>
-                            </div>                
-                            <div class="text-right">
-                                <button type="submit" class="btn bg-dark legitRipple">Update<i class="icon-paperplane ml-2"></i></button>
-                            </div>
-                        </form>
+                    <div class="form-group row">
+                      <label class="col-form-label col-lg-2">Trasact:</label>
+                      <div class="col-lg-8">
+                        <div class="input-group">
+                          <span class="input-group-prepend">
+                            <span
+                              style="color: white !important"
+                              class="input-group-text"
+                              >Time</span
+                            >
+                          </span>
+                          <input
+                            style="color: white !important"
+                            type="text"
+                            name="end_date"
+                            step="any"
+                            max-length="10"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
                     </div>
+                    <div class="form-group row">
+                      <label class="col-form-label col-lg-2"
+                        >Description:</label
+                      >
+                      <div class="col-lg-8">
+                        <textarea
+                          style="color: white !important"
+                          type="text"
+                          name="content"
+                          class="form-control"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <button type="submit" class="btn bg-dark legitRipple">
+                        Update<i class="icon-paperplane ml-2"></i>
+                      </button>
+                    </div>
+                  </form>
                 </div>
+              </div>
+              <div class="tab-pane fade" id="basic-tab4">
+                <div class="card-body">
+                  <form
+                    action="https://onlinebanking.zirantankasi.com/admin/debit-account"
+                    method="post"
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="iDFcjEucAMlZ1wTCxuDFDxHzBXsWPS1kIkW9kuCN"
+                    />
+                    <div class="form-group row">
+                      <label class="col-form-label col-lg-2">Amount:</label>
+                      <div class="col-lg-8">
+                        <div class="input-group">
+                          <span class="input-group-prepend">
+                            <span
+                              style="color: white !important"
+                              class="input-group-text"
+                              >USD</span
+                            >
+                          </span>
+                          <input
+                            style="color: white !important"
+                            type="number"
+                            name="amount"
+                            step="any"
+                            max-length="10"
+                            class="form-control"
+                          />
+                          <input type="hidden" value="1206" name="id" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-form-label col-lg-2">Trasact:</label>
+                      <div class="col-lg-8">
+                        <div class="input-group">
+                          <span class="input-group-prepend">
+                            <span
+                              style="color: white !important"
+                              class="input-group-text"
+                              >Time</span
+                            >
+                          </span>
+                          <input
+                            style="color: white !important"
+                            type="text"
+                            name="end_date"
+                            step="any"
+                            max-length="10"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-form-label col-lg-2"
+                        >Description:</label
+                      >
+                      <div class="col-lg-8">
+                        <textarea
+                          style="color: white !important"
+                          type="text"
+                          name="content"
+                          class="form-control"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <button type="submit" class="btn bg-dark legitRipple">
+                        Update<i class="icon-paperplane ml-2"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12">
-    <div style="background-color:#0b7599; color:white !important;" class="card">
-        <div class="card-header header-elements-inline">
+    <div class="row">
+      <div class="col-md-12">
+        <div
+          style="background-color: #0b7599; color: white !important"
+          class="card"
+        >
+          <div class="card-header header-elements-inline">
             <h6 class="card-title font-weight-semibold">Account statement</h6>
-        </div>
-        <div class="">
+          </div>
+          <div class="">
             <div id="1148delete" class="modal fade" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">   
-                                    <button type="button" class="close" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <h6 class="font-weight-semibold">Are you sure you want to delete this?</h6>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-link legitRipple" data-dismiss="modal">Close</button>
-                                    <a href="https://onlinebanking.zirantankasi.com/admin/withdraw/delete/1148" class="btn bg-danger legitRipple">Proceed</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div id="1146delete" class="modal fade" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">   
-                                    <button type="button" class="close" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <h6 class="font-weight-semibold">Are you sure you want to delete this?</h6>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-link legitRipple" data-dismiss="modal">Close</button>
-                                    <a href="https://onlinebanking.zirantankasi.com/admin/withdraw/delete/1146" class="btn bg-danger legitRipple">Proceed</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div id="1145delete" class="modal fade" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">   
-                                    <button type="button" class="close" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <h6 class="font-weight-semibold">Are you sure you want to delete this?</h6>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-link legitRipple" data-dismiss="modal">Close</button>
-                                    <a href="https://onlinebanking.zirantankasi.com/admin/withdraw/delete/1145" class="btn bg-danger legitRipple">Proceed</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><div class="datatable-header"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label><span>Filter:</span> <input type="search" class="" placeholder="Type to filter..." aria-controls="DataTables_Table_0"></label></div><div class="dataTables_length" id="DataTables_Table_0_length"><label><span>Show:</span> <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="-1">All</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-DataTables_Table_0_length-er-container"><span class="select2-selection__rendered" id="select2-DataTables_Table_0_length-er-container" title="10">10</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></label></div></div><div class="datatable-scroll"><table class="table datatable-show-all dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                <thead>
-                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="S/N: activate to sort column descending">S/N</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Amount: activate to sort column ascending">Amount</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Details: activate to sort column ascending">Details</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Type: activate to sort column ascending">Type</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Created" style="width: 100px;">Created</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Update: activate to sort column ascending">Update</th></tr>
-                </thead>
-                <tbody>
-                                            
-                    
-                                                
-                    
-                                                
-                    
-                                   
-                <tr role="row" class="odd">
-                        <td class="sorting_1">1.</td>
-                        <td>100,010USD</td>
-                        <td>Your account has been credited with $100010,
-Account Balance:$500000, Ref Number:1711451391, Description:Your transfer to the account number 7612545233 was pending and has been REVERSED to your offshore account successfully and the reason why your transfer failed and reversed to your account you have with us is because you need to get your Account Tax Code and Account Authorization Approval from the Office of the Central Bank of the Republic of Turkey over your Investment Fund in our Bank before your fund could be released in your offshore account to enable you to transfer to any Bank of your choice in your Country and in any Country around the World.
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      ×
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h6 class="font-weight-semibold">
+                      Are you sure you want to delete this?
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-link legitRipple"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="https://onlinebanking.zirantankasi.com/admin/withdraw/delete/1148"
+                      class="btn bg-danger legitRipple"
+                      >Proceed</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="1146delete" class="modal fade" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      ×
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h6 class="font-weight-semibold">
+                      Are you sure you want to delete this?
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-link legitRipple"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="https://onlinebanking.zirantankasi.com/admin/withdraw/delete/1146"
+                      class="btn bg-danger legitRipple"
+                      >Proceed</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="1145delete" class="modal fade" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      ×
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h6 class="font-weight-semibold">
+                      Are you sure you want to delete this?
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-link legitRipple"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="https://onlinebanking.zirantankasi.com/admin/withdraw/delete/1145"
+                      class="btn bg-danger legitRipple"
+                      >Proceed</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="DataTables_Table_0_wrapper"
+              class="dataTables_wrapper no-footer"
+            >
+              <div class="datatable-header">
+                <div id="DataTables_Table_0_filter" class="dataTables_filter">
+                  <label
+                    ><span>Filter:</span>
+                    <input
+                      type="search"
+                      class=""
+                      placeholder="Type to filter..."
+                      aria-controls="DataTables_Table_0"
+                  /></label>
+                </div>
+                <div class="dataTables_length" id="DataTables_Table_0_length">
+                  <label
+                    ><span>Show:</span>
+                    <select
+                      name="DataTables_Table_0_length"
+                      aria-controls="DataTables_Table_0"
+                      class="select2-hidden-accessible"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="-1">All</option></select
+                    ><span
+                      class="select2 select2-container select2-container--default"
+                      dir="ltr"
+                      style="width: auto"
+                      ><span class="selection"
+                        ><span
+                          class="select2-selection select2-selection--single"
+                          role="combobox"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          tabindex="0"
+                          aria-labelledby="select2-DataTables_Table_0_length-er-container"
+                          ><span
+                            class="select2-selection__rendered"
+                            id="select2-DataTables_Table_0_length-er-container"
+                            title="10"
+                            >10</span
+                          ><span
+                            class="select2-selection__arrow"
+                            role="presentation"
+                            ><b role="presentation"></b></span></span></span
+                      ><span
+                        class="dropdown-wrapper"
+                        aria-hidden="true"
+                      ></span></span
+                  ></label>
+                </div>
+              </div>
+              <div class="datatable-scroll">
+                <table
+                  class="table datatable-show-all dataTable no-footer"
+                  id="DataTables_Table_0"
+                  role="grid"
+                  aria-describedby="DataTables_Table_0_info"
+                >
+                  <thead>
+                    <tr role="row">
+                      <th
+                        class="sorting_asc"
+                        tabindex="0"
+                        aria-controls="DataTables_Table_0"
+                        rowspan="1"
+                        colspan="1"
+                        aria-sort="ascending"
+                        aria-label="S/N: activate to sort column descending"
+                      >
+                        S/N
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="DataTables_Table_0"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Amount: activate to sort column ascending"
+                      >
+                        Amount
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="DataTables_Table_0"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Details: activate to sort column ascending"
+                      >
+                        Details
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="DataTables_Table_0"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Type: activate to sort column ascending"
+                      >
+                        Type
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="DataTables_Table_0"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Status: activate to sort column ascending"
+                      >
+                        Status
+                      </th>
+                      <th
+                        class="sorting_disabled"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Created"
+                        style="width: 100px"
+                      >
+                        Created
+                      </th>
+                      <th
+                        class="sorting"
+                        tabindex="0"
+                        aria-controls="DataTables_Table_0"
+                        rowspan="1"
+                        colspan="1"
+                        aria-label="Update: activate to sort column ascending"
+                      >
+                        Update
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr role="row" class="odd">
+                      <td class="sorting_1">1.</td>
+                      <td>100,010USD</td>
+                      <td>
+                        Your account has been credited with $100010, Account
+                        Balance:$500000, Ref Number:1711451391, Description:Your
+                        transfer to the account number 7612545233 was pending
+                        and has been REVERSED to your offshore account
+                        successfully and the reason why your transfer failed and
+                        reversed to your account you have with us is because you
+                        need to get your Account Tax Code and Account
+                        Authorization Approval from the Office of the Central
+                        Bank of the Republic of Turkey over your Investment Fund
+                        in our Bank before your fund could be released in your
+                        offshore account to enable you to transfer to any Bank
+                        of your choice in your Country and in any Country around
+                        the World. Therefore, we are inviting you to come over
+                        here in our branch {{site.name}}Bankasi Bank Ankara,
+                        Turkey. To get your Tax Code and Authorization Approval
+                        from the Office of the Central Bank the Republic of
+                        Turkey in order to enable you to transfer to any Bank of
+                        your choice in your Country and any Country around the
+                        World. Meanwhile, If you can not come because of one
+                        reason or more, we advise you to forward your Account
+                        Tax Code and Account Authorization fee to our Bank to
+                        enable us process it on your behalf and it will required
+                        you to pay the sum of $5,000.00 United States Dollars
+                        for that and we will go ahead to process it at the
+                        Office of the Central Bank the Republic of Turkey on
+                        your behalf. We will provide you with the means of
+                        payment when you request it. Contact our customer
+                        support for help via Email at support@ankazbbo.com or
+                        contact {{site.name}}Bankasi management at
+                        ziraatbankasi.seniormanager@gmail.com
+                      </td>
+                      <td>
+                        <span class="badge badge-success">Credit</span>
+                      </td>
+                      <td>
+                        <span class="badge badge-success">Successful</span>
+                      </td>
+                      <td>Mar 26</td>
 
-Therefore, we are inviting you to come over here in our branch  {{site.name}}Bankasi Bank Ankara, Turkey. To get your Tax Code and Authorization Approval from the Office of the Central Bank the Republic of Turkey in order to enable you to transfer to any Bank of your choice in your Country and any Country around the World. 
+                      <td>
+                        <form
+                          action="https://onlinebanking.zirantankasi.com/Update.php"
+                          method="post"
+                        >
+                          <select name="update" class="form-control input-sm">
+                            <option value="1">Pending</option>
+                            <option value="2">Hold</option>
+                            <option value="3">Successful</option></select
+                          ><br />
 
-Meanwhile, If you can not come because of one reason or more, we advise you to forward your Account Tax Code and Account Authorization fee to our Bank to enable us process it on your behalf and it will required you to pay the sum of $5,000.00 United States Dollars for that and we will go ahead to process it at the Office of the Central Bank the Republic of Turkey on your behalf.
-
-We will provide you with the means of payment when you request it.
-Contact our customer support for help via Email at  support@ankazbbo.com or contact  {{site.name}}Bankasi management at ziraatbankasi.seniormanager@gmail.com</td>
-                        <td>
-                                                                    <span class="badge badge-success">Credit</span>
-                                                            </td> 
-                        <td>
-                                                                    <span class="badge badge-success">Successful</span> 
-                                                            </td>  
-                        <td>Mar 26</td>
-                        
-                        
-                        <td><form action="https://onlinebanking.zirantankasi.com/Update.php" method="post">
-<select name="update" class="form-control input-sm ">
-                        <option value="1">Pending</option>
-                        <option value="2">Hold</option>
-                        <option value="3">Successful</option>
-                    </select><br>
-
-<input type="text" hidden="" name="user_id" class="form-control" readonly="" value="1206">
-<input type="text" hidden="" name="id" class="form-control" readonly="" value="1148">
-    <button class="btn bg-dark legitRipple" value="1" type="submit" name="save">Save<i class="icon-paperplane ml-2"></i></button>
-<!---div class="text-right">
+                          <input
+                            type="text"
+                            hidden=""
+                            name="user_id"
+                            class="form-control"
+                            readonly=""
+                            value="1206"
+                          />
+                          <input
+                            type="text"
+                            hidden=""
+                            name="id"
+                            class="form-control"
+                            readonly=""
+                            value="1148"
+                          />
+                          <button
+                            class="btn bg-dark legitRipple"
+                            value="1"
+                            type="submit"
+                            name="save"
+                          >
+                            Save<i class="icon-paperplane ml-2"></i>
+                          </button>
+                          <!---div class="text-right">
                                 <button name="save" value="1" type="submit" class="btn bg-dark">Update<i class="icon-paperplane ml-2"></i></button>
                             </div--->
-</form></td>     
+                        </form>
+                      </td>
+                    </tr>
+                    <tr role="row" class="even">
+                      <td class="sorting_1">2.</td>
+                      <td>100,010USD</td>
+                      <td>
+                        You have requested a wire transfer of Amt:$100000, to
+                        Acct:7612545233
+                      </td>
+                      <td>
+                        <span class="badge badge-info">Debit</span>
+                      </td>
+                      <td>
+                        <span class="badge badge-danger">Pending</span>
+                      </td>
+                      <td>2024-03-26 06:26:30</td>
 
+                      <td>
+                        <form
+                          action="https://onlinebanking.zirantankasi.com/Update.php"
+                          method="post"
+                        >
+                          <select name="update" class="form-control input-sm">
+                            <option value="1">Pending</option>
+                            <option value="2">Hold</option>
+                            <option value="3">Successful</option></select
+                          ><br />
 
-                    </tr><tr role="row" class="even">
-                        <td class="sorting_1">2.</td>
-                        <td>100,010USD</td>
-                        <td> You have requested a wire transfer of Amt:$100000, to Acct:7612545233
-                </td>
-                        <td>
-                                                                    <span class="badge badge-info">Debit</span> 
-                                                            </td> 
-                        <td>
-                                                                    <span class="badge badge-danger">Pending</span>
-                                                            </td>  
-                        <td>2024-03-26 06:26:30</td>
-                        
-                        
-                        <td><form action="https://onlinebanking.zirantankasi.com/Update.php" method="post">
-<select name="update" class="form-control input-sm ">
-                        <option value="1">Pending</option>
-                        <option value="2">Hold</option>
-                        <option value="3">Successful</option>
-                    </select><br>
-
-<input type="text" hidden="" name="user_id" class="form-control" readonly="" value="1206">
-<input type="text" hidden="" name="id" class="form-control" readonly="" value="1146">
-    <button class="btn bg-dark legitRipple" value="1" type="submit" name="save">Save<i class="icon-paperplane ml-2"></i></button>
-<!---div class="text-right">
+                          <input
+                            type="text"
+                            hidden=""
+                            name="user_id"
+                            class="form-control"
+                            readonly=""
+                            value="1206"
+                          />
+                          <input
+                            type="text"
+                            hidden=""
+                            name="id"
+                            class="form-control"
+                            readonly=""
+                            value="1146"
+                          />
+                          <button
+                            class="btn bg-dark legitRipple"
+                            value="1"
+                            type="submit"
+                            name="save"
+                          >
+                            Save<i class="icon-paperplane ml-2"></i>
+                          </button>
+                          <!---div class="text-right">
                                 <button name="save" value="1" type="submit" class="btn bg-dark">Update<i class="icon-paperplane ml-2"></i></button>
                             </div--->
-</form></td>     
+                        </form>
+                      </td>
+                    </tr>
+                    <tr role="row" class="odd">
+                      <td class="sorting_1">3.</td>
+                      <td>500,000USD</td>
+                      <td>
+                        Your account has been credited with $500000, Account
+                        Balance:$500000, Ref Number:1711430875, Description:Your
+                        fund is successfully credited. You can now transfer to
+                        any bank of your choice in your Country or in any
+                        Country around the World.
+                      </td>
+                      <td>
+                        <span class="badge badge-success">Credit</span>
+                      </td>
+                      <td>
+                        <span class="badge badge-success">Successful</span>
+                      </td>
+                      <td>Mar 26</td>
 
+                      <td>
+                        <form method="post">
+                          <select name="update" class="form-control input-sm">
+                            <option value="1">Pending</option>
+                            <option value="2">Hold</option>
+                            <option value="3">Successful</option></select
+                          ><br />
 
-                    </tr><tr role="row" class="odd">
-                        <td class="sorting_1">3.</td>
-                        <td>500,000USD</td>
-                        <td>Your account has been credited with $500000,
-Account Balance:$500000, Ref Number:1711430875, Description:Your fund is successfully credited. You can now transfer to any bank of your choice in your Country or in any Country around the World.</td>
-                        <td>
-                                                                    <span class="badge badge-success">Credit</span>
-                                                            </td> 
-                        <td>
-                                                                    <span class="badge badge-success">Successful</span> 
-                                                            </td>  
-                        <td>Mar 26</td>
-                        
-                        
-                        <td><form  method="post">
-<select name="update" class="form-control input-sm ">
-                        <option value="1">Pending</option>
-                        <option value="2">Hold</option>
-                        <option value="3">Successful</option>
-                    </select><br>
-
-<input type="text" hidden="" name="user_id" class="form-control" readonly="" value="1206">
-<input type="text" hidden="" name="id" class="form-control" readonly="" value="1145">
-    <button class="btn bg-dark legitRipple" value="1" type="submit" name="save">Save<i class="icon-paperplane ml-2"></i></button>
-<!---div class="text-right">
+                          <input
+                            type="text"
+                            hidden=""
+                            name="user_id"
+                            class="form-control"
+                            readonly=""
+                            value="1206"
+                          />
+                          <input
+                            type="text"
+                            hidden=""
+                            name="id"
+                            class="form-control"
+                            readonly=""
+                            value="1145"
+                          />
+                          <button
+                            class="btn bg-dark legitRipple"
+                            value="1"
+                            type="submit"
+                            name="save"
+                          >
+                            Save<i class="icon-paperplane ml-2"></i>
+                          </button>
+                          <!---div class="text-right">
                                 <button name="save" value="1" type="submit" class="btn bg-dark">Update<i class="icon-paperplane ml-2"></i></button>
                             </div--->
-</form></td>     
-
-
-                    </tr></tbody>                    
-            </table></div><div class="datatable-footer"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 3 of 3 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">←</a><span><a class="paginate_button current" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" id="DataTables_Table_0_next">→</a></div></div></div>
+                        </form>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="datatable-footer">
+                <div
+                  class="dataTables_info"
+                  id="DataTables_Table_0_info"
+                  role="status"
+                  aria-live="polite"
+                >
+                  Showing 1 to 3 of 3 entries
+                </div>
+                <div
+                  class="dataTables_paginate paging_simple_numbers"
+                  id="DataTables_Table_0_paginate"
+                >
+                  <a
+                    class="paginate_button previous disabled"
+                    aria-controls="DataTables_Table_0"
+                    data-dt-idx="0"
+                    tabindex="0"
+                    id="DataTables_Table_0_previous"
+                    >←</a
+                  ><span
+                    ><a
+                      class="paginate_button current"
+                      aria-controls="DataTables_Table_0"
+                      data-dt-idx="1"
+                      tabindex="0"
+                      >1</a
+                    ></span
+                  ><a
+                    class="paginate_button next disabled"
+                    aria-controls="DataTables_Table_0"
+                    data-dt-idx="2"
+                    tabindex="0"
+                    id="DataTables_Table_0_next"
+                    >→</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</div>
- 
-</div>
+  </div>
 </div>
 {% endblock content %}
