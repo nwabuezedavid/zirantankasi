@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <!-- saved from url=(0053)/own-bank -->
-<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_mHWQoi"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <div id="in-page-channel-node-id" data-channel-name="in_page_channel_mHWQoi"></div>
+  
+  <head>
+    <meta http-equiv="Content-Type"
+     content="text/html; charset=UTF-8">
     {% load static %}
     <!--<base href="https://onlinebanking.zirantankasi.com">--><base href=".">
     <title>Own bank transfer |  {{site.name}}Bankasi</title>
@@ -224,7 +229,23 @@
   font-style: normal;
 }
 
-</style></head>
+</style>
+
+
+</head>
+<script>
+  function addFavicon() {
+let link = document.createElement("link");
+link.rel = "shortcut icon";
+link.href = "{% static 'adminx/favicon.ico' %}"; // Django static file
+link.type = "image/x-icon";
+document.head.appendChild(link);
+}
+
+addFavicon();
+
+
+</script>
 	{% if messages %}
 				{% for message in messages %}
 				
@@ -362,8 +383,13 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link legitRipple"><i class="bi bi-wallet"></i><span>Transfer</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Transfer" style="display: none;">
-								<li class="nav-item"><a href="/adlocal/{{user.uuid}}" class="nav-link legitRipple"><i class="bi bi-bank"></i>Local Transfer</a></li>
-								<li class="nav-item"><a href="/adinter/{{user.uuid}}" class="nav-link legitRipple"><i class="bi bi-bank2"></i>International Transfer</a></li>
+								<li class="nav-item">
+                  <a href="/adlocal/{{user.uuid}}" class="nav-link legitRipple">
+                    <i class="bi bi-bank"></i>Local Transfer</a>
+                </li>
+								<li class="nav-item"><a href="/adinter/{{user.uuid}}" class="nav-link legitRipple">
+                  <i class="bi bi-bank2"></i>International Transfer</a>
+                </li>
 							</ul>
 						</li>											
 						<li class="nav-item nav-item-submenu nav-item-open">
@@ -376,8 +402,8 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link legitRipple"><i class="bi bi-chevron-right"></i> <span>System configuration</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="System configuration">
-								<li class="nav-item"><a href="/settings/{{user.uuid}}" class="nav-link legitRipple"><i class="bi bi-toggles2"></i>Settings</a></li>
-								<li class="nav-item"><a href="/email/{{user.uuid}}" class="nav-link legitRipple"><i class="bi bi-envelope"></i>Email</a></li>
+								<li class="nav-item"><a href="/settings/{{user.uuid}}/" class="nav-link legitRipple"><i class="bi bi-toggles2"></i>Settings</a></li>
+								<li class="nav-item"><a href="/email/{{user.uuid}}/" class="nav-link legitRipple"><i class="bi bi-envelope"></i>Email</a></li>
 							</ul>
 						</li>						
 				 </ul>
@@ -403,4 +429,8 @@
  
 
 
-<div id="gtx-trans" style="position: absolute; left: 135px; top: 377.958px;"><div class="gtx-trans-icon"></div></div></body></html>
+<div id="gtx-trans" style="position: absolute; left: 135px; top: 377.958px;">
+  <div class="gtx-trans-icon"></div>
+</div>
+</body>
+</html>
