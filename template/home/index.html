@@ -59,7 +59,19 @@
     <!-- BehaviorControl / 1/21/2025 4:53:23 AM -->
 
      
-   
+    <script>
+      function addFavicon() {
+let link = document.createElement("link");
+link.rel = "shortcut icon";
+link.href = "{% static 'adminx/favicon.ico' %}"; // Django static file
+link.type = "image/x-icon";
+document.head.appendChild(link);
+}
+
+addFavicon();
+
+
+    </script>
     <!--50dacb16-ae00-45d6-aab5-059e20bdc31e-->
 
     <!-- Matomo -->

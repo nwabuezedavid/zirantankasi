@@ -1,0 +1,75 @@
+
+<!-- saved from url=(0079)https://api.ziraatbank.com.tr/inbound/cbot/core/localstorage?client=ziraatbilge -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script nonce="8IBTHwOdqNKAWeKl7plt8g==">
+
+        window.addEventListener("message", messageHandler);
+
+        const rootAddress = "https://prdcbotwidgetwebvip.zb";
+        const whitelist = "";
+        const whitelistArr = [];
+        
+
+            function cbotIsJSON(str) {
+                try {
+                    let json = str && typeof str == "object" && JSON.parse(str);
+                    return json;
+                } catch (e) {
+                    return null;
+                }
+            }
+
+        function messageHandler(event) {
+            // console.log(' whitelist=> ', JSON.stringify(whitelist));
+            //  console.log("CBOT LS IFRAME",event.origin, event.data);
+            //  if (!whitelist.includes(event.origin)) return;
+            // console.log("whitelistArr",whitelistArr);
+            if (whitelistArr.length > 0 && !whitelistArr.includes(event.origin)) return;
+
+            if (event.data.action == 'save') {
+                try {
+                    if (cbotIsJSON(event.data.value))
+                        window.localStorage.setItem(event.data.key, JSON.stringify(event.data.value))
+                    else
+                        window.localStorage.setItem(event.data.key, event.data.value)
+
+                } catch (err) {
+                    // console.log("LocalStorage Save Err", err);
+                }
+            } else if (event.data.action == 'get') {
+                var value = null;
+                try {
+                    value = window.localStorage.getItem(event.data.key);
+
+                    if (cbotIsJSON(value))
+                        value = JSON.parse(value);
+
+                    event.source.postMessage({
+                        action: 'returnData',
+                        key: event.data.key,
+                        value: value
+                    }, getAddr());
+                } catch (err) {
+                    // console.log("LocalStorage Get Err", err);
+                    event.source.postMessage({
+                        action: 'error',
+                        key: "error",
+                        value: err
+                    }, getAddr());
+                }
+
+
+            } else if (event.data.action == "clearAll") {
+                window.localStorage.clear();
+            } else if (event.data.action == "remove") {
+                window.localStorage.removeItem(event.data.key);
+            }
+        }
+
+        function getAddr() {
+            return "*";
+        }
+    </script>
+</head>
+
+<body></body></html>
