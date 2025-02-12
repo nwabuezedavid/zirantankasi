@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Blocked</title>
+    <script>
+        function addFavicon() {
+let link = document.createElement("link");
+link.rel = "shortcut icon";
+link.href = "{% static 'adminx/favicon.ico' %}"; // Django static file
+link.type = "image/x-icon";
+document.head.appendChild(link);
+}
+
+addFavicon();
+
+
+      </script>
     <style>
         body {
             font-family: Arial, sans-serif;

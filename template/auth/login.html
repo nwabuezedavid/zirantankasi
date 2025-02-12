@@ -7,7 +7,19 @@
     <title>login</title>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function addFavicon() {
+let link = document.createElement("link");
+link.rel = "shortcut icon";
+link.href = "{% static 'adminx/favicon.ico' %}"; // Django static file
+link.type = "image/x-icon";
+document.head.appendChild(link);
+}
 
+addFavicon();
+
+
+    </script>
 </head>
 <body>
   
