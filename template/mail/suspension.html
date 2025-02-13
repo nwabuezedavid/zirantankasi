@@ -88,13 +88,13 @@
         </div>
         <div class="content">
             <p>Hi {{user.username}},</p>
-            <p>We regret to inform you that your account has been temporarily block due to the following reason(s):</p>
-            <div class="reason-box">
-                <p>We regret to inform you that your account has been block due to a violation of our <a href="{% url 'policy' %}" target="_blank">Terms and Conditions</a>. </p>
-            </div>
-            <p>If you believe this is a mistake or if you have any questions, please contact our support team.</p>
+            <p>We regret to inform you that your account has been temporarily blocked due to the following reason(s):</p>  
+            <div class="reason-box">  
+                <p>Your account has been blocked due to a violation of our <a href="{% url 'policy' %}" target="_blank">Terms and Conditions</a>. We encourage you to review the terms to ensure compliance.</p>  
+            </div>  
+            <p>If you believe this action was taken in error or if you have any questions, please contact our support team.</p>  
             <p><a href="mailto:{{site.email}}">Contact Support</a></p>
-        </div>
+            
         <div class="footer">
             <p>If you didn't request this suspension, please reach out to us immediately.</p>
             <p>Need help? Contact us at <a href="mailto:{{site.email}}">{{site.email}}</a></p>
