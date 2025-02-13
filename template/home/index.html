@@ -26,7 +26,20 @@
     <meta property="og:image" content="{% static 'adminx/favicon.ico' %}">
     <meta property="og:url" content="https://www.ankazirankasi.com">
     <meta property="og:type" content="website">
-
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Ankazirankasi",
+          "url": "https://www.ankazirankasi.com",
+          "logo": "https://www.ankazirankasi.com/images/logo.png",
+          "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+123456789",
+              "contactType": "customer service"
+          }
+      }
+      </script>
     <!-- Twitter Card -->
     <meta name="twitter:card" content="{% static 'adminx/favicon.ico' %}">
     <meta name="twitter:title" content="Ankazirankasi - Best Solutions">
