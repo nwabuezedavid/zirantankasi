@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ankazirankasi - Your trusted source for [brief description of services/products]. Discover our top-quality solutions.">
+    <meta name="keywords" content="ankazirankasi, services, products, best solutions">
+    <meta name="author" content="Ankazirankasi">
+
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="Ankazirankasi - Premium Solutions">
+    <meta property="og:description" content="Your trusted source for [specific services/products].">
+    <meta property="og:image" content="{% static 'adminx/favicon.ico' %}">
+    <meta property="og:url" content="https://www.ankazirankasi.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="{% static 'adminx/favicon.ico' %}">
+    <meta name="twitter:title" content="Ankazirankasi - Best Solutions">
+    <meta name="twitter:description" content="Discover top-quality services from Ankazirankasi.">
+    <meta name="twitter:image" content="{% static 'adminx/favicon.ico' %}">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -22,7 +39,20 @@ addFavicon();
     </script>
 </head>
 <body>
-  
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ankazirankasi",
+        "url": "https://www.ankazirankasi.com",
+        "logo": "{% static 'adminx/favicon.ico' %}",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+123456789",
+            "contactType": "customer service"
+        }
+    }
+    </script>
 <style>
 body{
   background-image: url('{% static "main/western-union-desktop.jpg" %}')   ;
