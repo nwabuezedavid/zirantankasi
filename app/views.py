@@ -800,11 +800,10 @@ def aduseredit(request,pk):
                         conx={
                         "site":siteedit.objects.get(idx = 1),
                         "user" :profile     ,
-                        "item" :item     ,
-                        "item1" :item     ,
-                        "user2" :profile     ,
+                        "item" :loc     ,
+                         
                          }
-                        email_sending(request,"./mail/trans.html",conx,f" Debit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
+                        email_sending(request,"./mail/trans2.html",conx,f" Debit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
      }")
                         messages.success(request, ' Local transfer : credited  successfully ')
                         
@@ -814,11 +813,10 @@ def aduseredit(request,pk):
                     conx={
                         "site":siteedit.objects.get(idx = 1),
                         "user" :profile     ,
-                        "item" :item     ,
-                        "item1" :item     ,
-                        "user2" :profile     ,
+                        "item" :loc     ,
+                       
                          }
-                    email_sending(request,"./mail/trans.html",conx,f" credit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
+                    email_sending(request,"./mail/trans2.html",conx,f" credit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
      }")
                     messages.success(request, 'local transfer : created  successfully')
                 return redirect('aduseredit', pk=item.uuid)
@@ -835,11 +833,10 @@ def aduseredit(request,pk):
                         conx={
                         "site":siteedit.objects.get(idx = 1),
                         "user" :profile     ,
-                        "item" :item     ,
-                        "item1" :item     ,
-                        "user2" :profile     ,
+                        "item" :inters     ,
+                         
                          }
-                        email_sending(request,"./mail/trans.html",conx,f" Debit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
+                        email_sending(request,"./mail/tran2.html",conx,f" Debit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
      }")
                         messages.success(request, ' International : debit  successfully ')
                 if types == 'credit':
@@ -848,11 +845,10 @@ def aduseredit(request,pk):
                     conx={
                         "site":siteedit.objects.get(idx = 1),
                         "user" :profile     ,
-                        "item" :item     ,
-                        "item1" :item     ,
-                        "user2" :profile     ,
+                        "item" :inters     ,
+                         
                          }
-                    email_sending(request,"./mail/trans.html",conx,f" credit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
+                    email_sending(request,"./mail/trans2.html",conx,f" credit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
      }")
                     messages.success(request, ' International : credited  successfully ')
                 return redirect('aduseredit', pk=item.uuid)
