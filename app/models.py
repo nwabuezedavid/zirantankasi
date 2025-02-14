@@ -104,6 +104,9 @@ class Account(models.Model):
         combined_queryset2 = chain(self.intertransfer.all( )  ,self.localtransfer.all( ) )
         
         return combined_queryset2
+    def alltoritemcount(self):
+        combined_queryset2 = chain(self.intertransfer.all( )  ,self.localtransfer.all( ) )
+        return sum(1 for _ in combined_queryset2)  
 
 
 

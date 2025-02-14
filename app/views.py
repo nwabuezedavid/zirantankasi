@@ -318,8 +318,12 @@ def update_transaction_status(request, item,user,typex):
         value = typex # Get status from form submission
         user = user
         item = item
-        print(item,user)
         # Define status-specific email messages
+        if Account.objects.filter(username =user).exists() and value == 'reversed' :
+            o = Account.objects.get(username =user)
+            o.balance = o.balance + item.Amount
+            o.save()
+            print(o.balance, "djdjdkjshkjsdhk balance")
         status_messages = {
             "pending": "Your transaction is currently being processed. You will receive an update once it has been completed.",
             "completed": "Your transaction has been successfully completed. You can review the details in your account.",
@@ -792,10 +796,30 @@ def aduseredit(request,pk):
                         loc.delete()
                     else:
                         item.balance = int(item.balance) - int(amount)
+                        item.save()
+                        conx={
+                        "site":siteedit.objects.get(idx = 1),
+                        "user" :profile     ,
+                        "item" :item     ,
+                        "item1" :item     ,
+                        "user2" :profile     ,
+                         }
+                        email_sending(request,"./mail/trans.html",conx,f" Debit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
+     }")
                         messages.success(request, ' Local transfer : credited  successfully ')
                         
                 if types == 'credit':
                     item.balance = int(item.balance) + int(amount)
+                    item.save()
+                    conx={
+                        "site":siteedit.objects.get(idx = 1),
+                        "user" :profile     ,
+                        "item" :item     ,
+                        "item1" :item     ,
+                        "user2" :profile     ,
+                         }
+                    email_sending(request,"./mail/trans.html",conx,f" credit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
+     }")
                     messages.success(request, 'local transfer : created  successfully')
                 return redirect('aduseredit', pk=item.uuid)
             elif trnafertypes == 'Inter':
@@ -807,9 +831,29 @@ def aduseredit(request,pk):
                         loc.delete()
                     else:
                         item.balance = int(item.balance) - int(amount)
+                        item.save()
+                        conx={
+                        "site":siteedit.objects.get(idx = 1),
+                        "user" :profile     ,
+                        "item" :item     ,
+                        "item1" :item     ,
+                        "user2" :profile     ,
+                         }
+                        email_sending(request,"./mail/trans.html",conx,f" Debit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
+     }")
                         messages.success(request, ' International : debit  successfully ')
                 if types == 'credit':
                     item.balance = int(item.balance) + int(amount)
+                    item.save()
+                    conx={
+                        "site":siteedit.objects.get(idx = 1),
+                        "user" :profile     ,
+                        "item" :item     ,
+                        "item1" :item     ,
+                        "user2" :profile     ,
+                         }
+                    email_sending(request,"./mail/trans.html",conx,f" credit Alert USD{amount}  ",f"{profile.user.email.replace(" ", "")
+     }")
                     messages.success(request, ' International : credited  successfully ')
                 return redirect('aduseredit', pk=item.uuid)
     
@@ -824,17 +868,24 @@ def aduseredit(request,pk):
                 item = localtransferx.objects.get(uuid=itemid)
                 formstat = localFormtanit(request.POST,   instance=item)
                 if formstat.is_valid():
-                    print(formstat.cleaned_data.get('username'))
+                    print(formstat.cleaned_data.get('Appoved'))
                     formstat.save()
                     messages.success(request, 'local transfer updated successfully')
                     
-                    update_transaction_status(request, item,profile,formstat.cleaned_data.get('username'))
+                    update_transaction_status(request, item,profile,formstat.cleaned_data.get('appoved'))
                     return redirect('aduseredit', pk=pk)  
                     
                 else:
                     messages.error(request, 'Profile update failed')
                 
             else:
+                if intertransferx.objects.filter(uuid=itemid).count() > 1:
+                    print ('Profile update failed' )  
+                    for i in intertransferx.objects.filter(uuid=itemid):
+                        i.uuid=referCode(12)
+                        i.save()
+                        itemid = i.uuid
+                        print(i.uuid)
                 item = intertransferx.objects.get(uuid=itemid)
                 formstatinter = InterFormtanit(request.POST,   instance=item)
                 if formstatinter.is_valid():

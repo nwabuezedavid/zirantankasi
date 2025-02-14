@@ -164,7 +164,7 @@
                     {% for i in user.inter.all %}
 
                     <tr role="row" class="odd">
-                      <td class="sorting_1">{{i.id}}.</td>
+                      <td class="sorting_1">{{ forloop.counter }}</td>
                       <td>{{i.accname}}</td>
                       <td>{{i.accnum}}</td>
                       <td>USD {{i.Amount}}</td>

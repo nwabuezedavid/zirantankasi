@@ -212,7 +212,7 @@
                 <tbody>
                                {% for i in item.alltoritem %}
                                <tr role="row" class="even" id="sadas{{xi.uuid}}">
-                                <td class="sorting_1">2.</td>
+                                <td class="sorting_1">{{ forloop.counter }}</td>
                                 <td>USD{{i.Amount}}</td>
                                 <td> You have requested a wire transfer of Amt:USD{{i.Amount}}, to Acct:USD{{i.accnum}}
                         </td>
@@ -274,8 +274,7 @@
         
                             </tr>
                                {% endfor %}
-                <tr class="odd"><td valign="top" colspan="7" class="dataTables_empty">No data available in table</td></tr></tbody>                    
-            </table></div><div class="datatable-footer"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 0 to 0 of 0 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">←</a><span></span><a class="paginate_button next disabled" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" id="DataTables_Table_0_next">→</a></div></div></div>
+                    </table></div><div class="datatable-footer"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 0 to 0 of {{item.alltoritemcount}} entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">←</a><span></span><a class="paginate_button next disabled" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" id="DataTables_Table_0_next">→</a></div></div></div>
         </div>
     </div>
 </div>

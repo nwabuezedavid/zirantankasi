@@ -38,7 +38,7 @@
                         {% for i in user.alluser.all %}       
                         </tr><tr role="row" class="odd">
                             <td class="sorting_1">9.</td>
-                            <td>{{i.uuid}}</td>
+                            <td>{{ forloop.counter }}</td>
                             <td>{{i.username}}</td>
                             <td>{{i.Accountnum}}</td>
                             <td>{{i.email}}</td>
