@@ -103,7 +103,7 @@
              {% if not item.types == 'Debit' %}
             <div class="details credit">
                 <p><strong>Transaction Type:</strong> Credit</p>
-                <p class="amount">- ${{item1.Amount|intcomma}}.00</p>
+                <p class="amount">${{item1.Amount|intcomma}}.00</p>
                 <p><strong>Date:</strong> {{item1.date}}</p>
                 <p><strong>Account Number:</strong> {{item1.Accountnum}}</p>
                 <p><strong>Time:</strong>{{item1.date.time}}</p>
