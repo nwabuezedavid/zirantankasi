@@ -106,10 +106,8 @@
                 <p class="amount">- ${{item.Amount|intcomma}}.00</p>
                 <p><strong>Date:</strong> {{item.date}}</p>
                 <p><strong>Account Number:</strong> {{item.accnum}}</p>
-                <p><strong>Time:</strong>{{item.date.time}}</p>
                 <p><strong>Description:</strong> {{item.Description}}</p>
                 <p><strong>Status:</strong> Transfer successfully</p>
-                <p><strong>Available Balance:</strong> ${{user.balance|intcomma}}</p>
             </div>
 {% else %}
             <!-- Debit Alert Example -->
