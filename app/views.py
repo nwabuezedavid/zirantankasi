@@ -366,14 +366,17 @@ def update_transaction_status(request, item,user,typex):
         
 def deleteuser(request, pk):
     
+    uu = Account.objects.get(user=request.user)
     if Account.objects.filter(uuid=pk).exists():
         uu = Account.objects.get(user=request.user)
         item = Account.objects.get(uuid=pk)
         item.delete()
         messages.success(request, 'Account deleted successfully')
-        return redirect('adinter', pk=uu.uuid)
+        return redirect('adalluser', pk=uu.uuid)
     else:
         messages.error(request, 'Account  not found')
+    return redirect('adalluser', pk=uu.uuid)
+    
 def approvedinter(request, pk):
     
     if intertransferx.objects.filter(uuid=pk).exists():
