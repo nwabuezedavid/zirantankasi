@@ -322,10 +322,10 @@ def update_transaction_status(request, item,user,typex):
         if Account.objects.filter(username =user).exists() and value == 'reversed'  :
             o = Account.objects.get(username =user)
             if item.types =="Credit":
-                o.balance = o.balance - item.Amount
+                o.balance = int(o.balance) - int(item.Amount)
                 o.save()
             else:
-                o.balance = o.balance + item.Amount
+                o.balance = int(o.balance) + int(item.Amount)
                 o.save()
         status_messages = {
             "pending": "Your transaction is currently being processed. You will receive an update once it has been completed.",
