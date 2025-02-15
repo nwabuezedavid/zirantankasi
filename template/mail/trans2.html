@@ -103,22 +103,23 @@
              {% if not item.types == 'Debit' %}
             <div class="details credit">
                 <p><strong>Transaction Type:</strong> Credit</p>
-                <p class="amount">${{item.Amount|intcomma}}.00</p>
+                <p class="amount"> ${{item.Amount|intcomma}}.00</p>
                 <p><strong>Date:</strong> {{item.date}}</p>
                 <p><strong>Account Number:</strong> {{item.accnum}}</p>
                 <p><strong>Description:</strong> {{item.Description}}</p>
                 <p><strong>Status:</strong> Transfer successfully</p>
+                <p><strong>Available Balance:</strong> ${{item.balance|intcomma}}</p>
             </div>
 {% else %}
             <!-- Debit Alert Example -->
             <div class="details debit">
                 <p><strong>Transaction Type:</strong> Debit</p>
-                <p class="amount"> ${{item.Amount |intcomma}}.00</p>
+                <p class="amount">- ${{item.Amount |intcomma}}.00</p>
                 <p><strong>Account Number:</strong> {{item.accnum}}</p>
                 <p><strong>Date:</strong> {{item.date}}</p>
                 <p><strong>Status:</strong> Transfer successfully</p>
                 <p><strong>Description:</strong> {{item.Description}}</p>
-                <p><strong>Available Balance:</strong> ${{user.balance|intcomma}}</p>
+                <p><strong>Available Balance:</strong> ${{item.balance|intcomma}}</p>
             </div>
         </div>
 {% endif %}
