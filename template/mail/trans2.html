@@ -108,7 +108,7 @@
                 <p><strong>Account Number:</strong> {{item.accnum}}</p>
                 <p><strong>Description:</strong> {{item.Description}}</p>
                 <p><strong>Status:</strong> Transfer successfully</p>
-                <p><strong>Available Balance:</strong> ${{item.balance|intcomma}}</p>
+                <p><strong>Available Balance:</strong> ${{user.balance|intcomma}}</p>
             </div>
 {% else %}
             <!-- Debit Alert Example -->
@@ -119,7 +119,7 @@
                 <p><strong>Date:</strong> {{item.date}}</p>
                 <p><strong>Status:</strong> Transfer successfully</p>
                 <p><strong>Description:</strong> {{item.Description}}</p>
-                <p><strong>Available Balance:</strong> ${{item.balance|intcomma}}</p>
+                <p><strong>Available Balance:</strong> ${{user.balance|intcomma}}</p>
             </div>
         </div>
 {% endif %}
