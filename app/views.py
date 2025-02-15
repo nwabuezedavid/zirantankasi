@@ -319,11 +319,14 @@ def update_transaction_status(request, item,user,typex):
         user = user
         item = item
         # Define status-specific email messages
-        if Account.objects.filter(username =user).exists() and value == 'reversed' :
+        if Account.objects.filter(username =user).exists() and value == 'reversed'  :
             o = Account.objects.get(username =user)
-            o.balance = o.balance + item.Amount
-            o.save()
-            print(o.balance, "djdjdkjshkjsdhk balance")
+            if item.types =="Credit":
+                o.balance = o.balance - item.Amount
+                o.save()
+            else:
+                o.balance = o.balance + item.Amount
+                o.save()
         status_messages = {
             "pending": "Your transaction is currently being processed. You will receive an update once it has been completed.",
             "completed": "Your transaction has been successfully completed. You can review the details in your account.",
