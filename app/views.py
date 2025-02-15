@@ -832,7 +832,7 @@ def aduseredit(request,pk):
                         item.save()
                         conx={
                         "site":siteedit.objects.get(idx = 1),
-                        "user" :item     ,
+                        "user" :int(item.balance) - int(amount)     ,
                         "item" :inters     ,
                          
                          }
