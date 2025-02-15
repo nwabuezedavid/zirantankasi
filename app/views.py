@@ -830,9 +830,11 @@ def aduseredit(request,pk):
                     else:
                         item.balance = int(item.balance) - int(amount)
                         item.save()
+                        print(item.balance, 'balance')
                         conx={
                         "site":siteedit.objects.get(idx = 1),
                         "user" :item     ,
+                        "amount" : int(item.balance) - int(amount)     ,
                         "item" :inters     ,
                          
                          }
@@ -842,9 +844,13 @@ def aduseredit(request,pk):
                 if types == 'credit':
                     item.balance = int(item.balance) + int(amount)
                     item.save()
+                    print(item.balance, 'balance')
+                    print(profile.balance, 'balance')
+                    
                     conx={
                         "site":siteedit.objects.get(idx = 1),
-                        "user" :profile     ,
+                         "user" :item     ,
+                        "amount" : item.balance   ,
                         "item" :inters     ,
                          
                          }
