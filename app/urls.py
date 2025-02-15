@@ -40,6 +40,7 @@ urlpatterns = [
     
     # tiketdelet
     path("tiketdelet/<pk>/",tiketdelet, name="tiketdelet"),
+    path("deleteuser/<pk>/",deleteuser, name="deleteuser"),
     path("approvedlocal/<pk>/",approvedlocal, name="approvedlocal"),
     path("deletelocal/<pk>/",deletelocal, name="deletelocal"),
     path("banners/<pk>/",banners, name="banners"),
