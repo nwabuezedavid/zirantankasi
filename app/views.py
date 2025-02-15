@@ -465,7 +465,7 @@ def inter(request,pk):
         Bankaddress =request.POST['Bankaddress']
         Amount =request.POST['Amount']
         Description =request.POST['Description']
-        if int(user.balance) <= int(Amount)+1 and  swiftcode and bankname and accnum and accname and Bankaddress and Amount and Description:
+        if  int(Amount) <= int(user.balance)  and  swiftcode and bankname and accnum and accname and Bankaddress and Amount and Description:
             messages.error(request, 'Insufficient balance')
         else:
             i = intertransferx.objects.create(
@@ -588,7 +588,7 @@ def local(request,pk):
         amount = request.POST['amount']
         pin = request.POST['pin']
         Discription = request.POST['Discription']
-        if int(user.balance) <= int(amount)+1:
+        if  int(amount) <= int(user.balance):
             messages.error(request, 'Insufficient balance')
         if pin == user.pin:
             if Account.objects.filter(Accountnum=acct_no).exists():
