@@ -370,6 +370,7 @@ def deleteuser(request, pk):
     if Account.objects.filter(uuid=pk).exists():
         uu = Account.objects.get(user=request.user)
         item = Account.objects.get(uuid=pk)
+        User.objects.filter(username=item.user.username).delete()
         item.delete()
         messages.success(request, 'Account deleted successfully')
         return redirect('adalluser', pk=uu.uuid)
