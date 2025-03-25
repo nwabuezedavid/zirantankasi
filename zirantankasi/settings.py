@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'zirantankasi.wsgi.application'
 
 import  os 
 from urllib.parse import urlparse
-tmpPostgres = urlparse('postgres://avnadmin:AVNS_0OjRz2DfUKJEixA3mR2@pg-363e4bc0-nwabuezedavid333-2f45.k.aivencloud.com:27439/defaultdb?sslmode=require')
+tmpPostgres = urlparse('postgresql://neondb_owner:npg_FaPd9CU0lsAM@ep-soft-waterfall-a5isdrzw-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require')
 
 DATABASES = {
     'default': {
@@ -100,7 +100,7 @@ DATABASES = {
         'USER': tmpPostgres.username,
         'PASSWORD': tmpPostgres.password,
         'HOST': tmpPostgres.hostname,
-        'PORT': 27439,
+        'PORT': 5432,
     }
 }
 # Password validation

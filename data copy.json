@@ -1,0 +1,2594 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2025-01-22T10:44:51.848Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "zirantankasi",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2025-01-22T10:46:05.579Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "zirantankasi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image1\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2025-01-22T10:49:33.015Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "3",
+      "object_repr": "NWABUEZE",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2025-01-22T10:49:33.107Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "nwabuezedavid013@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2025-01-22T10:51:45.006Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "nwabuezedav",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2025-01-22T10:52:24.575Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "4",
+      "object_repr": "nwabuezedav",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2025-01-22T21:10:23.600Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "nwabuezeda",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Balance\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2025-01-22T21:37:29.358Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "client e0be1d48cb58",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Appoved\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2025-01-26T11:15:52.074Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "7",
+      "object_repr": "adminxx",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2025-01-26T11:16:45.761Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "adminxx",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is verified\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2025-01-26T13:45:18.744Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "8",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2025-01-26T13:45:18.807Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "8",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2025-01-26T13:45:19.419Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "8",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2025-01-26T13:51:59.762Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "9",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2025-01-26T13:57:02.899Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "10",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2025-01-26T14:09:09.867Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "11",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2025-01-26T14:13:39.346Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "12",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2025-01-26T14:20:22.466Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "13",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2025-01-26T14:24:31.486Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "14",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2025-01-26T14:31:24.068Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Chidi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Balance\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2025-01-27T07:39:36.748Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is verified\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2025-01-29T10:18:07.290Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2025-01-29T10:19:47.415Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "15",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2025-01-29T10:30:54.229Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "19",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2025-01-29T10:30:54.317Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "18",
+      "object_repr": "nwabuezed",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2025-01-29T10:30:54.404Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "5",
+      "object_repr": "nwabuezeda",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2025-01-29T10:30:54.491Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "16",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2025-01-29T10:31:15.854Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "17",
+      "object_repr": "Passwosasrd",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2025-01-29T10:37:07.960Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "20",
+      "object_repr": "nwabuezedavid",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2025-01-29T10:37:08.050Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "21",
+      "object_repr": "nwabuezedavid3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2025-01-29T10:39:37.228Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "22",
+      "object_repr": "nwabuezedavid0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2025-01-29T10:42:49.044Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "23",
+      "object_repr": "nwabuezedavid0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2025-01-29T10:47:00.985Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "24",
+      "object_repr": "nwabuezedavid",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2025-01-29T10:47:01.074Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "25",
+      "object_repr": "nwabuezedavid01",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2025-01-29T11:04:58.835Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "Chidi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is verified\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2025-02-01T07:53:55.011Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "7",
+      "object_repr": "adminxx",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2025-02-01T07:53:55.173Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "28",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2025-02-01T07:53:55.312Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "27",
+      "object_repr": "nwabuezedavid0",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2025-02-01T07:53:55.479Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "26",
+      "object_repr": "nwabuezedavid01",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2025-02-01T08:05:50.058Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "29",
+      "object_repr": "nwabuezed",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2025-02-01T08:05:50.227Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "30",
+      "object_repr": "nwabuezeda s",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2025-02-01T08:19:06.064Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "31",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2025-02-01T08:21:05.685Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "zirantankasi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2025-02-01T08:24:46.061Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "31",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2025-02-01T08:29:30.777Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Balance\", \"Is verified\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2025-02-01T08:37:42.357Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is verified\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2025-02-01T08:41:25.594Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2025-02-01T08:42:37.999Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "28",
+      "object_repr": "nwabuezedass",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2025-02-01T09:01:35.061Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "zirantankasi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Host\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2025-02-01T09:05:03.300Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "32",
+      "object_repr": "nwabuezedass",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2025-02-01T09:05:03.460Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "31",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2025-02-01T09:13:24.193Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "29",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is verified\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2025-02-01T09:20:07.743Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "29",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2025-02-01T09:21:35.473Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "29",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is verified\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2025-02-01T10:16:39.264Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "33",
+      "object_repr": "nwabuezedavi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2025-02-03T09:39:16.466Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "34",
+      "object_repr": "nwabuezedavid013@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2025-02-03T09:41:11.314Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "35",
+      "object_repr": "nwabuez",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2025-02-03T09:45:04.524Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "36",
+      "object_repr": "Username",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2025-02-03T10:12:47.778Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "39",
+      "object_repr": "michae",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2025-02-03T10:12:47.867Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "38",
+      "object_repr": "nwabuezedavid01",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2025-02-03T10:12:47.955Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "37",
+      "object_repr": "Username",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2025-02-03T10:17:34.980Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "40",
+      "object_repr": "Firstname",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2025-02-03T10:40:35.863Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "41",
+      "object_repr": "Firstname",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2025-02-03T10:40:35.952Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "42",
+      "object_repr": "sadas",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2025-02-03T10:58:51.908Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "43",
+      "object_repr": "Username",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2025-02-03T16:50:08.685Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "42",
+      "object_repr": "Chidi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Balance\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2025-02-08T11:27:19.359Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "46",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2025-02-08T11:27:37.597Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "47",
+      "object_repr": "news",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2025-02-08T11:27:37.684Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "44",
+      "object_repr": "nwabue",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2025-02-08T11:27:37.771Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "45",
+      "object_repr": "nwabuezex",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2025-02-08T14:02:45.202Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "45",
+      "object_repr": "Chidi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Balance\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2025-02-08T14:25:38.699Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "48",
+      "object_repr": "asdas",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2025-02-08T14:26:15.411Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "44",
+      "object_repr": "asdas",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2025-02-08T15:00:13.496Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "44",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"Password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2025-02-08T15:12:01.781Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "zirantankasi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Owneremail\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2025-02-10T19:54:57.413Z",
+      "user": 48,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "zirantankasi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Address\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2025-02-15T08:58:39.214Z",
+      "user": 48,
+      "content_type": 4,
+      "object_id": "50",
+      "object_repr": "adminsss",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2025-02-15T08:58:39.302Z",
+      "user": 48,
+      "content_type": 4,
+      "object_id": "49",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2025-02-15T10:07:06.754Z",
+      "user": 48,
+      "content_type": 4,
+      "object_id": "51",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2025-02-15T11:09:02.453Z",
+      "user": 48,
+      "content_type": 4,
+      "object_id": "53",
+      "object_repr": "Chidi",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2025-03-17T16:50:57.212Z",
+      "user": 48,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Ziraat Bankasi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Phone\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2025-03-17T16:54:04.945Z",
+      "user": 48,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Ziraat Bankasi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Phone\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2025-03-17T17:01:53.878Z",
+      "user": 48,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Ziraat Bankasi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Country\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add siteedit",
+      "content_type": 7,
+      "codename": "add_siteedit"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change siteedit",
+      "content_type": 7,
+      "codename": "change_siteedit"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete siteedit",
+      "content_type": 7,
+      "codename": "delete_siteedit"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view siteedit",
+      "content_type": 7,
+      "codename": "view_siteedit"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add account",
+      "content_type": 8,
+      "codename": "add_account"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change account",
+      "content_type": 8,
+      "codename": "change_account"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete account",
+      "content_type": 8,
+      "codename": "delete_account"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view account",
+      "content_type": 8,
+      "codename": "view_account"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add intertransferx",
+      "content_type": 9,
+      "codename": "add_intertransferx"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change intertransferx",
+      "content_type": 9,
+      "codename": "change_intertransferx"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete intertransferx",
+      "content_type": 9,
+      "codename": "delete_intertransferx"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view intertransferx",
+      "content_type": 9,
+      "codename": "view_intertransferx"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add localtransferx",
+      "content_type": 10,
+      "codename": "add_localtransferx"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change localtransferx",
+      "content_type": 10,
+      "codename": "change_localtransferx"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete localtransferx",
+      "content_type": 10,
+      "codename": "delete_localtransferx"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view localtransferx",
+      "content_type": 10,
+      "codename": "view_localtransferx"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add subjecttiket",
+      "content_type": 11,
+      "codename": "add_subjecttiket"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change subjecttiket",
+      "content_type": 11,
+      "codename": "change_subjecttiket"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete subjecttiket",
+      "content_type": 11,
+      "codename": "delete_subjecttiket"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view subjecttiket",
+      "content_type": 11,
+      "codename": "view_subjecttiket"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$4Z3VZH9emMfRmoBe8lyMiw$QatzDzhfM4+8n/GXOMmkNnXNGXHmbfbSa0lJM9B6j7E=",
+      "last_login": "2025-03-25T09:41:41.541Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-01-22T10:29:33.345Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 48,
+    "fields": {
+      "password": "https://www.ankazirankasi.com/login/",
+      "last_login": "2025-03-10T14:53:43.278Z",
+      "is_superuser": true,
+      "username": "asdas",
+      "first_name": "",
+      "last_name": "",
+      "email": "nwabuezedavid013@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-02-08T11:28:21Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 52,
+    "fields": {
+      "password": "id333@gmail.com",
+      "last_login": "2025-02-15T09:39:52.350Z",
+      "is_superuser": false,
+      "username": "nwabuezedav",
+      "first_name": "",
+      "last_name": "",
+      "email": "nwabuezedavid333@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-02-15T09:39:01.814Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 54,
+    "fields": {
+      "password": "vid333@gmail.com",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "nwabuezedavid333@gmail.com",
+      "first_name": "",
+      "last_name": "",
+      "email": "nwabuezedavid333@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-02-15T11:04:54.021Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 55,
+    "fields": {
+      "password": "Chibuike222",
+      "last_login": "2025-03-08T21:02:34.170Z",
+      "is_superuser": false,
+      "username": "Chidi",
+      "first_name": "",
+      "last_name": "",
+      "email": "aydinhuseyin395@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-02-15T11:09:53.429Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 89,
+    "fields": {
+      "password": "4er9f5s%uEJ",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Anya99Et",
+      "first_name": "",
+      "last_name": "",
+      "email": "99@dianabykiris.fun",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-03-15T04:56:46.001Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": { "app_label": "admin", "model": "logentry" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": { "app_label": "auth", "model": "permission" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": { "app_label": "auth", "model": "group" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": { "app_label": "auth", "model": "user" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": { "app_label": "contenttypes", "model": "contenttype" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": { "app_label": "sessions", "model": "session" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": { "app_label": "app", "model": "siteedit" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": { "app_label": "app", "model": "account" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": { "app_label": "app", "model": "intertransferx" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": { "app_label": "app", "model": "localtransferx" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": { "app_label": "app", "model": "subjecttiket" }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "0xlk37uoi0k83946c302bprsff52ik1w",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSFDYSjj0r3fQBgeUjU0Ke3K-O_apAvd3nPOfQkftrX6refFT0mchXHi9DtyiI_cdpLuod1mGee2LhPLXZEH7fI6p_y8HO7fQQ29fmsmQyqBVaiscRapABiMTEgDFkc6RwBNg4agmQqPWKI2Y8KkADizeH8A0nE3Hg:1tjEOH:j2sFx_-8nH7M4bZMXrfAoQhHjYtCg87HqvhfK-9eGOI",
+      "expire_date": "2025-03-01T09:23:13.462Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "2o0nijm7915goxy5m4kzaeopxta22vb6",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pDSwgAu3fcMZIAZqRqalHZlvLtt0oVu_3vvv0XAbS1ha7SEKYur0F5cfseI6Un1IPmB9T7LNNd1maI8FHnSJsc50-t2un8HBVvZa0CgQUXVEzubDJBOoMgno8AMzvaGkTEysFVA3LG23nW7Ho0BJpvF5wsR5jhU:1tglHu:lMOEVI-hnAgty5Z6bs8D-NsEmUXDe2IctidpXHGFLCA",
+      "expire_date": "2025-02-22T13:54:26.857Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "3k24kvpxe3y0w8rrbl2jl5zao0myidb6",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpcwZrvWtwANlSnFSIu0OkFNC-mXkvlmBba9pGWdJM7MwkO_1uGfBR2g7oDu3WOfa2LnPmu8IPOvjUqTwvh_t3UGHUbw0iOpG18ehsMBE0aUMkjQpXpZAIDEawwWkX0ElLVnukEkP2XqDNmr0_zhQ3fQ:1td56c:UbouIiRFDPilqGqT9Cu06w-HTfkaID35Zjjg6tfNzOk",
+      "expire_date": "2025-02-12T10:15:34.017Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "5mvkkvkk1dbl2flw3uurf677noo76qvl",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpcwZrvWtwANlSnFSIu0OkFNC-mXkvlmBba9pGWdJM7MwkO_1uGfBR2g7oDu3WOfa2LnPmu8IPOvjUqTwvh_t3UGHUbw0iOpG18ehsMBE0aUMkjQpXpZAIDEawwWkX0ElLVnukEkP2XqDNmr0_zhQ3fQ:1te9ge:9T76l0JGTCR_ka8NcPyOOGmygvn8thuG_RkXzQMq72Q",
+      "expire_date": "2025-02-15T09:21:12.170Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "8j3efk0xaj935miiscs1xwfwixey6p8u",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pDSwkBduu8ZyAAzUjWQlHZlvLtt0oVu_3vvv4XHbc1-a7T4OYmr0CAuv2PA-KRykPTAcq8y1rIuc5CHIk_a5FQTvW6n-3eQseW9BgQaVFA9sbPRAOkIisZoFJjB2d4wMgYGtgqIO9Z2dN2uB2OAySbx-QIQGzhR:1tezUr:FfiFbrCzdmWgoCuZgIj5FQ8iXcWPnr2qsNgrC0wRjqw",
+      "expire_date": "2025-02-17T16:40:29.999Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "9quuip4y2fug692ezl6aw434v624wcph",
+    "fields": {
+      "session_data": ".eJxVjEEOgjAQRe_StWkoMNPi0j1naKbtjEVNSSisjHcXEha6_e-9_1aetjX7rfLip6SuyoC6_I6B4pPLQdKDyn3WcS7rMgV9KPqkVY9z4tftdP8OMtW810jInQmmZXE2AnIf0fAQwSB0zrYgJBQExRpkaaS3g2t2PQCgsE3q8wUNtDhN:1tc3cK:aOj7TVrR0rIFYAeNpIu7GF9p8RYMVh5UzO73_DuPROo",
+      "expire_date": "2025-02-09T14:28:04.046Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "bc4kmlalob0kq4h93lh7w7advdlgjzcd",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pABBhSX7nsGMjAgVUOT0q6MdzckXej2v_f-WwTatxr2ntcws7gKC-L0O0ZKz9wG4Qe1-yLT0rZ1jnIo8qBdTgvn1-1w_w4q9TpqKsZ4RoVYwPiYokY01josiZW5nAuw00iJPCeF5LIrGrSFrJX1BOLzBQUqN74:1titn5:_arqIf4rFZgAFWe1Cmb7r3aMnmWNOnXrrZZkC7DAfMs",
+      "expire_date": "2025-02-28T11:23:27.460Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ch27b1o5s42wochmgsk4feomu9i6x7td",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpcwZrvWtwANlSnFSIu0OkFNC-mXkvlmBba9pGWdJM7MwkO_1uGfBR2g7oDu3WOfa2LnPmu8IPOvjUqTwvh_t3UGHUbw0iOpG18ehsMBE0aUMkjQpXpZAIDEawwWkX0ElLVnukEkP2XqDNmr0_zhQ3fQ:1tx0mz:ZGjSVvskXWKncjo1wxNGgXpKPD9RJexbz8JiV9EMbBM",
+      "expire_date": "2025-04-08T09:41:41.657Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "cwb4icxvu6o42n2zs3u70a753iis51fl",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pBCy0Bduu8ZyAAzUjWQlHZlvLtt0oVu_3vvv4XHbc1-a7T4OYmr0E5cfseA8UnlIOmB5V5lrGVd5iAPRZ60yakmet1O9-8gY8t7DQjUq6A0sbPRAA0RFI3RKDC9s9owMgYGtgqIOx7s6LpdD8YAk03i8wUQGThR:1td5tn:1ZHe8tZFdckeICJIDipZlfYExMnTwWkRp0mTaKsHKSs",
+      "expire_date": "2025-02-12T11:06:23.529Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "efh881euiy4ki4bycg2ekwb1p8gzdhj8",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpcwZrvWtwANlSnFSIu0OkFNC-mXkvlmBba9pGWdJM7MwkO_1uGfBR2g7oDu3WOfa2LnPmu8IPOvjUqTwvh_t3UGHUbw0iOpG18ehsMBE0aUMkjQpXpZAIDEawwWkX0ElLVnukEkP2XqDNmr0_zhQ3fQ:1tqopQ:PVrb_qMh3uUOMGnm2enJjIX0zSQZN2xRmVCtCLc9_ww",
+      "expire_date": "2025-03-22T07:42:36.285Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "he71rhgelu0qlp5dl3bjiynj38rw0tl6",
+    "fields": {
+      "session_data": ".eJxVjEEOgjAQRe_StWkoMNPi0j1naKbtjEVNSSisjHcXEha6_e-9_1aetjX7rfLip6SuCkBdfsdA8cnlIOlB5T7rOJd1mYI-FH3Sqsc58et2un8HmWreayTkzgTTsjgbAbmPaHiIYBA6Z1sQEgqCYg2yNNLbwTW7HgBQ2Cb1-QIQHDhR:1tjGP7:czKFCfed8oCGGrsJ_gFQGBL37aMKEa42BhfccvHzWl0",
+      "expire_date": "2025-03-01T11:32:13.371Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "hw0iqwp5w1727cir28a2xtw1544zdjxy",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSFDYSjj0r3fQBgeUjU0Ke3K-O_apAvd3nPOfQkftrX6refFT0mchXHi9DtyiI_cdpLuod1mGee2LhPLXZEH7fI6p_y8HO7fQQ29fmsmQyqBVaiscRapABiMTEgDFkc6RwBNg4agmQqPWKI2Y8KkADizeH8A0nE3Hg:1thWZ9:HexyfU2Yu2_cEtT3e8lCNqAX8FfATpDDWFJOKz-U_ns",
+      "expire_date": "2025-02-24T16:23:23.596Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ixofkd4xh3qkocs43xphoddqixglsoca",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpcwZrvWtwANlSnFSIu0OkFNC-mXkvlmBba9pGWdJM7MwkO_1uGfBR2g7oDu3WOfa2LnPmu8IPOvjUqTwvh_t3UGHUbw0iOpG18ehsMBE0aUMkjQpXpZAIDEawwWkX0ElLVnukEkP2XqDNmr0_zhQ3fQ:1tc2wa:fEtuMmdrMxc9c97DGhFrGKueZJn--4nJ4z62NzrD5H8",
+      "expire_date": "2025-02-09T13:44:56.490Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "kuymf5dmigqfmwyi9o5mg4zi43rpavhk",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSFDYSjj0r3fQBgeUjU0Ke3K-O_apAvd3nPOfQkftrX6refFT0mchXHi9DtyiI_cdpLuod1mGee2LhPLXZEH7fI6p_y8HO7fQQ29fmsmQyqBVaiscRapABiMTEgDFkc6RwBNg4agmQqPWKI2Y8KkADizeH8A0nE3Hg:1trGNj:SF14R9XJ2UXZ-E76Oin6Id3LL-fMZkDdYGsFT8QDeo0",
+      "expire_date": "2025-03-23T13:07:51.946Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "lb4nj5db99u3sgfbdfl85bq60jkhukof",
+    "fields": {
+      "session_data": ".eJxVjEEOgjAQRe_StWkoMNPi0j1naKbtjEVNSSisjHcXEha6_e-9_1aetjX7rfLip6SuCkBdfsdA8cnlIOlB5T7rOJd1mYI-FH3Sqsc58et2un8HmWreayTkzgTTsjgbAbmPaHiIYBA6Z1sQEgqCYg2yNNLbwTW7HgBQ2Cb1-QIQHDhR:1tr1Ja:sdMYwvbYfHVi_oAN-zCDyQRWFd2edqrh617JZbBeAOc",
+      "expire_date": "2025-03-22T21:02:34.264Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ldvbtboh33qkjx2fbfe46dsiuu15dcpb",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSFDYSjj0r3fQBgeUjU0Ke3K-O_apAvd3nPOfQkftrX6refFT0mchXHi9DtyiI_cdpLuod1mGee2LhPLXZEH7fI6p_y8HO7fQQ29fmsmQyqBVaiscRapABiMTEgDFkc6RwBNg4agmQqPWKI2Y8KkADizeH8A0nE3Hg:1tjEf9:f5HpV9uCszerl1Mb_tE-UxHfOIfcFJxnuutk9PadLro",
+      "expire_date": "2025-03-01T09:40:39.890Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "m46eelf9lb4mf3iy3a4s6mvgkd69xfpo",
+    "fields": {
+      "session_data": ".eJxVzMEOwiAQBNB_4WxICSy0Hr37DWRhF6kaSEp7avx3adKDXmfezC48bmv2W-PFzySuAsTlNwsYX1yOgp5YHlXGWtZlDvIg8mybvFfi9-20fwcZW-7roAMBxxB10skYnCyPCjRy1KidswwwwZBsIjsaR9AZKgMqIXVhB_H5AgZoOGc:1tc2Vu:fi1cw-FABt1qpuJv7o64tHPoYSc_c7l4KcfLQsVvY20",
+      "expire_date": "2025-02-09T13:17:22.575Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "o28105oxh2y4elog35enz712ha06861a",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpcwZrvWtwANlSnFSIu0OkFNC-mXkvlmBba9pGWdJM7MwkO_1uGfBR2g7oDu3WOfa2LnPmu8IPOvjUqTwvh_t3UGHUbw0iOpG18ehsMBE0aUMkjQpXpZAIDEawwWkX0ElLVnukEkP2XqDNmr0_zhQ3fQ:1td5ez:aL1N-yAPBhivoTdpQPOdACF6uxmcpSs4j7_Q5ZimG1c",
+      "expire_date": "2025-02-12T10:51:05.119Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "qdwptjy01f0m3lybpuhh63f5lyc1fa1m",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpcwZrvWtwANlSnFSIu0OkFNC-mXkvlmBba9pGWdJM7MwkO_1uGfBR2g7oDu3WOfa2LnPmu8IPOvjUqTwvh_t3UGHUbw0iOpG18ehsMBE0aUMkjQpXpZAIDEawwWkX0ElLVnukEkP2XqDNmr0_zhQ3fQ:1tahyT:XIvm51CnTriAhZqRckUW_TxnuPkx5JvQRk5c_-TiCSk",
+      "expire_date": "2025-02-05T21:09:21.856Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "uynsu2a3ovkmetcged6i0pyvygatv4sz",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSFDYSjj0r3fQBgeUjU0Ke3K-O_apAvd3nPOfQkftrX6refFT0mchXHi9DtyiI_cdpLuod1mGee2LhPLXZEH7fI6p_y8HO7fQQ29fmsmQyqBVaiscRapABiMTEgDFkc6RwBNg4agmQqPWKI2Y8KkADizeH8A0nE3Hg:1treVj:sujBobuMLfHoqlw_LFtkyp0BDaMoOCmLV6dt6tZ7XKc",
+      "expire_date": "2025-03-24T14:53:43.377Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "v2wnqkhc9jtvdnl345h46wgb7d6jwfpq",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGlm7dvyjpOcM1jpr4wBypDipEHeHSCmgfTPzXiLStta49bzEicVZoBWn3zHR-MhtJ3yndpvlOLd1mZLcFXnQLq8z5-flcP8OKvX6rRWg1x4JQbsAmQebcCDS3jkfFIcCKVPwDOBK1uwhmFRQpWAMWVQk3h_cqDdB:1tcJjO:L3LeACTr42j0flg2wqAo0dqAAugrJcH4ekaggwkACCo",
+      "expire_date": "2025-02-10T07:40:26.411Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "wb82ykxcq1rsoagz0fjdrjedy4boshmq",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGllrO_4sJT1niDbeFQ4gW4qTCnF3iJQC2jcz76VG2tYybl2WcWZ1VlGdfreJ8kPqDvhO9dZ0bnVd5knvij5o19fG8rwc7t9BoV6-tQucTCL0CDaxuMTGQI7svJHEgw-WAxjnbEgMHmAgzIEkW7GEGFG9P7dZNrw:1tc0sK:7pj0dAhXCw18N9uNIJVRHeS3-8BlKWFQ_pqerB9JGQs",
+      "expire_date": "2025-02-09T11:32:24.025Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xjl5ujx9gj5a12c72x59baleo9df83jg",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSFDYSjj0r3fQBgeUjU0Ke3K-O_apAvd3nPOfQkftrX6refFT0mchXHi9DtyiI_cdpLuod1mGee2LhPLXZEH7fI6p_y8HO7fQQ29fmsmQyqBVaiscRapABiMTEgDFkc6RwBNg4agmQqPWKI2Y8KkADizeH8A0nE3Hg:1tjS2C:O-IP3vcclaa4F_y4V0SRuNEJsEA3Np1Bi4b226Ub9w4",
+      "expire_date": "2025-03-01T23:57:20.571Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "y4heq2lq0x8c2bqwc0n2vr3onlo6r1if",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pBCy0Bduu8ZyAAzUjWQlHZlvLtt0oVu_3vvv4XHbc1-a7T4OYmr0E5cfseA8UnlIOmB5V5lrGVd5iAPRZ60yakmet1O9-8gY8t7DQjUq6A0sbPRAA0RFI3RKDC9s9owMgYGtgqIOx7s6LpdD8YAk03i8wUQGThR:1td5uF:HNgsJe8Ce2ss1Gx4tun3_1EzWY_EmxZADg15gs7rowc",
+      "expire_date": "2025-02-12T11:06:51.626Z"
+    }
+  },
+  {
+    "model": "app.account",
+    "pk": 44,
+    "fields": {
+      "uuid": "e0ec671d2b1e",
+      "user": 48,
+      "username": "admin",
+      "firstname": "asd",
+      "lastname": "asdasd",
+      "email": "nwabuezedavid013@gmail.com",
+      "gender": "male",
+      "mobile": "+10908879868",
+      "password": "admin",
+      "occupation": "real state",
+      "Country": "TV",
+      "City": "City",
+      "Zip": "409384",
+      "Accountnum": "1647035097410",
+      "balance": "0",
+      "pin": "0000",
+      "address": "4 nna\r\n34 EDE",
+      "marital_status": "divorced",
+      "type_of_account": "current",
+      "created_at": "2025-02-08T11:28:21.949Z",
+      "updated_at": "2025-02-10T18:07:45.510Z",
+      "is_verified": true,
+      "banned": false,
+      "profile_picture": "https://ydssynpziabhms9a.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-08%20at%2002.02.09_96600c61-M5144YDxv5C5C1suSXzkbkNqMVtSbn.jpg",
+      "intertransfer": [5],
+      "localtransfer": [],
+      "Subjecttiketmain": [2]
+    }
+  },
+  {
+    "model": "app.account",
+    "pk": 51,
+    "fields": {
+      "uuid": "24f3d5b301a3",
+      "user": 55,
+      "username": "Chidi",
+      "firstname": "Chidiebere",
+      "lastname": "Okeke",
+      "email": "aydinhuseyin395@gmail.com",
+      "gender": "male",
+      "mobile": "09054231628",
+      "password": "Chibuike222",
+      "occupation": "Business",
+      "Country": "AG",
+      "City": null,
+      "Zip": null,
+      "Accountnum": "4529568860293",
+      "balance": "9000",
+      "pin": "0000",
+      "address": "No 41 Nkannu Street Lagos",
+      "marital_status": "single",
+      "type_of_account": "savings",
+      "created_at": "2025-02-15T11:09:53.514Z",
+      "updated_at": "2025-03-08T21:03:56.887Z",
+      "is_verified": true,
+      "banned": false,
+      "profile_picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR16or0exEMDvFtsffJsXIClq3qU0zDoSMoUKxic-68O4CpTFbT",
+      "intertransfer": [35, 36],
+      "localtransfer": [47, 14],
+      "Subjecttiketmain": []
+    }
+  },
+  {
+    "model": "app.account",
+    "pk": 85,
+    "fields": {
+      "uuid": "c9d095ea4352",
+      "user": 89,
+      "username": "Anya99Et",
+      "firstname": "Anya99Et",
+      "lastname": "Anya99EtBW",
+      "email": "99@dianabykiris.fun",
+      "gender": "female",
+      "mobile": "87692474586",
+      "password": "4er9f5s%uEJ",
+      "occupation": "[url=https://drms-stockton.org/slot-jackpots/5-most-beautiful-casino-exteriors-around-the-world/]htt",
+      "Country": "AX",
+      "City": null,
+      "Zip": null,
+      "Accountnum": "5723638862678",
+      "balance": "0",
+      "pin": "0000",
+      "address": "https://drms-stockton.org/slot-jackpots/5-most-beautiful-casino-exteriors-around-the-world/",
+      "marital_status": "married",
+      "type_of_account": "fixed-deposit",
+      "created_at": "2025-03-15T04:56:46.092Z",
+      "updated_at": "2025-03-15T04:56:46.092Z",
+      "is_verified": false,
+      "banned": false,
+      "profile_picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR16or0exEMDvFtsffJsXIClq3qU0zDoSMoUKxic-68O4CpTFbT",
+      "intertransfer": [],
+      "localtransfer": [],
+      "Subjecttiketmain": []
+    }
+  },
+  {
+    "model": "app.subjecttiket",
+    "pk": 2,
+    "fields": {
+      "uuid": "af8bb199c3d5",
+      "Subject": "jhgjh",
+      "Priority": "Low",
+      "Details": "jkbkj",
+      "created_at": "2025-02-08T13:44:33.127Z",
+      "updated_at": "2025-02-08T13:44:33.127Z",
+      "appoved": false
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 5,
+    "fields": {
+      "Amount": "2000",
+      "uuid": "c17e92182500",
+      "accname": "Jane Smith",
+      "accnum": "5419422263549",
+      "bankname": "Greenhill Federal Trust",
+      "swiftcode": "JBCSCB5Y16J",
+      "Bankaddress": null,
+      "Description": "Translate ",
+      "appoved": "Pending",
+      "types": "credit",
+      "date": "2022-09-06T19:06:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 6,
+    "fields": {
+      "Amount": "1000000",
+      "uuid": "40c636369214",
+      "accname": "Pat Wilson",
+      "accnum": "8894358453202",
+      "bankname": "Greenhill Federal Trust",
+      "swiftcode": "YIJLMZ4MID4",
+      "Bankaddress": null,
+      "Description": "Investment Funds",
+      "appoved": "reversed",
+      "types": "credit",
+      "date": "2025-01-25T01:27:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 7,
+    "fields": {
+      "Amount": "1000000",
+      "uuid": "91fbd37c7ab4",
+      "accname": "Pat Williams",
+      "accnum": "8894358453202",
+      "bankname": "Northgate Credit Union",
+      "swiftcode": "JBEIBAVO7Y4",
+      "Bankaddress": null,
+      "Description": "Investment Funds",
+      "appoved": "reversed",
+      "types": "credit",
+      "date": "2025-01-25T01:27:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 8,
+    "fields": {
+      "Amount": "500",
+      "uuid": "052dacbda0da",
+      "accname": "John Mba",
+      "accnum": "658I5784938837",
+      "bankname": "Indian Bank",
+      "swiftcode": "LF4562",
+      "Bankaddress": "67 transfer street India",
+      "Description": "For feeding",
+      "appoved": "reversed",
+      "types": "Debit",
+      "date": "2025-02-13T21:04:54.872Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 9,
+    "fields": {
+      "Amount": "500",
+      "uuid": "aad068f43367",
+      "accname": "Emily Johnson",
+      "accnum": "6486940346031",
+      "bankname": "Westfield Bank of Commerce",
+      "swiftcode": "LCKXBZK9",
+      "Bankaddress": null,
+      "Description": "Reversed ",
+      "appoved": "reversed",
+      "types": "credit",
+      "date": "2025-02-13T02:22:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 10,
+    "fields": {
+      "Amount": "500",
+      "uuid": "9a3d96037ded",
+      "accname": "Dana Jones",
+      "accnum": "4891532167269",
+      "bankname": "Westfield National Bank",
+      "swiftcode": "BNMJOVDR",
+      "Bankaddress": null,
+      "Description": "Reversed",
+      "appoved": "reversed",
+      "types": "credit",
+      "date": "2025-02-13T20:34:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 11,
+    "fields": {
+      "Amount": "40000",
+      "uuid": "c798e3af4fc2",
+      "accname": "John Brown",
+      "accnum": "2197943114912",
+      "bankname": "Cedarview National Bank",
+      "swiftcode": "KNFWXA9IXLN",
+      "Bankaddress": null,
+      "Description": "trqansfer",
+      "appoved": "Pending",
+      "types": "credit",
+      "date": "2025-02-22T06:20:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 12,
+    "fields": {
+      "Amount": "400",
+      "uuid": "1cf5c5265369",
+      "accname": "Emily Smith",
+      "accnum": "2685954590641",
+      "bankname": "Eastvale Savings & Loan",
+      "swiftcode": "HYYJHL4TX7S",
+      "Bankaddress": null,
+      "Description": "transfer",
+      "appoved": "Pending",
+      "types": "credit",
+      "date": "2025-02-06T18:34:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 13,
+    "fields": {
+      "Amount": "6000",
+      "uuid": "1cf5c5265369",
+      "accname": "Taylor Williams",
+      "accnum": "2685954590641",
+      "bankname": "Westfield Investment Bank",
+      "swiftcode": "XABMLJLI",
+      "Bankaddress": null,
+      "Description": "qadasas",
+      "appoved": "Pending",
+      "types": "credit",
+      "date": "2025-02-08T06:37:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 14,
+    "fields": {
+      "Amount": "400",
+      "uuid": "a23a3a6a72fd",
+      "accname": "Jordan Johnson",
+      "accnum": "4597796443990",
+      "bankname": "Eastvale Investment Bank",
+      "swiftcode": "EOMRFPGJ",
+      "Bankaddress": null,
+      "Description": "transfer",
+      "appoved": "Pending",
+      "types": "credit",
+      "date": "2025-02-22T06:39:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 15,
+    "fields": {
+      "Amount": "6000",
+      "uuid": "a23a3a6a72fd",
+      "accname": "Pat Taylor",
+      "accnum": "4597796443990",
+      "bankname": "Silverbrook Federal Trust",
+      "swiftcode": "IYVAMNH5",
+      "Bankaddress": null,
+      "Description": "asdas",
+      "appoved": "Pending",
+      "types": "credit",
+      "date": "2025-02-14T06:42:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 16,
+    "fields": {
+      "Amount": "4000",
+      "uuid": "a23a3a6a72fd",
+      "accname": "Pat Taylor",
+      "accnum": "4597796443990",
+      "bankname": "Greenhill Credit Union",
+      "swiftcode": "RFZGCN8DRNI",
+      "Bankaddress": null,
+      "Description": "asdas",
+      "appoved": "Pending",
+      "types": "credit",
+      "date": "2025-02-14T10:41:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 20,
+    "fields": {
+      "Amount": "1000",
+      "uuid": "cff5daab0c19",
+      "accname": "Robin Brown",
+      "accnum": "5194997245478",
+      "bankname": "Silverbrook Financial Group",
+      "swiftcode": "RBNYPIVEDQ0",
+      "Bankaddress": null,
+      "Description": "Investneb",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2229-02-12T22:22:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 21,
+    "fields": {
+      "Amount": "2000",
+      "uuid": "9fddfcabbf67",
+      "accname": "Emily Johnson",
+      "accnum": "9480775722388",
+      "bankname": "Greenhill Federal Trust",
+      "swiftcode": "JAQQAH5O30R",
+      "Bankaddress": null,
+      "Description": "Inve",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "1076-05-05T01:11:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 22,
+    "fields": {
+      "Amount": "1000",
+      "uuid": "1c82e3ad1d96",
+      "accname": "Jordan Brown",
+      "accnum": "2125187579398",
+      "bankname": "Greenhill National Bank",
+      "swiftcode": "HKZQQSIC4G9",
+      "Bankaddress": null,
+      "Description": "Inv",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2228-02-22T12:22:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 23,
+    "fields": {
+      "Amount": "1000",
+      "uuid": "772c1a515d48",
+      "accname": "Jordan Williams",
+      "accnum": "3888657728247",
+      "bankname": "Eastvale Savings & Loan",
+      "swiftcode": "WRNCKVSW05R",
+      "Bankaddress": null,
+      "Description": "ED",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2222-02-22T22:22:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 24,
+    "fields": {
+      "Amount": "1000",
+      "uuid": "a5ccac306e0a",
+      "accname": "Jane Brown",
+      "accnum": "1649822485370",
+      "bankname": "Eastvale Credit Union",
+      "swiftcode": "QQNXET0S5MV",
+      "Bankaddress": null,
+      "Description": "Iw",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2222-02-22T22:22:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 25,
+    "fields": {
+      "Amount": "6000",
+      "uuid": "0f3ce982ec93",
+      "accname": "Alex Miller",
+      "accnum": "7740093937272",
+      "bankname": "Northgate Federal Trust",
+      "swiftcode": "NSSTXF0YO3S",
+      "Bankaddress": null,
+      "Description": "ASDA",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2025-02-21T04:41:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 26,
+    "fields": {
+      "Amount": "4000",
+      "uuid": "ab3205f93816",
+      "accname": "Chris Miller",
+      "accnum": "4037899012742",
+      "bankname": "Chestburg Financial Group",
+      "swiftcode": "QFQELHBECYQ",
+      "Bankaddress": null,
+      "Description": "ASDASD",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2025-02-06T07:44:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 27,
+    "fields": {
+      "Amount": "40000",
+      "uuid": "76d184d1b80e",
+      "accname": "John Smith",
+      "accnum": "6546536027890",
+      "bankname": "Silverbrook Credit Union",
+      "swiftcode": "XEISFU2CMGO",
+      "Bankaddress": null,
+      "Description": "TRANSFER",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2025-02-21T04:46:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 28,
+    "fields": {
+      "Amount": "40000",
+      "uuid": "38494e284878",
+      "accname": "John Wilson",
+      "accnum": "2408142040707",
+      "bankname": "Greenhill Federal Trust",
+      "swiftcode": "OHNGAQ2UHGL",
+      "Bankaddress": null,
+      "Description": "ASDA",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2025-02-15T04:54:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 29,
+    "fields": {
+      "Amount": "4000000",
+      "uuid": "d81d29f1cabe",
+      "accname": "Pat Miller",
+      "accnum": "7769137021619",
+      "bankname": "Greenhill Credit Union",
+      "swiftcode": "IBXRCYB88IR",
+      "Bankaddress": null,
+      "Description": "sdfsd",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2025-02-15T08:59:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 30,
+    "fields": {
+      "Amount": "2000",
+      "uuid": "c96fafbe679d",
+      "accname": "Robin Williams",
+      "accnum": "8882230780455",
+      "bankname": "Westfield Investment Bank",
+      "swiftcode": "CVQSHEKZ",
+      "Bankaddress": null,
+      "Description": "Investment",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2222-02-02T02:22:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 31,
+    "fields": {
+      "Amount": "500",
+      "uuid": "2e4623e64d1d",
+      "accname": "Okafor",
+      "accnum": "55466577687879",
+      "bankname": "Indian Bank",
+      "swiftcode": "LF4562",
+      "Bankaddress": "67 transfer street India",
+      "Description": "For feeding",
+      "appoved": "reversed",
+      "types": "Debit",
+      "date": "2025-02-15T10:25:10.479Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 32,
+    "fields": {
+      "Amount": "5000",
+      "uuid": "c5b3fb563824",
+      "accname": "Pat Jones",
+      "accnum": "2792964701482",
+      "bankname": "Northgate Financial Group",
+      "swiftcode": "BBZKFMLQZ7T",
+      "Bankaddress": null,
+      "Description": "Tranf",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2222-02-22T22:22:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 33,
+    "fields": {
+      "Amount": "2000",
+      "uuid": "fd8a4b338218",
+      "accname": "Jane Johnson",
+      "accnum": "4762142566224",
+      "bankname": "Greenhill Investment Bank",
+      "swiftcode": "SXTFAJBH",
+      "Bankaddress": null,
+      "Description": "Investment Transfer",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2025-02-15T22:35:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 34,
+    "fields": {
+      "Amount": "3500",
+      "uuid": "8bc02825698a",
+      "accname": "Jude",
+      "accnum": "35097867858896",
+      "bankname": "Indian Bank",
+      "swiftcode": "LF4562",
+      "Bankaddress": "67 transfer street India",
+      "Description": "For feeding",
+      "appoved": "reversed",
+      "types": "Debit",
+      "date": "2025-02-15T10:44:47.101Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 35,
+    "fields": {
+      "Amount": "10000",
+      "uuid": "289387bcd822",
+      "accname": "Taylor Moore",
+      "accnum": "2122126968516",
+      "bankname": "Eastvale Savings & Loan",
+      "swiftcode": "ZPFDXZ8KR2U",
+      "Bankaddress": null,
+      "Description": "Investment Fund",
+      "appoved": "Completed",
+      "types": "credit",
+      "date": "2025-02-15T22:03:00Z"
+    }
+  },
+  {
+    "model": "app.intertransferx",
+    "pk": 36,
+    "fields": {
+      "Amount": "2000",
+      "uuid": "3f48a4530d7c",
+      "accname": "Okafor",
+      "accnum": "657558585858",
+      "bankname": "Indian Bank",
+      "swiftcode": "LF4562",
+      "Bankaddress": "67 transfer street India",
+      "Description": "For feeding",
+      "appoved": "reversed",
+      "types": "Debit",
+      "date": "2025-02-15T11:17:28.115Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 2,
+    "fields": {
+      "uuid": "13107aad8fab",
+      "accname": "david nwabueze",
+      "accnum": "23424242",
+      "Amount": "40000",
+      "Description": "transfer",
+      "types": "Debit",
+      "appoved": "Pending",
+      "Routing": "233423423",
+      "date": "2025-02-01T08:30:22.860Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 5,
+    "fields": {
+      "uuid": "937da12eb3d7",
+      "accname": "H├╝seyin",
+      "accnum": "657575657565757",
+      "Amount": "500",
+      "Description": "Just Transfe",
+      "types": "Debit",
+      "appoved": "completed",
+      "Routing": "6575",
+      "date": "2025-02-08T14:36:18.537Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 8,
+    "fields": {
+      "uuid": "ecdd46e66",
+      "accname": "Pat Taylor",
+      "accnum": "8551454251867",
+      "Amount": "40000",
+      "Description": "nwas",
+      "types": "credit",
+      "appoved": "Pending",
+      "Routing": "df941b675",
+      "date": "2025-02-21T06:28:00Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 9,
+    "fields": {
+      "uuid": "3fda36ef0",
+      "accname": "Taylor Wilson",
+      "accnum": "2215591993543",
+      "Amount": "4000",
+      "Description": "trsdf",
+      "types": "credit",
+      "appoved": "Pending",
+      "Routing": "2033ccd83",
+      "date": "2025-02-14T10:37:00Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 11,
+    "fields": {
+      "uuid": "2d24985ad467",
+      "accname": "Moshe C Reynolds Reynolds",
+      "accnum": "23423423423",
+      "Amount": "500000",
+      "Description": "transfer",
+      "types": "Debit",
+      "appoved": "Pending",
+      "Routing": "23423",
+      "date": "2025-02-15T09:55:52.521Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 12,
+    "fields": {
+      "uuid": "84b34ea0b297",
+      "accname": "Moshe C Reynolds Reynolds",
+      "accnum": "234234234",
+      "Amount": "7000000",
+      "Description": "transfer",
+      "types": "Debit",
+      "appoved": "Pending",
+      "Routing": "42323423",
+      "date": "2025-02-15T10:00:35.875Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 13,
+    "fields": {
+      "uuid": "7a94245cb086",
+      "accname": "Nnamani",
+      "accnum": "7585744744788",
+      "Amount": "500",
+      "Description": "Just Transfe",
+      "types": "Debit",
+      "appoved": "reversed",
+      "Routing": "5678",
+      "date": "2025-02-15T10:17:04.139Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 14,
+    "fields": {
+      "uuid": "17488eb38556",
+      "accname": "Nnamani",
+      "accnum": "456788899000",
+      "Amount": "1000",
+      "Description": "Just Transfe",
+      "types": "Debit",
+      "appoved": "reversed",
+      "Routing": "445",
+      "date": "2025-02-15T11:19:04.054Z"
+    }
+  },
+  {
+    "model": "app.localtransferx",
+    "pk": 47,
+    "fields": {
+      "uuid": "e97824bb4464",
+      "accname": "OBEVA",
+      "accnum": "31343453567746",
+      "Amount": "1000",
+      "Description": "Just Transfe",
+      "types": "Debit",
+      "appoved": "Pending",
+      "Routing": "568",
+      "date": "2025-03-08T21:03:56.545Z"
+    }
+  },
+  {
+    "model": "app.siteedit",
+    "pk": 1,
+    "fields": {
+      "name": "Ziraat Bankasi",
+      "email": "support@ankazirankasi.com",
+      "owneremail": "obevaglobalg@gmail.com",
+      "host": "https://www.ankazirankasi.com/",
+      "Address": "Do─ƒanbey Mah. Atat├╝rk Bulvar─▒ No 8 Ulus Ankara. Tu",
+      "country": null,
+      "dis": "",
+      "phone": "+902122466228",
+      "logo": "https://zirantankasi.vercel.app/static/imagesx/logo-en.png",
+      "image1": "https://www.ziraatbank.com.tr/PublishingImages/Landing/girisimci/Tarim.jpg",
+      "idx": 1,
+      "facebooklink": null,
+      "twiiterlink": null,
+      "instergram": null,
+      "youtubelink": null,
+      "whatsapplonk": null
+    }
+  }
+]

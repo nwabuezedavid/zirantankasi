@@ -190,23 +190,23 @@ class  localtransferx(models.Model):
         return f'client {str(self.uuid)}'
 
 class siteedit(models.Model):
-    name = models.CharField( max_length=50 ,blank=True, null=True,)
-    email = models.CharField( max_length=50 ,blank=True, null=True,)
-    owneremail = models.CharField( max_length=50 ,blank=True, null=True,)
-    host = models.CharField( max_length=50 ,default=name, blank=True, null=True,)
-    Address = models.CharField( max_length=50 ,blank=True, null=True,)
-    country = models.CharField( max_length=50 ,blank=True, null=True,)
+    name = models.CharField( max_length=225 ,blank=True, null=True,)
+    email = models.CharField( max_length=225 ,blank=True, null=True,)
+    owneremail = models.CharField( max_length=225 ,blank=True, null=True,)
+    host = models.CharField( max_length=225 ,default=name, blank=True, null=True,)
+    Address = models.CharField( max_length=225 ,blank=True, null=True,)
+    country = models.CharField( max_length=225 ,blank=True, null=True,)
     dis = models.TextField( blank=True, null=True,)
-    phone = models.CharField( max_length=50 ,blank=True, null=True,)
+    phone = models.CharField( max_length=225 ,blank=True, null=True,)
     logo = models.TextField( blank=True, null=True,)
     image1 = models.TextField( blank=True, null=True,)
     idx = models.IntegerField( default=1) 
     
-    facebooklink = models.CharField( max_length=500 ,blank=True, null=True,)
-    twiiterlink = models.CharField( max_length=500 ,blank=True, null=True,)
-    instergram = models.CharField( max_length=500 ,blank=True, null=True,)
-    youtubelink = models.CharField( max_length=500 ,blank=True, null=True,)
-    whatsapplonk = models.CharField( max_length=500 ,blank=True, null=True,)
+    facebooklink = models.CharField( max_length=225 ,blank=True, null=True,)
+    twiiterlink = models.CharField( max_length=225 ,blank=True, null=True,)
+    instergram = models.CharField( max_length=225,blank=True, null=True,)
+    youtubelink = models.CharField( max_length=225 ,blank=True, null=True,)
+    whatsapplonk = models.CharField( max_length=225 ,blank=True, null=True,)
    
     def __str__(self):
         return self.name
