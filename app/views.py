@@ -795,7 +795,7 @@ def aduseredit(request,pk):
         content = request.POST.get('content')
         if types and amount and end_date and content: 
             if trnafertypes == 'local':
-                loc = localtransferx.objects.create(types=types,accname=get_random_name(),appoved="Completed", Routing=referCode(9) ,Amount=amount, date=end_date, Description=content, )
+                loc = localtransferx.objects.create(types=types,accname=get_random_name(),accnum  =item.Accountnum,appoved="Completed", Routing=referCode(9) ,Amount=amount, date=end_date, Description=content, )
                 item.localtransfer.add(loc)
                 if types == 'debit': 
                     if int(item.balance) < int(amount):
@@ -828,7 +828,7 @@ def aduseredit(request,pk):
                     messages.success(request, 'local transfer : created  successfully')
                 return redirect('aduseredit', pk=item.uuid)
             elif trnafertypes == 'Inter':
-                inters = intertransferx.objects.create(bankname = get_random_bank_name(),types=types, swiftcode = generate_swift_code(), accname=get_random_name(),appoved="Completed"  ,Amount=amount, date=end_date, Description=content, )
+                inters = intertransferx.objects.create(bankname = get_random_bank_name(),accnum  =item.Accountnum, types=types, swiftcode = generate_swift_code(), accname=get_random_name(),appoved="Completed"  ,Amount=amount, date=end_date, Description=content, )
                 item.intertransfer.add(inters)
                 if types == 'debit':
                     if item.balance < int(amount):
