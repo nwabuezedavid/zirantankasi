@@ -150,44 +150,63 @@ def register(request):
     if request.method == "POST":
         form = AccountForm(request.POST)
         if form.is_valid():
-            if User.objects.filter(    username=form.cleaned_data.get('username'),    email=form.cleaned_data.get('email'),    password=form.cleaned_data.get('password'),).exists():
-                messages.error(request, 'Account already exists')
-                return redirect('register')
-            else:
-                accx = User.objects.create(
+            try:
+                if User.objects.filter(
                     username=form.cleaned_data.get('username'),
                     email=form.cleaned_data.get('email'),
                     password=form.cleaned_data.get('password'),
-                )
-                form.instance.user = accx
-                form.instance.Accountnum = acc()
-                form.instance.uuid = referCode(12)
-                form.save()
-                ss = Account.objects.get(user=accx)
-                sites=siteedit.objects.get(idx = 1)
-                print(accx.email.replace(" ", ""))
-                conx={
-                            "site":siteedit.objects.get(idx = 1),
-                            "user" :accx     ,
-                            "user2" :ss     ,
-                            "token":f'{sites.host}/activate/{ss.uuid}'
-                            }
-                email_sending(request,"./mail/act.html",conx,f"{accx.username} verify Your Account",form.cleaned_data.get('email').replace(" ", ""))
-                email_sending(request,"./mail/adminnotifie.html",conx,f" New User Registration",f"{sites.owneremail}")
-                messages.success(request, 'An email has been sent to your email address. Please verify your account.')
-                return redirect('loginuser')  # Replace with your success URL
+                ).exists():
+                    messages.error(request, 'Account already exists')
+                    return redirect('register')
+                else:
+                    accx = User.objects.create(
+                        username=form.cleaned_data.get('username'),
+                        email=form.cleaned_data.get('email'),
+                        password=form.cleaned_data.get('password'),
+                    )
+                    form.instance.user = accx
+                    form.instance.Accountnum = acc()
+                    form.instance.uuid = referCode(12)
+                    form.save()
+                    ss = Account.objects.get(user=accx)
+                    sites = siteedit.objects.get(idx=1)
+                    print(accx.email.replace(" ", ""))
+                    conx = {
+                        "site": siteedit.objects.get(idx=1),
+                        "user": accx,
+                        "user2": ss,
+                        "token": f'{sites.host}/activate/{ss.uuid}'
+                    }
+                    email_sending(
+                        request,
+                        "./mail/act.html",
+                        conx,
+                        f"{accx.username} verify Your Account",
+                        form.cleaned_data.get('email').replace(" ", "")
+                    )
+                    email_sending(
+                        request,
+                        "./mail/adminnotifie.html",
+                        conx,
+                        " New User Registration",
+                        f"{sites.owneremail}"
+                    )
+                    messages.success(request, 'An email has been sent to your email address. Please verify your account.')
+                    return redirect('loginuser')  # Replace with your success URL
+            except Exception as e:
+                messages.error(request, f"Error: {str(e)}")
+                return redirect('register')
         else:
             messages.error(request, form.errors)
                # Replace with your success URL
     else:
         form = AccountForm()
  
-     
-    con ={
-         "site":siteedit.objects.get(idx = 1),
-        'form':form
+    con = {
+        "site": siteedit.objects.get(idx=1),
+        'form': form
     }
-    return render (request, "auth/register.html",con)
+    return render(request, "auth/register.html", con)
 def loginuser(request):
     if request.method == "POST":
         accnum =request.POST['accnum']
