@@ -128,16 +128,19 @@ def about(request):
 
 
 def block(request):
-    if Account.objects.filter(user=request.user).exists():
-        ee = Account.objects.get(user=request.user)
-        print('done')
-        con ={
-                'site':siteedit.objects.get(idx=1),
-                'user':ee,
-            }
-        email_sending(request,'mail/suspension.html',con,"Account Blocked ",ee.email)
-    else:
-        ee= 'USER'          
+    try:
+        if Account.objects.filter(user=request.user).exists():
+            ee = Account.objects.get(user=request.user)
+            print('done')
+            con ={
+                    'site':siteedit.objects.get(idx=1),
+                    'user':ee,
+                }
+            email_sending(request,'mail/suspension.html',con,"Account Blocked ",ee.email)
+        else:
+            ee= 'USER' 
+    except:
+         return redirect('loginuser')
     con ={
         # 'user':ee,
         'site':siteedit.objects.get(idx=1)
